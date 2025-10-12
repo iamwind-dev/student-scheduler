@@ -1,4 +1,6 @@
 const { app } = require('@azure/functions');
+const fs = require('fs');
+const path = require('path');
 
 app.http('courses', {
     methods: ['GET'],
@@ -9,112 +11,85 @@ app.http('courses', {
         // Lấy parameter semester từ query string
         const semester = request.query.get('semester') || '2025A';
 
-        // Data demo môn học
-        const courses = [
-            {
-                id: 1,
-                code: 'CS101',
-                name: 'Lập trình căn bản',
-                semester: semester,
-                credits: 3,
-                lecturer: 'TS. Nguyễn Văn A',
-                slots: [
-                    { day: 'Thứ 2', time: 'Sáng (7h-11h)', room: 'A101', campus: 'Cơ sở A' },
-                    { day: 'Thứ 4', time: 'Chiều (13h-17h)', room: 'B202', campus: 'Cơ sở B' }
-                ]
-            },
-            {
-                id: 2,
-                code: 'CS102',
-                name: 'Cấu trúc dữ liệu và giải thuật',
-                semester: semester,
-                credits: 4,
-                lecturer: 'PGS.TS. Trần Thị B',
-                slots: [
-                    { day: 'Thứ 3', time: 'Sáng (7h-11h)', room: 'A203', campus: 'Cơ sở A' },
-                    { day: 'Thứ 5', time: 'Chiều (13h-17h)', room: 'C101', campus: 'Cơ sở A' }
-                ]
-            },
-            {
-                id: 3,
-                code: 'CS201',
-                name: 'Cơ sở dữ liệu',
-                semester: semester,
-                credits: 3,
-                lecturer: 'ThS. Lê Văn C',
-                slots: [
-                    { day: 'Thứ 2', time: 'Chiều (13h-17h)', room: 'B105', campus: 'Cơ sở B' },
-                    { day: 'Thứ 6', time: 'Sáng (7h-11h)', room: 'A304', campus: 'Cơ sở A' }
-                ]
-            },
-            {
-                id: 4,
-                code: 'CS202',
-                name: 'Mạng máy tính',
-                semester: semester,
-                credits: 3,
-                lecturer: 'TS. Phạm Thị D',
-                slots: [
-                    { day: 'Thứ 3', time: 'Chiều (13h-17h)', room: 'C201', campus: 'Cơ sở A' },
-                    { day: 'Thứ 5', time: 'Sáng (7h-11h)', room: 'B301', campus: 'Cơ sở B' }
-                ]
-            },
-            {
-                id: 5,
-                code: 'CS301',
-                name: 'Công nghệ phần mềm',
-                semester: semester,
-                credits: 4,
-                lecturer: 'PGS.TS. Hoàng Văn E',
-                slots: [
-                    { day: 'Thứ 4', time: 'Sáng (7h-11h)', room: 'A401', campus: 'Cơ sở A' },
-                    { day: 'Thứ 7', time: 'Chiều (13h-17h)', room: 'B401', campus: 'Cơ sở B' }
-                ]
-            },
-            {
-                id: 6,
-                code: 'CS302',
-                name: 'Trí tuệ nhân tạo',
-                semester: semester,
-                credits: 3,
-                lecturer: 'TS. Vũ Thị F',
-                slots: [
-                    { day: 'Thứ 2', time: 'Tối (18h-21h)', room: 'C301', campus: 'Cơ sở A' },
-                    { day: 'Thứ 5', time: 'Tối (18h-21h)', room: 'A501', campus: 'Cơ sở A' }
-                ]
-            },
-            {
-                id: 7,
-                code: 'MATH101',
-                name: 'Toán cao cấp A1',
-                semester: semester,
-                credits: 3,
-                lecturer: 'PGS.TS. Đỗ Văn G',
-                slots: [
-                    { day: 'Thứ 3', time: 'Sáng (7h-11h)', room: 'D101', campus: 'Cơ sở B' },
-                    { day: 'Thứ 6', time: 'Chiều (13h-17h)', room: 'D102', campus: 'Cơ sở B' }
-                ]
-            },
-            {
-                id: 8,
-                code: 'ENG101',
-                name: 'Tiếng Anh chuyên ngành',
-                semester: semester,
-                credits: 2,
-                lecturer: 'ThS. Ngô Thị H',
-                slots: [
-                    { day: 'Thứ 4', time: 'Tối (18h-21h)', room: 'E201', campus: 'Cơ sở A' },
-                    { day: 'Thứ 7', time: 'Sáng (7h-11h)', room: 'E202', campus: 'Cơ sở B' }
-                ]
-            }
-        ];
+        try {
+            // Đọc data từ file data.json
+            const dataPath = path.join(__dirname, '../data/data.json');
+            const rawData = fs.readFileSync(dataPath, 'utf-8');
+            const coursesData = JSON.parse(rawData);
 
-        return {
-            status: 200,
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(courses)
-        };
+            // Transform data từ format cũ sang format mới
+            const courses = coursesData.map(course => {
+                // Parse thời gian: "Thứ Tư | Tiết 1->3"
+                let day = 'Thứ 2';
+                let timeSlot = 'Tiết 1->3';
+                
+                if (course.time && course.time.includes('|')) {
+                    const timeParts = course.time.split(' | ');
+                    day = timeParts[0] || 'Thứ 2';
+                    timeSlot = timeParts[1] || 'Tiết 1->3';
+                }
+                
+                // Chuyển đổi tiết học sang giờ học
+                const getTimeRange = (timeSlot) => {
+                    if (!timeSlot) return 'Sáng (7h-11h)';
+                    const match = timeSlot.match(/Tiết (\d+)->?(\d+)?/);
+                    if (match) {
+                        const start = parseInt(match[1]);
+                        if (start >= 1 && start <= 5) return 'Sáng (7h-11h)';
+                        if (start >= 6 && start <= 10) return 'Chiều (13h-17h)';
+                        return 'Tối (18h-21h)';
+                    }
+                    return 'Sáng (7h-11h)';
+                };
+
+                // Xác định cơ sở dựa trên ký tự đầu của phòng
+                const room = course.room || 'V.A101';
+                const campus = room.startsWith('V.') ? 'Cơ sở A' : 
+                              room.startsWith('K.') ? 'Cơ sở B' : 'Cơ sở A';
+
+                return {
+                    id: course.id,
+                    code: `COURSE${course.id}`,
+                    name: course.name || 'Môn học',
+                    semester: semester,
+                    credits: 3, // Mặc định 3 tín chỉ
+                    lecturer: course.lecturer || 'Chưa có thông tin',
+                    slots: [
+                        {
+                            day: day,
+                            time: getTimeRange(timeSlot),
+                            room: room,
+                            campus: campus,
+                            weeks: course.weeks || '1->18',
+                            capacity: course["Sỉ số"] || '0'
+                        }
+                    ]
+                };
+            }).filter(course => course.name !== 'Môn học'); // Lọc các môn không hợp lệ
+
+            context.log(`Loaded ${courses.length} courses from data.json`);
+
+            context.log(`Loaded ${courses.length} courses from data.json`);
+
+            return {
+                status: 200,
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(courses)
+            };
+        } catch (error) {
+            context.error('Error loading courses:', error);
+            return {
+                status: 500,
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    error: 'Failed to load courses',
+                    message: error.message
+                })
+            };
+        }
     }
 });
