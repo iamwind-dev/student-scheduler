@@ -1,67 +1,52 @@
-# Docs: https://github.com/azure/functions-action
-name: Build and deploy Node.js API to Azure Function App
+name: Deploy Azure Functions API
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'api/**'
   workflow_dispatch:
 
 env:
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: 'api' # thư mục chứa host.json
+  AZURE_FUNCTIONAPP_NAME: 'student-api-func'
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: './api'
   NODE_VERSION: '20.x'
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
-      - name: Install dependencies
-        run: |
-          cd ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          npm install
-          npm run build --if-present
-          npm run test --if-present
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: function-app
-          path: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
     permissions:
       id-token: write
       contents: read
-
+    
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: function-app
+    - name: 'Checkout GitHub Action'
+      uses: actions/checkout@v4
 
-      - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_40464ED23E514CFBA1A187F2BF61193A }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_29E18F6F305E43C3B665EB0C4CBF77EE }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_882861DF1DBD48A7A71B05A94283B211 }}
+    - name: Setup Node ${{ env.NODE_VERSION }} Environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ env.NODE_VERSION }}
 
-      - name: Deploy to Azure Function App
-        uses: Azure/functions-action@v1
-        with:
-          app-name: 'student-api-func'
-          package: '.'
-          clean: true
+    - name: 'Resolve Project Dependencies Using Npm'
+      shell: bash
+      run: |
+        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
+        npm install
+        npm run build --if-present
+        popd
+
+    - name: 'Login to Azure'
+      uses: azure/login@v2
+      with:
+         client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_40464ED23E514CFBA1A187F2BF61193A }}
+         tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_29E18F6F305E43C3B665EB0C4CBF77EE }}
+         subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_882861DF1DBD48A7A71B05A94283B211 }}
+
+    - name: 'Run Azure Functions Action'
+      uses: Azure/functions-action@v1
+      with:
+        app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
+        package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
+        respect-funcignore: true
