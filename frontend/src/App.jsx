@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useMsal } from '@azure/msal-react';
 import Login from './pages/Login';
 import Courses from './pages/Courses';
 import Preferences from './pages/Preferences';
@@ -6,16 +7,39 @@ import Recommend from './pages/Recommend';
 import './App.css';
 
 function App() {
+  const { accounts, instance } = useMsal();
   const [currentPage, setCurrentPage] = useState('login');
   const [studentId, setStudentId] = useState('');
+  const [userInfo, setUserInfo] = useState(null);
 
-  const handleLogin = (id) => {
+  // Check nếu user đã đăng nhập (restore session)
+  useEffect(() => {
+    if (accounts.length > 0) {
+      const account = accounts[0];
+      setStudentId(account.username || account.localAccountId);
+      setUserInfo(account);
+      setCurrentPage('courses');
+    }
+  }, [accounts]);
+
+  const handleLogin = (id, account) => {
     setStudentId(id);
+    setUserInfo(account);
     setCurrentPage('courses');
   };
 
-  const handleLogout = () => {
+  const handleLogout = async () => {
+    try {
+      // Logout khỏi Microsoft nếu đang dùng MSAL
+      if (accounts.length > 0) {
+        await instance.logoutPopup();
+      }
+    } catch (error) {
+      console.error('Logout error:', error);
+    }
+    
     setStudentId('');
+    setUserInfo(null);
     setCurrentPage('login');
   };
 
@@ -40,7 +64,9 @@ function App() {
         <nav className="navbar">
           <div className="navbar-brand">
             <h2>🎓 Student Scheduler</h2>
-            <span className="student-id">SV: {studentId}</span>
+            <span className="student-id">
+              {userInfo?.name || studentId}
+            </span>
           </div>
           <div className="navbar-menu">
             <button
