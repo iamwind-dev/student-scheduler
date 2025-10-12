@@ -1,6 +1,6 @@
 // API Configuration
 // Khi deploy production, sử dụng URL Azure Functions
-// Khi chạy local development, sử dụng proxy /api
+// Khi chạy local development, sử dụng proxy /api qua Vite
 const API_BASE = import.meta.env.PROD 
   ? "https://student-api-func.azurewebsites.net/api"
   : "/api";
