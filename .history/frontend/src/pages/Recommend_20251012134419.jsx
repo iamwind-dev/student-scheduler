@@ -14,7 +14,7 @@ function Recommend({ studentId }) {
     setSchedules([]);
 
     try {
-      const response = await fetch(`${API_BASE}/recommend`, {
+      const response = await fetch('/api/recommend', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -44,7 +44,7 @@ function Preferences({ studentId }) {
     setMessage(null);
 
     try {
-      const response = await fetch(`${API_BASE}/preferences`, {
+      const response = await fetch('/api/preferences', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
