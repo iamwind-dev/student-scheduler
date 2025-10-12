@@ -52,9 +52,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_40464ED23E514CFBA1A187F2BF61193A }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_29E18F6F305E43C3B665EB0C4CBF77EE }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_882861DF1DBD48A7A71B05A94283B211 }}
 
       - name: Deploy to Azure Function
         uses: Azure/functions-action@v1
@@ -62,3 +62,4 @@ jobs:
           app-name: 'student-api-func'
           slot-name: 'Production'
           package: .
+
