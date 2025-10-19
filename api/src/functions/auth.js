@@ -9,7 +9,7 @@ const validator = new ValidationHelper();
 
 app.http('auth-login', {
     methods: ['POST', 'OPTIONS'],
-    route: 'auth/login',
+    route: 'user/login',
     authLevel: 'anonymous',
     handler: async (request, context) => {
         if (request.method === 'OPTIONS') {
@@ -71,7 +71,7 @@ app.http('auth-login', {
 
 app.http('auth-refresh', {
     methods: ['POST', 'OPTIONS'],
-    route: 'auth/refresh',
+    route: 'user/refresh',
     authLevel: 'anonymous',
     handler: async (request, context) => {
         if (request.method === 'OPTIONS') {
@@ -120,7 +120,7 @@ app.http('auth-refresh', {
 
 app.http('auth-logout', {
     methods: ['POST', 'OPTIONS'],
-    route: 'auth/logout',
+    route: 'user/logout',
     authLevel: 'anonymous',
     handler: async (request, context) => {
         if (request.method === 'OPTIONS') {
@@ -163,7 +163,7 @@ app.http('auth-logout', {
 
 app.http('auth-me', {
     methods: ['GET', 'OPTIONS'],
-    route: 'auth/me',
+    route: 'user/me',
     authLevel: 'anonymous',
     handler: async (request, context) => {
         if (request.method === 'OPTIONS') {
