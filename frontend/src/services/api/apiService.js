@@ -162,7 +162,7 @@ class ApiService {
      * Login with Microsoft token
      */
     async login(accessToken, tokenType = 'Bearer') {
-        return this.client.post('/account/login', {
+        return this.client.post('/session/signin', {
             accessToken,
             tokenType
         });
@@ -177,7 +177,7 @@ class ApiService {
             throw new Error('No refresh token available');
         }
 
-        return this.client.post('/account/refresh', {}, {
+        return this.client.post('/session/refresh', {}, {
             headers: {
                 'Authorization': `Bearer ${refreshToken}`
             }
@@ -188,14 +188,14 @@ class ApiService {
      * Logout
      */
     async logout() {
-        return this.client.post('/account/logout');
+        return this.client.post('/session/signout');
     }
 
     /**
      * Get current user profile
      */
     async getProfile() {
-        return this.client.get('/account/profile');
+        return this.client.get('/session/info');
     }
 
     /**
