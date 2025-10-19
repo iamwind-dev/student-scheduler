@@ -4,10 +4,11 @@
  */
 
 import axios from 'axios';
+import API_BASE_URL from '../../config';
 
 class ApiService {
     constructor() {
-        this.baseURL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:7071/api';
+        this.baseURL = API_BASE_URL;
 
         // Create axios instance
         this.client = axios.create({
