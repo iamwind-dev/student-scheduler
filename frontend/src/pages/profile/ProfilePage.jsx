@@ -18,7 +18,8 @@ const ProfilePage = () => {
     const loadSchedule = async () => {
         try {
             // Load từ SQL Server trước
-            const response = await fetch('http://localhost:7071/api/schedules/demo-user');
+            const API_URL = import.meta.env.VITE_API_URL || 'https://student-api-func.azurewebsites.net/api';
+            const response = await fetch(`${API_URL}/schedules/demo-user`);
             const result = await response.json();
 
             if (result.success) {

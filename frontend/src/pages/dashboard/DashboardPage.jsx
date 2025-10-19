@@ -22,7 +22,8 @@ const DashboardPage = () => {
 
     const fetchDashboardStats = async () => {
         try {
-            const response = await fetch('http://localhost:7071/api/courses');
+            const API_URL = import.meta.env.VITE_API_URL || 'https://student-api-func.azurewebsites.net/api';
+            const response = await fetch(`${API_URL}/courses`);
             const courses = await response.json();
 
             setStats({

@@ -165,7 +165,8 @@ export default function SchedulePage() {
     const saveSchedule = async () => {
         try {
             // Lưu vào SQL Server
-            const response = await fetch('http://localhost:7071/api/schedules', {
+            const API_URL = import.meta.env.VITE_API_URL || 'https://student-api-func.azurewebsites.net/api';
+            const response = await fetch(`${API_URL}/schedules`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

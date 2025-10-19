@@ -20,7 +20,8 @@ const CoursesPage = () => {
     const fetchCourses = async () => {
         try {
             setLoading(true);
-            const response = await fetch('http://localhost:7071/api/courses');
+            const API_URL = import.meta.env.VITE_API_URL || 'https://student-api-func.azurewebsites.net/api';
+            const response = await fetch(`${API_URL}/courses`);
 
             if (!response.ok) {
                 throw new Error('Failed to fetch courses');
