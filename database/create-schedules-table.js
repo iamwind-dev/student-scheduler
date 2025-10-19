@@ -19,23 +19,23 @@ async function createSchedulesTable() {
         console.log('📊 Connecting to Azure SQL Server...');
         console.log(`Server: ${config.server}`);
         console.log(`Database: ${config.database}`);
-        
+
         // Connect to database
         await sql.connect(config);
         console.log('✅ Connected successfully!\n');
 
         // Read SQL script
         const sqlScript = fs.readFileSync(
-            path.join(__dirname, 'add-schedules-table.sql'), 
+            path.join(__dirname, 'add-schedules-table.sql'),
             'utf8'
         );
 
         console.log('📝 Executing SQL script...');
         console.log('----------------------------');
-        
+
         // Split by GO statements and execute each batch
         const batches = sqlScript.split(/\nGO\n|\nGO$/gi).filter(batch => batch.trim());
-        
+
         for (let i = 0; i < batches.length; i++) {
             const batch = batches[i].trim();
             if (batch) {
@@ -53,14 +53,14 @@ async function createSchedulesTable() {
         console.log('- totalCredits: INT NOT NULL');
         console.log('- createdAt: DATETIME2');
         console.log('- updatedAt: DATETIME2');
-        
+
         // Verify table exists
         const result = await sql.query`
             SELECT TABLE_NAME 
             FROM INFORMATION_SCHEMA.TABLES 
             WHERE TABLE_NAME = 'Schedules'
         `;
-        
+
         if (result.recordset.length > 0) {
             console.log('\n✅ Verification: Schedules table exists in database');
         }

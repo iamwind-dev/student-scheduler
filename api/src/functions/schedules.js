@@ -38,7 +38,7 @@ app.http('schedules-save', {
             const { userId, courses, totalCredits } = body;
 
             const pool = await sql.connect(config);
-            
+
             const result = await pool.request()
                 .input('userId', sql.NVarChar, userId || 'demo-user')
                 .input('coursesJson', sql.NVarChar, JSON.stringify(courses))
@@ -102,7 +102,7 @@ app.http('schedules-get', {
             const userId = request.params.userId || 'demo-user';
 
             const pool = await sql.connect(config);
-            
+
             const result = await pool.request()
                 .input('userId', sql.NVarChar, userId)
                 .query(`

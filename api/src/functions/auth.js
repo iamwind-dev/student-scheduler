@@ -16,7 +16,7 @@ app.http('auth-login', {
             return {
                 status: 200,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Methods': 'POST, OPTIONS',
                     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
                     'Access-Control-Allow-Credentials': 'true'
@@ -26,44 +26,56 @@ app.http('auth-login', {
 
         try {
             const body = await request.json();
+            context.log('Login request received:', { hasAccessToken: !!body.accessToken });
 
-            const validation = validator.validateLoginRequest(body);
-            if (!validation.isValid) {
-                return response.validationError(validation.errors);
-            }
-
-            const result = await authService.authenticateWithMicrosoft(
-                body.accessToken,
-                body.tokenType
-            );
-
-            return {
-                ...response.success(result, 'Login successful'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
-
-        } catch (error) {
-            context.log.error('Login error:', error.message);
-
-            if (error.message.includes('Invalid Microsoft token')) {
+            if (!body.accessToken) {
                 return {
-                    ...response.unauthorized('Invalid authentication token'),
+                    status: 400,
                     headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
                         'Access-Control-Allow-Credentials': 'true'
-                    }
+                    },
+                    body: JSON.stringify({
+                        success: false,
+                        message: 'Access token required',
+                        errors: [{ field: 'accessToken', message: 'Access token required' }]
+                    })
                 };
             }
 
+            // Authenticate with Microsoft token
+            const result = await authService.authenticateWithMicrosoft(body.accessToken);
+
             return {
-                ...response.serverError('Authentication failed', error.message),
+                status: 200,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Credentials': 'true'
-                }
+                },
+                body: JSON.stringify({
+                    success: true,
+                    data: result,
+                    message: 'Login successful'
+                })
+            };
+
+        } catch (error) {
+            context.log('Login error:', error.message, error.stack);
+
+            return {
+                status: 500,
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Credentials': 'true'
+                },
+                body: JSON.stringify({
+                    success: false,
+                    message: 'Authentication failed',
+                    error: error.message
+                })
             };
         }
     }
@@ -78,7 +90,7 @@ app.http('auth-refresh', {
             return {
                 status: 200,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Methods': 'POST, OPTIONS',
                     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
                     'Access-Control-Allow-Credentials': 'true'
@@ -88,31 +100,52 @@ app.http('auth-refresh', {
 
         try {
             const body = await request.json();
-            const validation = validator.validateRefreshRequest(body);
 
-            if (!validation.isValid) {
-                return response.validationError(validation.errors);
+            if (!body.refreshToken) {
+                return {
+                    status: 400,
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
+                        'Access-Control-Allow-Credentials': 'true'
+                    },
+                    body: JSON.stringify({
+                        success: false,
+                        message: 'Refresh token required'
+                    })
+                };
             }
 
             const result = await authService.refreshToken(body.refreshToken);
 
             return {
-                ...response.success(result, 'Token refreshed'),
+                status: 200,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Credentials': 'true'
-                }
+                },
+                body: JSON.stringify({
+                    success: true,
+                    data: result,
+                    message: 'Token refreshed'
+                })
             };
 
         } catch (error) {
             context.log.error('Refresh error:', error.message);
 
             return {
-                ...response.unauthorized('Invalid refresh token'),
+                status: 401,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Credentials': 'true'
-                }
+                },
+                body: JSON.stringify({
+                    success: false,
+                    message: 'Invalid refresh token'
+                })
             };
         }
     }
@@ -127,7 +160,7 @@ app.http('auth-logout', {
             return {
                 status: 200,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Methods': 'POST, OPTIONS',
                     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
                     'Access-Control-Allow-Credentials': 'true'
@@ -140,22 +173,33 @@ app.http('auth-logout', {
             await authService.logout(body.userId);
 
             return {
-                ...response.success(null, 'Logout successful'),
+                status: 200,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Credentials': 'true'
-                }
+                },
+                body: JSON.stringify({
+                    success: true,
+                    message: 'Logout successful'
+                })
             };
 
         } catch (error) {
             context.log.error('Logout error:', error.message);
 
             return {
-                ...response.serverError('Logout failed', error.message),
+                status: 500,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Credentials': 'true'
-                }
+                },
+                body: JSON.stringify({
+                    success: false,
+                    message: 'Logout failed',
+                    error: error.message
+                })
             };
         }
     }
@@ -170,7 +214,7 @@ app.http('auth-me', {
             return {
                 status: 200,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Methods': 'GET, OPTIONS',
                     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
                     'Access-Control-Allow-Credentials': 'true'
@@ -183,11 +227,16 @@ app.http('auth-me', {
 
             if (!authHeader || !authHeader.startsWith('Bearer ')) {
                 return {
-                    ...response.unauthorized('Missing or invalid authorization header'),
+                    status: 401,
                     headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Origin': '*',
                         'Access-Control-Allow-Credentials': 'true'
-                    }
+                    },
+                    body: JSON.stringify({
+                        success: false,
+                        message: 'Missing or invalid authorization header'
+                    })
                 };
             }
 
@@ -195,22 +244,33 @@ app.http('auth-me', {
             const user = await authService.validateToken(token);
 
             return {
-                ...response.success(user, 'User retrieved'),
+                status: 200,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Credentials': 'true'
-                }
+                },
+                body: JSON.stringify({
+                    success: true,
+                    data: user,
+                    message: 'User retrieved'
+                })
             };
 
         } catch (error) {
             context.log.error('Get user error:', error.message);
 
             return {
-                ...response.unauthorized('Invalid or expired token'),
+                status: 401,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Credentials': 'true'
-                }
+                },
+                body: JSON.stringify({
+                    success: false,
+                    message: 'Invalid or expired token'
+                })
             };
         }
     }

@@ -20,7 +20,7 @@ const ProfilePage = () => {
             // Load từ SQL Server trước
             const response = await fetch('http://localhost:7071/api/schedules/demo-user');
             const result = await response.json();
-            
+
             if (result.success) {
                 const data = {
                     courses: result.data.courses,
@@ -67,7 +67,7 @@ const ProfilePage = () => {
         if (!timeString) return null;
         const parts = timeString.split('|');
         if (parts.length !== 2) return null;
-        
+
         const day = parts[0].trim();
         const periodMatch = parts[1].match(/Tiết (\d+)->(\d+)|Tiết (\d+)/);
         if (!periodMatch) return null;
@@ -76,7 +76,7 @@ const ProfilePage = () => {
         const endPeriod = parseInt(periodMatch[2] || periodMatch[3]);
 
         return { day, startPeriod, endPeriod };
-    };    const deleteSchedule = () => {
+    }; const deleteSchedule = () => {
         if (confirm('Bạn có chắc muốn xóa thời khóa biểu đã lưu?')) {
             localStorage.removeItem('savedSchedule');
             setSavedSchedule(null);
@@ -94,9 +94,9 @@ const ProfilePage = () => {
                     const course = scheduleTable[key];
                     const span = endPeriod - startPeriod + 1;
                     return (
-                        <div 
+                        <div
                             className="schedule-course-cell"
-                            style={{ 
+                            style={{
                                 '--span': span,
                                 gridRow: `span ${span}`
                             }}
@@ -176,7 +176,7 @@ const ProfilePage = () => {
                         {/* Schedule Table */}
                         <div className="schedule-table-container">
                             <h3 className="table-title">🗓️ Lịch học trong tuần</h3>
-                            
+
                             {/* Morning Schedule */}
                             <div className="period-section">
                                 <h4 className="period-header">☀️ Buổi sáng (Tiết 1-5)</h4>
@@ -187,7 +187,7 @@ const ProfilePage = () => {
                                             <div key={day} className="header-cell">{day}</div>
                                         ))}
                                     </div>
-                                    
+
                                     {MORNING_PERIODS.map(period => (
                                         <div key={period} className="table-row">
                                             <div className="period-label">{period}</div>
@@ -211,7 +211,7 @@ const ProfilePage = () => {
                                             <div key={day} className="header-cell">{day}</div>
                                         ))}
                                     </div>
-                                    
+
                                     {AFTERNOON_PERIODS.map(period => (
                                         <div key={period} className="table-row">
                                             <div className="period-label">{period}</div>

@@ -92,7 +92,7 @@ const DashboardPage = () => {
                         icon="❄️"
                         title="Thiết lập ràng buộc"
                         description="Đang phát triển - Coming soon"
-                        onClick={() => {}}
+                        onClick={() => { }}
                         color="success"
                     />
                     <QuickAction

@@ -24,7 +24,7 @@ app.http('courses', {
 
         try {
             context.log(`Fetching courses from JSON file`);
-            
+
             const courses = coursesData.map(course => ({
                 courseId: course.id,
                 courseName: course.name,

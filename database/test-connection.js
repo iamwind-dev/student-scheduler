@@ -55,7 +55,7 @@ async function testConnection() {
                     FROM Schedules 
                     ORDER BY createdAt DESC
                 `);
-                
+
                 console.log('📋 5 thời khóa biểu gần nhất:');
                 console.table(recentResult.recordset);
             }
@@ -73,7 +73,7 @@ async function testConnection() {
             WHERE TABLE_TYPE = 'BASE TABLE'
             ORDER BY TABLE_NAME
         `);
-        
+
         console.log(`   Tổng số bảng: ${tablesResult.recordset.length}`);
         console.log('   Danh sách bảng:');
         tablesResult.recordset.forEach(table => {
@@ -89,14 +89,14 @@ async function testConnection() {
 
     } catch (error) {
         console.log('❌ LỖI KẾT NỐI!\n');
-        
+
         if (error.code === 'ELOGIN') {
             console.log('🔐 Lỗi: Sai username hoặc password');
             console.log('💡 Giải pháp:');
             console.log('   1. Kiểm tra lại username/password trong Azure Portal');
             console.log('   2. Reset password nếu cần:');
             console.log('      Azure Portal → SQL servers → student-scheduler-server → Reset password\n');
-        } 
+        }
         else if (error.code === 'ESOCKET' || error.code === 'ECONNRESET') {
             console.log('🛡️  Lỗi: Firewall chưa mở hoặc không kết nối được server');
             console.log('💡 Giải pháp:');
