@@ -1,134 +1,332 @@
-# Student Scheduler - Website Gợi ý Thời gian biểu cho Sinh viên
+# Student Scheduler - Hệ thống Gợi ý Thời khóa biểu Thông minh
 
-Đề tài: **Triển khai mô hình Cloud Computing trên Azure**
+> Đề tài: **Triển khai mô hình Cloud Computing trên Azure**
 
 ## 📋 Mô tả dự án
 
-Hệ thống gợi ý thời gian biểu thông minh cho sinh viên, triển khai trên nền tảng Azure Cloud Computing.
+Hệ thống gợi ý thời khóa biểu thông minh cho sinh viên, triển khai trên nền tảng Azure Cloud Computing với kiến trúc hiện đại và khả năng mở rộng cao.
 
-### Công nghệ sử dụng
+### 🚀 Công nghệ sử dụng
 
 **Frontend:**
 - React 19.1.1
+- React Router v7.9.4
 - Vite 7.1.7
-- CSS3
+- Microsoft MSAL (Authentication)
+- CSS3 với CSS Variables
 
 **Backend:**
-- Azure Functions (Node.js)
+- Azure Functions (Node.js 20)
 - Azure Functions Core Tools v4
+- Azure SQL Database
+- Microsoft Entra ID (Authentication)
 
-## 🚀 Hướng dẫn cài đặt và chạy
+**Cloud Services:**
+- Azure App Service / Static Web Apps
+- Azure Functions (Serverless)
+- Azure SQL Database
+- Microsoft Entra ID
+
+---
+
+## 📁 Cấu trúc Project
+
+### Backend (API)
+```
+api/
+├── src/
+│   ├── functions/              # Azure Functions endpoints
+│   │   ├── auth/              # Authentication
+│   │   ├── courses/           # Course management
+│   │   ├── preferences/       # User preferences
+│   │   ├── recommend/         # Schedule recommendations
+│   │   └── schedules/         # Schedule management
+│   ├── services/              # Business logic
+│   │   ├── auth-service.js
+│   │   ├── course-service.js
+│   │   ├── database-service.js
+│   │   └── user-service.js
+│   ├── utils/                 # Utilities
+│   │   ├── logger.js
+│   │   ├── response-helper.js
+│   │   └── validation-helper.js
+│   └── database.js            # Database connection
+├── host.json
+└── local.settings.json
+```
+
+### Frontend
+```
+frontend/
+├── src/
+│   ├── pages/                 # Page components
+│   │   ├── auth/             # Login pages
+│   │   ├── dashboard/        # Dashboard
+│   │   ├── courses/          # Course management
+│   │   ├── preferences/      # User preferences
+│   │   ├── schedule/         # Schedule views
+│   │   └── profile/          # User profile
+│   ├── components/           # Reusable components
+│   │   ├── common/          # Generic components
+│   │   ├── layout/          # Layout components
+│   │   └── auth/            # Auth components
+│   ├── contexts/            # React Context
+│   │   ├── AuthContext.jsx
+│   │   └── AppContext.jsx
+│   ├── hooks/               # Custom hooks
+│   │   └── useCourses.js
+│   ├── services/            # API services
+│   │   └── api/
+│   └── styles/              # Global styles
+├── index.html
+└── vite.config.js
+```
+
+### Database
+```
+database/
+├── AZURE_SQL_SETUP.md        # Setup guide
+├── schema-new.sql            # Database schema
+├── import-new-data.js        # Data import script
+└── output_fixed.json         # Sample data
+```
+
+---
+
+## 🚀 Hướng dẫn Cài đặt và Chạy
 
 ### Yêu cầu hệ thống
 
-- Node.js 18+ 
+- Node.js 18+
 - npm hoặc yarn
-- Azure Functions Core Tools (`npm install -g azure-functions-core-tools@4`)
+- Azure Functions Core Tools: `npm install -g azure-functions-core-tools@4`
 
-### Cài đặt Frontend
+### 1. Cài đặt Dependencies
 
 ```bash
+# Backend
+cd api
+npm install
+
+# Frontend
 cd frontend
 npm install
 ```
 
-### Cài đặt Backend
+### 2. Cấu hình Environment Variables
 
-```bash
-cd api
-npm install
+**Frontend** - Tạo file `frontend/.env.local`:
+```env
+VITE_ENTRA_CLIENT_ID=your-client-id
+VITE_ENTRA_TENANT_ID=your-tenant-id
+VITE_REDIRECT_URI=http://localhost:5173
+VITE_API_URL=http://localhost:7071/api
 ```
 
-## ▶️ Chạy ứng dụng
+**Backend** - Cập nhật file `api/local.settings.json`:
+```json
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "SQL_SERVER": "your-server.database.windows.net",
+    "SQL_DATABASE": "student-scheduler-db",
+    "SQL_USERNAME": "sqladmin",
+    "SQL_PASSWORD": "your-password"
+  }
+}
+```
 
-### 1. Chạy Backend (Azure Functions)
+### 3. Chạy ứng dụng
 
-Mở terminal tại thư mục `api`:
-
+**Terminal 1 - Backend:**
 ```bash
 cd api
 npm start
-# hoặc
-func start
+# hoặc: func start
 ```
+Backend chạy tại: `http://localhost:7071`
 
-Backend sẽ chạy tại: `http://localhost:7071`
-
-Các API endpoints:
-- `GET http://localhost:7071/api/courses?semester=2025A` - Lấy danh sách môn học
-- `POST http://localhost:7071/api/preferences` - Lưu ràng buộc sinh viên
-- `POST http://localhost:7071/api/recommend` - Tạo gợi ý thời gian biểu
-
-### 2. Chạy Frontend (React + Vite)
-
-Mở terminal mới tại thư mục `frontend`:
-
+**Terminal 2 - Frontend:**
 ```bash
 cd frontend
 npm run dev
 ```
+Frontend chạy tại: `http://localhost:5173`
 
-Frontend sẽ chạy tại: `http://localhost:5173`
+---
 
-> **Lưu ý:** Vite đã được cấu hình proxy để chuyển tiếp các request `/api/*` tới `http://localhost:7071`
+## 📱 Tính năng
 
-## 📱 Các tính năng
+### ✅ Đã hoàn thành
+- ✅ Xác thực với Microsoft Entra ID
+- ✅ Quản lý danh sách môn học
+- ✅ Hiển thị thông tin chi tiết môn học
+- ✅ Responsive design (Mobile, Tablet, Desktop)
+- ✅ Error handling & Loading states
+- ✅ Kết nối Azure SQL Database
 
-### 1. Trang Login (`/`)
-- Đăng nhập giả lập bằng mã số sinh viên
-- Sau này sẽ tích hợp Microsoft Entra ID
+### 🚧 Đang phát triển
+- ⏳ Thiết lập ràng buộc (Preferences)
+- ⏳ Thuật toán gợi ý thời khóa biểu
+- ⏳ Lưu và quản lý nhiều phương án TKB
+- ⏳ Export TKB ra PDF/Excel
+- ⏳ Thông báo & Reminders
 
-### 2. Trang Danh sách môn học
-- Hiển thị các môn học theo học kỳ
-- Xem thông tin chi tiết: mã môn, tên, giảng viên, lớp học, thời gian
+---
 
-### 3. Trang Thiết lập ràng buộc
-- Nhập số tín chỉ tối đa
-- Chọn khu vực học (Cơ sở A/B/Tất cả)
-- Chọn thời gian rảnh (không muốn học)
-- Các ràng buộc khác: tránh học sáng sớm, tránh học tối muộn
+## 🔐 Setup Microsoft Entra ID (Azure AD)
 
-### 4. Trang Gợi ý thời gian biểu
-- Tạo nhiều phương án TKB khác nhau
-- Xem dạng danh sách hoặc dạng bảng
-- Thống kê tổng số tín chỉ và môn học
+### Bước 1: Tạo App Registration
+1. Vào https://portal.azure.com
+2. Tìm **Microsoft Entra ID** → **App registrations** → **New registration**
+3. Điền thông tin:
+   - **Name**: Student Scheduler
+   - **Supported account types**: Accounts in this organizational directory only
+   - **Redirect URI**: 
+     - Platform: Single-page application (SPA)
+     - URI: `http://localhost:5173`
 
-## 📂 Cấu trúc dự án
+### Bước 2: Lấy Client ID & Tenant ID
+- **Application (client) ID** → Copy vào `VITE_ENTRA_CLIENT_ID`
+- **Directory (tenant) ID** → Copy vào `VITE_ENTRA_TENANT_ID`
 
+### Bước 3: Thêm API Permissions
+1. Vào **API permissions** → **Add a permission**
+2. Chọn **Microsoft Graph** → **Delegated permissions**
+3. Chọn: `User.Read`, `profile`, `openid`, `email`
+4. Click **Grant admin consent**
+
+### Bước 4: Test Login
+```bash
+cd frontend
+npm run dev
 ```
-student-scheduler/
-├── frontend/
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── Login.jsx
-│   │   │   ├── Login.css
-│   │   │   ├── Courses.jsx
-│   │   │   ├── Courses.css
-│   │   │   ├── Preferences.jsx
-│   │   │   ├── Preferences.css
-│   │   │   ├── Recommend.jsx
-│   │   │   └── Recommend.css
-│   │   ├── App.jsx
-│   │   ├── App.css
-│   │   └── main.jsx
-│   ├── package.json
-│   └── vite.config.js
-├── api/
-│   ├── src/
-│   │   └── functions/
-│   │       ├── courses.js
-│   │       ├── preferences.js
-│   │       └── recommend.js
-│   ├── host.json
-│   ├── local.settings.json
-│   └── package.json
-└── README.md
+Truy cập http://localhost:5173 và thử đăng nhập với Microsoft Account
+
+---
+
+## 🗄️ Setup Azure SQL Database
+
+### Bước 1: Tạo Database
+1. Vào https://portal.azure.com
+2. Tìm **SQL databases** → **Create**
+3. Điền thông tin:
+   - **Database name**: student-scheduler-db
+   - **Server**: Tạo mới server
+   - **Server name**: student-scheduler-server
+   - **Admin login**: sqladmin
+   - **Password**: [Mật khẩu mạnh]
+   - **Location**: Southeast Asia
+   - **Service tier**: Basic (5 DTU, 2GB)
+
+### Bước 2: Cấu hình Firewall
+1. Vào **SQL servers** → **student-scheduler-server**
+2. Chọn **Networking** → **Firewall rules**
+3. ✅ Allow Azure services and resources to access this server
+4. ✅ Add current client IP address
+
+### Bước 3: Import Data
+```bash
+cd database
+node import-new-data.js
 ```
+
+### Bước 4: Test Connection
+```bash
+cd api
+npm start
+curl http://localhost:7071/api/courses
+```
+
+---
+
+## 🚀 Deploy lên Azure
+
+### Deploy Frontend (Azure Static Web Apps)
+
+```bash
+# Build frontend
+cd frontend
+npm run build
+
+# Deploy với Azure CLI
+az login
+az staticwebapp create \
+  --name student-scheduler \
+  --resource-group student-scheduler-rg \
+  --source ./dist \
+  --location "Southeast Asia" \
+  --branch main \
+  --app-location "/frontend" \
+  --output-location "dist"
+```
+
+### Deploy Backend (Azure Functions)
+
+```bash
+# Deploy functions
+cd api
+func azure functionapp publish student-scheduler-api
+
+# Cấu hình CORS
+az functionapp cors add \
+  --resource-group student-scheduler-rg \
+  --name student-scheduler-api \
+  --allowed-origins "https://your-app.azurestaticapps.net"
+```
+
+### Cấu hình Production Environment
+
+**Frontend - Add to Static Web App Configuration:**
+```
+VITE_ENTRA_CLIENT_ID=your-client-id
+VITE_ENTRA_TENANT_ID=your-tenant-id
+VITE_REDIRECT_URI=https://your-app.azurestaticapps.net
+VITE_API_URL=https://student-scheduler-api.azurewebsites.net
+```
+
+**Backend - Add to Function App Settings:**
+```
+SQL_SERVER=your-server.database.windows.net
+SQL_DATABASE=student-scheduler-db
+SQL_USERNAME=sqladmin
+SQL_PASSWORD=your-password
+```
+
+---
 
 ## 🔧 API Documentation
 
-### GET /api/courses
-Lấy danh sách môn học theo học kỳ
+### Authentication
+
+#### POST /api/auth/login
+Microsoft authentication endpoint
+
+**Request:**
+```json
+{
+  "token": "microsoft-access-token"
+}
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "user": {
+    "id": "user-id",
+    "email": "user@example.com",
+    "name": "User Name"
+  }
+}
+```
+
+### Courses
+
+#### GET /api/courses
+Lấy danh sách môn học
 
 **Query Parameters:**
 - `semester` (string): Mã học kỳ (ví dụ: "2025A")
@@ -138,54 +336,39 @@ Lấy danh sách môn học theo học kỳ
 [
   {
     "id": 1,
-    "code": "CS101",
     "name": "Lập trình căn bản",
-    "semester": "2025A",
     "credits": 3,
     "lecturer": "TS. Nguyễn Văn A",
-    "slots": [
-      {
-        "day": "Thứ 2",
-        "time": "Sáng (7h-11h)",
-        "room": "A101",
-        "campus": "Cơ sở A"
-      }
-    ]
+    "time": "Thứ 2 | Tiết 1->3",
+    "room": "A.101",
+    "weeks": "1->16"
   }
 ]
 ```
 
-### POST /api/preferences
-Lưu ràng buộc của sinh viên
+### Preferences
 
-**Request Body:**
+#### POST /api/preferences
+Lưu ràng buộc sinh viên
+
+**Request:**
 ```json
 {
   "studentId": "SV001",
-  "preferences": {
-    "maxCredits": 18,
-    "freeTime": ["Thứ 2 - Sáng (7h-11h)"],
-    "campus": "all",
-    "avoidMorning": false,
-    "avoidEvening": false
-  }
+  "maxCredits": 18,
+  "campus": "all",
+  "freeTime": ["Thứ 2 - Sáng"],
+  "avoidMorning": false,
+  "avoidEvening": false
 }
 ```
 
-**Response:**
-```json
-{
-  "message": "Preferences saved successfully",
-  "studentId": "SV001",
-  "prefs": { ... },
-  "savedAt": "2025-10-12T10:30:00.000Z"
-}
-```
+### Recommendations
 
-### POST /api/recommend
-Tạo gợi ý thời gian biểu
+#### POST /api/recommend
+Tạo gợi ý thời khóa biểu
 
-**Request Body:**
+**Request:**
 ```json
 {
   "studentId": "SV001",
@@ -196,49 +379,109 @@ Tạo gợi ý thời gian biểu
 **Response:**
 ```json
 {
-  "message": "Schedule recommendations generated successfully",
-  "studentId": "SV001",
   "recommendations": [
     {
       "totalCredits": 15,
-      "courses": [
-        {
-          "courseCode": "CS101",
-          "courseName": "Lập trình căn bản",
-          "slot": {
-            "day": "Thứ 2",
-            "time": "Sáng (7h-11h)",
-            "room": "A101",
-            "campus": "Cơ sở A"
-          }
-        }
-      ]
+      "courses": [...]
     }
-  ],
-  "generatedAt": "2025-10-12T10:30:00.000Z"
+  ]
 }
 ```
 
-## 🎯 Các bước phát triển tiếp theo
+---
 
-1. ✅ Hoàn thành giao diện cơ bản
-2. ✅ Tạo các API endpoints
-3. ⏳ Tích hợp Microsoft Entra ID để xác thực
-4. ⏳ Kết nối Azure Cosmos DB để lưu trữ dữ liệu
-5. ⏳ Triển khai thuật toán gợi ý TKB thông minh
-6. ⏳ Deploy lên Azure App Service / Azure Static Web Apps
-7. ⏳ Tối ưu hóa hiệu suất và bảo mật
+## 🧪 Testing
 
-## 📝 Ghi chú
+### Test Frontend
+```bash
+cd frontend
+npm run test
+```
 
-- Hiện tại đang sử dụng dữ liệu demo, chưa kết nối database
-- Đăng nhập đang ở chế độ giả lập
-- Thuật toán gợi ý TKB đang trả về dữ liệu demo
+### Test Backend
+```bash
+cd api
+npm run test
+```
 
-## 👥 Tác giả
+### Test API với curl
+```bash
+# Get courses
+curl http://localhost:7071/api/courses?semester=2025A
 
-[Tên sinh viên - MSSV]
+# Post preferences
+curl -X POST http://localhost:7071/api/preferences \
+  -H "Content-Type: application/json" \
+  -d '{"studentId":"SV001","maxCredits":18}'
+```
+
+---
+
+## 🐛 Troubleshooting
+
+### Lỗi: Port already in use
+```bash
+# Tìm và kill process
+lsof -i :7071  # hoặc :5173
+kill -9 <PID>
+```
+
+### Lỗi: Cannot connect to database
+- ✅ Kiểm tra credentials trong `local.settings.json`
+- ✅ Kiểm tra firewall rules trong Azure Portal
+- ✅ Kiểm tra database online status
+
+### Lỗi: Microsoft login failed
+- ✅ Kiểm tra Client ID & Tenant ID đúng
+- ✅ Kiểm tra Redirect URI trong Azure Portal
+- ✅ Clear browser cache: `localStorage.clear()`
+
+### Lỗi: CORS issues
+- ✅ Kiểm tra CORS configuration trong Azure Functions
+- ✅ Kiểm tra API URL trong frontend .env
+
+---
+
+## 📚 Tài liệu tham khảo
+
+- [Azure Functions Documentation](https://learn.microsoft.com/en-us/azure/azure-functions/)
+- [React Documentation](https://react.dev/)
+- [Microsoft Entra ID (Azure AD)](https://learn.microsoft.com/en-us/azure/active-directory/)
+- [Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/)
+- [Vite Documentation](https://vitejs.dev/)
+
+---
+
+## 📊 Chi phí ước tính (Azure)
+
+| Service | Tier | Cost/Month |
+|---------|------|------------|
+| Azure Static Web Apps | Free | $0 |
+| Azure Functions | Consumption | ~$0-5 |
+| Azure SQL Database | Basic (5 DTU) | ~$5 |
+| Microsoft Entra ID | Free | $0 |
+| **TOTAL** | | **~$5-10/month** |
+
+---
+
+## 👥 Team
+
+- **Developer**: [Tên của bạn]
+- **MSSV**: [Mã số sinh viên]
+- **Institution**: [Tên trường]
+
+---
 
 ## 📄 License
 
 Đề tài nghiên cứu - Không sử dụng cho mục đích thương mại
+
+---
+
+## 📞 Support
+
+Nếu gặp vấn đề, vui lòng:
+1. Kiểm tra phần **Troubleshooting** ở trên
+2. Xem logs trong Azure Portal
+3. Kiểm tra browser console (F12)
+4. Tạo issue trên GitHub repository

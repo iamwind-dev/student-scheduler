@@ -1,0 +1,141 @@
+/**
+ * LOADING SPINNER STYLES
+ * CSS animations and responsive design for loading component
+ */
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-md);
+}
+
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.spinner-circle {
+    position: relative;
+    display: inline-block;
+}
+
+.spinner-inner {
+    border-radius: 50%;
+    border-style: solid;
+    animation: spin 1s linear infinite;
+}
+
+/* Size variants */
+.spinner-small .spinner-inner {
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+}
+
+.spinner-medium .spinner-inner {
+    width: 32px;
+    height: 32px;
+    border-width: 3px;
+}
+
+.spinner-large .spinner-inner {
+    width: 48px;
+    height: 48px;
+    border-width: 4px;
+}
+
+/* Color variants */
+.spinner-primary .spinner-inner {
+    border-color: var(--primary-color) transparent var(--primary-color) transparent;
+}
+
+.spinner-secondary .spinner-inner {
+    border-color: var(--secondary-color) transparent var(--secondary-color) transparent;
+}
+
+.spinner-accent .spinner-inner {
+    border-color: var(--accent-color) transparent var(--accent-color) transparent;
+}
+
+/* Fullscreen variant */
+.spinner-fullscreen-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-fullscreen {
+    padding: 0;
+}
+
+/* Overlay variant */
+.spinner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+
+/* Message styling */
+.spinner-message {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    text-align: center;
+    margin-top: var(--spacing-xs);
+}
+
+/* Animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Dark theme */
+[data-theme="dark"] .spinner-fullscreen-wrapper {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+[data-theme="dark"] .spinner-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .spinner-inner {
+        animation-duration: 2s;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .spinner-large .spinner-inner {
+        width: 40px;
+        height: 40px;
+        border-width: 3px;
+    }
+
+    .spinner-medium .spinner-inner {
+        width: 28px;
+        height: 28px;
+        border-width: 2px;
+    }
+}

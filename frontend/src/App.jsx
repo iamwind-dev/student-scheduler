@@ -1,103 +1,148 @@
-import { useState, useEffect } from 'react';
-import { useMsal } from '@azure/msal-react';
-import Login from './pages/Login';
-import Courses from './pages/Courses';
-import Preferences from './pages/Preferences';
-import Recommend from './pages/Recommend';
-import './App.css';
+/**
+ * MAIN APP COMPONENT v2.0
+ * Root application component with providers and routing
+ */
+
+import React, { Suspense, lazy, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { ErrorBoundary } from 'react-error-boundary';
+
+// Context Providers
+import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { AppProvider } from './contexts/AppContext';
+
+// Components
+import Layout from './components/layout/Layout';
+import LoadingSpinner from './components/common/LoadingSpinner';
+import ErrorFallback from './components/common/ErrorFallback';
+import ProtectedRoute from './components/auth/ProtectedRoute';
+import { ToastContainer, useToast } from './components/common/Toast';
+
+// Lazy-loaded Pages
+const LoginPage = lazy(() => import('./pages/auth/LoginPage'));
+const DashboardPage = lazy(() => import('./pages/dashboard/DashboardPage'));
+const CoursesPage = lazy(() => import('./pages/courses/CoursesPage'));
+const CourseDetailsPage = lazy(() => import('./pages/courses/CourseDetailsPage'));
+const PreferencesPage = lazy(() => import('./pages/preferences/PreferencesPage'));
+const SchedulePage = lazy(() => import('./pages/schedule/SchedulePage'));
+const ScheduleDetailsPage = lazy(() => import('./pages/schedule/ScheduleDetailsPage'));
+const ProfilePage = lazy(() => import('./pages/profile/ProfilePage'));
+const NotFoundPage = lazy(() => import('./pages/error/NotFoundPage'));
+
+// Styles
+import './styles/globals.css';
+
+// App Content Component (needs to be inside AuthProvider)
+function AppContent() {
+    const { user, isAuthenticated } = useAuth();
+    const { toasts, removeToast, showSuccess, showInfo } = useToast();
+
+    // Show login success toast
+    useEffect(() => {
+        if (isAuthenticated && user) {
+            // Show welcome toast after a short delay
+            const timer = setTimeout(() => {
+                showSuccess(`Đăng nhập thành công! Xin chào ${user.name}`);
+                setTimeout(() => {
+                    showInfo('Kết nối API thành công');
+                }, 200);
+            }, 500);
+
+            return () => clearTimeout(timer);
+        }
+    }, [isAuthenticated, user?.id, showSuccess, showInfo]); // Include all dependencies
+
+    return (
+        <>
+            <ToastContainer toasts={toasts} removeToast={removeToast} />
+            <div className="app">
+                <Suspense fallback={<LoadingSpinner fullscreen />}>
+                    <Routes>
+                        {/* Public Routes */}
+                        <Route path="/login" element={<LoginPage />} />
+
+                        {/* Protected Routes */}
+                        <Route path="/" element={
+                            <ProtectedRoute>
+                                <Layout />
+                            </ProtectedRoute>
+                        }>
+                            {/* Dashboard */}
+                            <Route index element={<DashboardPage />} />
+
+                            {/* Courses */}
+                            <Route path="courses" element={<CoursesPage />} />
+                            <Route path="courses/:courseId" element={<CourseDetailsPage />} />
+
+                            {/* Preferences */}
+                            <Route path="preferences" element={<PreferencesPage />} />
+
+                            {/* Schedule */}
+                            <Route path="schedule" element={<SchedulePage />} />
+                            <Route path="schedule/:scheduleId" element={<ScheduleDetailsPage />} />
+
+                            {/* Profile */}
+                            <Route path="profile" element={<ProfilePage />} />
+
+                            {/* Redirects */}
+                            <Route path="dashboard" element={<Navigate to="/" replace />} />
+                        </Route>
+
+                        {/* Error Routes */}
+                        <Route path="/404" element={<NotFoundPage />} />
+                        <Route path="*" element={<Navigate to="/404" replace />} />
+                    </Routes>
+                </Suspense>
+            </div>
+        </>
+    );
+}
 
 function App() {
-  const { accounts, instance } = useMsal();
-  const [currentPage, setCurrentPage] = useState('login');
-  const [studentId, setStudentId] = useState('');
-  const [userInfo, setUserInfo] = useState(null);
+    useEffect(() => {
+        // Set theme on app load
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
 
-  // Check nếu user đã đăng nhập (restore session)
-  useEffect(() => {
-    if (accounts.length > 0) {
-      const account = accounts[0];
-      setStudentId(account.username || account.localAccountId);
-      setUserInfo(account);
-      setCurrentPage('courses');
-    }
-  }, [accounts]);
+        // Set up global error handlers
+        window.addEventListener('unhandledrejection', handleUnhandledRejection);
+        window.addEventListener('error', handleGlobalError);
 
-  const handleLogin = (id, account) => {
-    setStudentId(id);
-    setUserInfo(account);
-    setCurrentPage('courses');
-  };
+        return () => {
+            window.removeEventListener('unhandledrejection', handleUnhandledRejection);
+            window.removeEventListener('error', handleGlobalError);
+        };
+    }, []);
 
-  const handleLogout = async () => {
-    try {
-      // Logout khỏi Microsoft nếu đang dùng MSAL
-      if (accounts.length > 0) {
-        await instance.logoutPopup();
-      }
-    } catch (error) {
-      console.error('Logout error:', error);
-    }
-    
-    setStudentId('');
-    setUserInfo(null);
-    setCurrentPage('login');
-  };
+    const handleUnhandledRejection = (event) => {
+        console.error('Unhandled promise rejection:', event.reason);
+        // Could send to error reporting service
+    };
 
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'login':
-        return <Login onLogin={handleLogin} />;
-      case 'courses':
-        return <Courses />;
-      case 'preferences':
-        return <Preferences studentId={studentId} />;
-      case 'recommend':
-        return <Recommend studentId={studentId} />;
-      default:
-        return <Login onLogin={handleLogin} />;
-    }
-  };
+    const handleGlobalError = (event) => {
+        console.error('Global error:', event.error);
+        // Could send to error reporting service
+    };
 
-  return (
-    <div className="app">
-      {currentPage !== 'login' && (
-        <nav className="navbar">
-          <div className="navbar-brand">
-            <h2>🎓 Student Scheduler</h2>
-            <span className="student-id">
-              {userInfo?.name || studentId}
-            </span>
-          </div>
-          <div className="navbar-menu">
-            <button
-              className={`nav-button ${currentPage === 'courses' ? 'active' : ''}`}
-              onClick={() => setCurrentPage('courses')}
-            >
-              📚 Danh sách môn học
-            </button>
-            <button
-              className={`nav-button ${currentPage === 'preferences' ? 'active' : ''}`}
-              onClick={() => setCurrentPage('preferences')}
-            >
-              ⚙️ Ràng buộc
-            </button>
-            <button
-              className={`nav-button ${currentPage === 'recommend' ? 'active' : ''}`}
-              onClick={() => setCurrentPage('recommend')}
-            >
-              🎯 Gợi ý TKB
-            </button>
-            <button className="nav-button logout" onClick={handleLogout}>
-              🚪 Đăng xuất
-            </button>
-          </div>
-        </nav>
-      )}
-      <main className="main-content">
-        {renderPage()}
-      </main>
-    </div>
-  );
+    return (
+        <ErrorBoundary
+            FallbackComponent={ErrorFallback}
+            onError={(error, errorInfo) => {
+                console.error('React Error Boundary:', error, errorInfo);
+            }}
+            onReset={() => {
+                window.location.reload();
+            }}
+        >
+            <AppProvider>
+                <AuthProvider>
+                    <BrowserRouter>
+                        <AppContent />
+                    </BrowserRouter>
+                </AuthProvider>
+            </AppProvider>
+        </ErrorBoundary>
+    );
 }
 
 export default App;

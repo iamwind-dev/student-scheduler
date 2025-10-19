@@ -1,5 +1,5 @@
 const { app } = require('@azure/functions');
-const coursesData = require('../data/data.json');
+const { getCoursesBySemester } = require('../../database');
 
 app.http('courses', {
     methods: ['GET', 'OPTIONS'],
@@ -20,24 +20,15 @@ app.http('courses', {
 
         context.log('HTTP trigger function processed a request for courses');
 
+        // Lấy parameter semester từ query string
         const semester = request.query.get('semester') || '2025A';
 
         try {
-            context.log(`Fetching courses from JSON file`);
-            
-            const courses = coursesData.map(course => ({
-                courseId: course.id,
-                courseName: course.name,
-                courseCode: `COURSE${course.id}`,
-                credits: 2,
-                lecturer: course.lecturer,
-                time: course.time,
-                room: course.room,
-                weeks: course.weeks,
-                quantity: parseInt(course['Sỉ số']) || 0
-            }));
+            // Lấy data từ Azure SQL Database
+            context.log(`Fetching courses from Azure SQL Database`);
+            const courses = await getCoursesBySemester(semester);
 
-            context.log(`Loaded ${courses.length} courses from JSON file`);
+            context.log(`Loaded ${courses.length} courses from Azure SQL Database`);
 
             return {
                 status: 200,
@@ -58,7 +49,7 @@ app.http('courses', {
                     'Access-Control-Allow-Credentials': 'true'
                 },
                 body: JSON.stringify({
-                    error: 'Internal Server Error',
+                    error: 'Failed to load courses',
                     message: error.message
                 })
             };

@@ -14,10 +14,18 @@
  * 8. Paste vào file .env.local
  */
 
+// Kiểm tra xem có cấu hình Microsoft Entra ID đầy đủ không
+const hasValidEntraConfig = import.meta.env.VITE_ENTRA_CLIENT_ID &&
+  import.meta.env.VITE_ENTRA_CLIENT_ID !== "demo-mode" &&
+  import.meta.env.VITE_ENTRA_TENANT_ID &&
+  import.meta.env.VITE_ENTRA_TENANT_ID !== "YOUR_TENANT_ID_HERE";
+
 export const msalConfig = {
   auth: {
-    clientId: import.meta.env.VITE_ENTRA_CLIENT_ID || "YOUR_CLIENT_ID_HERE",
-    authority: `https://login.microsoftonline.com/${import.meta.env.VITE_ENTRA_TENANT_ID || "YOUR_TENANT_ID_HERE"}`,
+    clientId: hasValidEntraConfig ? import.meta.env.VITE_ENTRA_CLIENT_ID : "demo-client-id",
+    authority: hasValidEntraConfig ?
+      `https://login.microsoftonline.com/${import.meta.env.VITE_ENTRA_TENANT_ID}` :
+      "https://login.microsoftonline.com/common",
     redirectUri: import.meta.env.VITE_REDIRECT_URI || "http://localhost:5173",
   },
   cache: {
@@ -25,6 +33,9 @@ export const msalConfig = {
     storeAuthStateInCookie: false, // Set true nếu dùng IE11 hoặc Edge
   },
 };
+
+// Flag để biết có đang ở chế độ demo không
+export const isDemoMode = !hasValidEntraConfig;
 
 // Scopes yêu cầu khi đăng nhập
 export const loginRequest = {

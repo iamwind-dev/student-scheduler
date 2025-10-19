@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Authentication - Student Scheduler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .test-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .test-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .test-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .test-card .icon {
+            font-size: 1.8em;
+        }
+
+        .test-card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .test-section {
+            margin-bottom: 20px;
+        }
+
+        .test-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .test-button {
+            width: 100%;
+            padding: 15px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: scale(1.02);
+        }
+
+        .btn-success {
+            background: #48bb78;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #38a169;
+            transform: scale(1.02);
+        }
+
+        .btn-info {
+            background: #4299e1;
+            color: white;
+        }
+
+        .btn-info:hover {
+            background: #3182ce;
+            transform: scale(1.02);
+        }
+
+        .btn-warning {
+            background: #ed8936;
+            color: white;
+        }
+
+        .btn-warning:hover {
+            background: #dd6b20;
+            transform: scale(1.02);
+        }
+
+        .btn-danger {
+            background: #f56565;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #e53e3e;
+            transform: scale(1.02);
+        }
+
+        .test-result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            line-height: 1.6;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .result-success {
+            background: #c6f6d5;
+            border: 2px solid #48bb78;
+            color: #22543d;
+        }
+
+        .result-error {
+            background: #fed7d7;
+            border: 2px solid #f56565;
+            color: #742a2a;
+        }
+
+        .result-info {
+            background: #bee3f8;
+            border: 2px solid #4299e1;
+            color: #2c5282;
+        }
+
+        .info-box {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .info-box li {
+            padding: 8px 0;
+            color: #555;
+            display: flex;
+            align-items: start;
+            gap: 10px;
+        }
+
+        .info-box li:before {
+            content: "✅";
+            flex-shrink: 0;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .badge-demo {
+            background: #ffd93d;
+            color: #744210;
+        }
+
+        .badge-prod {
+            background: #90cdf4;
+            color: #2c5282;
+        }
+
+        code {
+            background: #f7fafc;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #e53e3e;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #667eea, transparent);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Student Scheduler - Test Authentication</h1>
+            <p>Công cụ test đăng nhập và chức năng</p>
+        </div>
+
+        <!-- Current Mode Info -->
+        <div class="info-box">
+            <h3>📋 Trạng thái hiện tại</h3>
+            <ul>
+                <li>Frontend URL: <code>http://localhost:5173</code></li>
+                <li>API URL: <code>http://localhost:7071/api</code></li>
+                <li>Mode: <span id="currentMode" class="status-badge">Đang kiểm tra...</span></li>
+                <li>Auto-login: <span id="autoLogin">Đang kiểm tra...</span></li>
+            </ul>
+            <div class="divider"></div>
+            <p style="color: #666; margin-top: 15px;">
+                <strong>Lưu ý:</strong> Đảm bảo cả Frontend (port 5173) và API (port 7071) đang chạy trước khi test!
+            </p>
+        </div>
+
+        <!-- Test Cards Grid -->
+        <div class="test-grid">
+            <!-- Demo Mode Tests -->
+            <div class="test-card">
+                <h2><span class="icon">🎭</span>Demo Mode</h2>
+                <p>Test chế độ demo với user giả lập</p>
+
+                <div class="test-section">
+                    <h3>1. Kiểm tra cấu hình</h3>
+                    <button class="test-button btn-info" onclick="checkDemoConfig()">
+                        🔍 Kiểm tra .env.local
+                    </button>
+                </div>
+
+                <div class="test-section">
+                    <h3>2. Test auto-login</h3>
+                    <button class="test-button btn-success" onclick="testAutoLogin()">
+                        🚀 Test Auto-Login
+                    </button>
+                </div>
+
+                <div class="test-section">
+                    <h3>3. Test thủ công</h3>
+                    <button class="test-button btn-primary" onclick="openDemoApp()">
+                        🎯 Mở ứng dụng Demo
+                    </button>
+                </div>
+
+                <div id="demoResult" class="test-result" style="display: none;"></div>
+            </div>
+
+            <!-- Microsoft Login Tests -->
+            <div class="test-card">
+                <h2><span class="icon">🔐</span>Microsoft Login</h2>
+                <p>Test đăng nhập với Microsoft Entra ID</p>
+
+                <div class="test-section">
+                    <h3>1. Kiểm tra cấu hình</h3>
+                    <button class="test-button btn-info" onclick="checkMicrosoftConfig()">
+                        🔍 Kiểm tra Entra ID
+                    </button>
+                </div>
+
+                <div class="test-section">
+                    <h3>2. Test CORS</h3>
+                    <button class="test-button btn-warning" onclick="testCORS()">
+                        🌐 Test CORS API
+                    </button>
+                </div>
+
+                <div class="test-section">
+                    <h3>3. Switch to Microsoft</h3>
+                    <button class="test-button btn-primary" onclick="switchToMicrosoft()">
+                        🔄 Chuyển sang Microsoft
+                    </button>
+                </div>
+
+                <div id="microsoftResult" class="test-result" style="display: none;"></div>
+            </div>
+
+            <!-- API Tests -->
+            <div class="test-card">
+                <h2><span class="icon">⚙️</span>API Tests</h2>
+                <p>Test các endpoint API</p>
+
+                <div class="test-section">
+                    <h3>1. Health check</h3>
+                    <button class="test-button btn-info" onclick="testAPIHealth()">
+                        💚 Test API Health
+                    </button>
+                </div>
+
+                <div class="test-section">
+                    <h3>2. Test courses</h3>
+                    <button class="test-button btn-success" onclick="testCoursesAPI()">
+                        📚 Test /api/courses
+                    </button>
+                </div>
+
+                <div class="test-section">
+                    <h3>3. Test auth endpoints</h3>
+                    <button class="test-button btn-warning" onclick="testAuthAPI()">
+                        🔑 Test /api/auth/*
+                    </button>
+                </div>
+
+                <div id="apiResult" class="test-result" style="display: none;"></div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="test-card">
+                <h2><span class="icon">⚡</span>Quick Actions</h2>
+                <p>Thao tác nhanh và debug</p>
+
+                <div class="test-section">
+                    <h3>Clear & Reset</h3>
+                    <button class="test-button btn-danger" onclick="clearStorage()">
+                        🗑️ Clear LocalStorage
+                    </button>
+                    <button class="test-button btn-warning" onclick="resetToDemo()">
+                        🔄 Reset về Demo
+                    </button>
+                </div>
+
+                <div class="test-section">
+                    <h3>Debug Tools</h3>
+                    <button class="test-button btn-info" onclick="showStorageData()">
+                        📦 Xem LocalStorage
+                    </button>
+                    <button class="test-button btn-info" onclick="checkServers()">
+                        🖥️ Check Servers
+                    </button>
+                </div>
+
+                <div id="quickResult" class="test-result" style="display: none;"></div>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="info-box">
+            <h3>📖 Hướng dẫn sử dụng</h3>
+            <ul>
+                <li><strong>Demo Mode:</strong> Click "Kiểm tra .env.local" → "Test Auto-Login" → "Mở ứng dụng Demo"
+                </li>
+                <li><strong>Microsoft Login:</strong> Click "Chuyển sang Microsoft" → Reload app → Test login</li>
+                <li><strong>Debug:</strong> Dùng "Clear LocalStorage" nếu gặp lỗi → "Reset về Demo" để quay lại demo
+                </li>
+                <li><strong>API Tests:</strong> Kiểm tra từng endpoint để đảm bảo backend hoạt động</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:7071/api';
+        const APP_URL = 'http://localhost:5173';
+
+        // Check current mode on load
+        window.addEventListener('load', () => {
+            checkCurrentMode();
+        });
+
+        async function checkCurrentMode() {
+            try {
+                const response = await fetch(`${APP_URL}/.env.local`);
+                const text = await response.text();
+
+                const isDemo = text.includes('VITE_ENTRA_CLIENT_ID=demo-mode');
+                const modeEl = document.getElementById('currentMode');
+                const autoLoginEl = document.getElementById('autoLogin');
+
+                if (isDemo) {
+                    modeEl.textContent = 'Demo Mode';
+                    modeEl.className = 'status-badge badge-demo';
+                    autoLoginEl.textContent = '✅ Enabled (Auto-login khi load)';
+                } else {
+                    modeEl.textContent = 'Microsoft Mode';
+                    modeEl.className = 'status-badge badge-prod';
+                    autoLoginEl.textContent = '❌ Disabled (Cần click nút login)';
+                }
+            } catch (error) {
+                document.getElementById('currentMode').textContent = 'Không xác định';
+                document.getElementById('autoLogin').textContent = '❓ Không thể kiểm tra';
+            }
+        }
+
+        function showResult(elementId, message, type = 'info') {
+            const el = document.getElementById(elementId);
+            el.style.display = 'block';
+            el.className = `test-result result-${type}`;
+            el.innerHTML = message;
+        }
+
+        // Demo Mode Tests
+        async function checkDemoConfig() {
+            const instructions = `
+                <strong>✅ Kiểm tra cấu hình Demo Mode:</strong><br><br>
+                
+                1. Mở file: <code>/frontend/.env.local</code><br>
+                2. Kiểm tra các dòng sau:<br>
+                <code>VITE_ENTRA_CLIENT_ID=demo-mode</code><br>
+                <code>VITE_ENTRA_TENANT_ID=demo-mode</code><br><br>
+                
+                3. Nếu đúng → Demo mode đang active! ✅<br>
+                4. Nếu sai → Chạy "Reset về Demo" ở Quick Actions<br><br>
+                
+                <strong>Auto-login sẽ hoạt động khi:</strong><br>
+                ✅ .env.local có demo-mode<br>
+                ✅ LocalStorage trống (hoặc đã clear)<br>
+                ✅ Load trang lần đầu
+            `;
+            showResult('demoResult', instructions, 'info');
+        }
+
+        async function testAutoLogin() {
+            showResult('demoResult', '🔄 Đang test auto-login...', 'info');
+
+            setTimeout(() => {
+                const result = `
+                    <strong>✅ Test Auto-Login:</strong><br><br>
+                    
+                    <strong>Bước 1:</strong> Clear LocalStorage<br>
+                    <button onclick="clearStorage()" style="padding: 5px 15px; margin: 10px 0; border: none; background: #f56565; color: white; border-radius: 5px; cursor: pointer;">Clear Now</button><br><br>
+                    
+                    <strong>Bước 2:</strong> Mở app trong tab mới<br>
+                    <button onclick="window.open('${APP_URL}', '_blank')" style="padding: 5px 15px; margin: 10px 0; border: none; background: #48bb78; color: white; border-radius: 5px; cursor: pointer;">Open App</button><br><br>
+                    
+                    <strong>Kết quả mong đợi:</strong><br>
+                    ✅ Loading spinner hiện ra<br>
+                    ✅ Tự động login với "Sinh viên Demo"<br>
+                    ✅ Chuyển thẳng vào Dashboard<br>
+                    ✅ Header hiển thị tên user<br><br>
+                    
+                    <strong>Console log:</strong><br>
+                    <code>🎭 Demo mode detected - Auto-login as demo user</code>
+                `;
+                showResult('demoResult', result, 'success');
+            }, 500);
+        }
+
+        function openDemoApp() {
+            window.open(APP_URL, '_blank');
+            showResult('demoResult', '✅ Đã mở app trong tab mới!<br><br>Bạn sẽ thấy auto-login nếu .env.local đúng cấu hình.', 'success');
+        }
+
+        // Microsoft Login Tests
+        async function checkMicrosoftConfig() {
+            const instructions = `
+                <strong>🔐 Kiểm tra cấu hình Microsoft:</strong><br><br>
+                
+                1. Mở file: <code>/frontend/.env.local</code><br>
+                2. Bỏ comment và cập nhật:<br>
+                <code>VITE_ENTRA_CLIENT_ID=37ff0c04-1d21-4a5f-b5b4-303c13358afb</code><br>
+                <code>VITE_ENTRA_TENANT_ID=5f802bcb-2987-4495-bc98-97f3d78164a3</code><br><br>
+                
+                3. Kiểm tra Azure Portal:<br>
+                ✅ App Registration có Client ID đúng<br>
+                ✅ Redirect URI: <code>http://localhost:5173</code><br>
+                ✅ CORS trong API cho phép origin này<br><br>
+                
+                4. Restart cả Frontend và API sau khi đổi
+            `;
+            showResult('microsoftResult', instructions, 'info');
+        }
+
+        async function testCORS() {
+            showResult('microsoftResult', '🔄 Testing CORS...', 'info');
+
+            try {
+                const response = await fetch(`${API_URL}/courses`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    showResult('microsoftResult', `✅ CORS OK!<br><br>Đã lấy được ${data.length || 0} courses từ API.<br><br>API có thể giao tiếp với Frontend.`, 'success');
+                } else {
+                    showResult('microsoftResult', `⚠️ API response: ${response.status}<br><br>CORS có thể có vấn đề.`, 'error');
+                }
+            } catch (error) {
+                showResult('microsoftResult', `❌ CORS Error:<br><br>${error.message}<br><br>Kiểm tra:<br>✅ API đang chạy?<br>✅ host.json có CORS config?`, 'error');
+            }
+        }
+
+        function switchToMicrosoft() {
+            const instructions = `
+                <strong>🔄 Chuyển sang Microsoft Mode:</strong><br><br>
+                
+                <strong>Bước 1:</strong> Edit <code>.env.local</code>:<br>
+                <pre style="background: #f7fafc; padding: 10px; border-radius: 5px; overflow-x: auto;">
+# Comment demo mode
+# VITE_ENTRA_CLIENT_ID=demo-mode
+# VITE_ENTRA_TENANT_ID=demo-mode
+
+# Uncomment Microsoft
+VITE_ENTRA_CLIENT_ID=37ff0c04-1d21-4a5f-b5b4-303c13358afb
+VITE_ENTRA_TENANT_ID=5f802bcb-2987-4495-bc98-97f3d78164a3</pre><br>
+                
+                <strong>Bước 2:</strong> Restart Frontend:<br>
+                <code>npm run dev</code> trong terminal<br><br>
+                
+                <strong>Bước 3:</strong> Clear storage và reload app<br>
+                <button onclick="clearStorage(); setTimeout(() => window.open('${APP_URL}', '_blank'), 500)" style="padding: 5px 15px; margin: 10px 0; border: none; background: #4299e1; color: white; border-radius: 5px; cursor: pointer;">Clear & Open</button>
+            `;
+            showResult('microsoftResult', instructions, 'info');
+        }
+
+        // API Tests
+        async function testAPIHealth() {
+            showResult('apiResult', '🔄 Checking API health...', 'info');
+
+            try {
+                const response = await fetch(`${API_URL}/courses`);
+
+                if (response.ok) {
+                    showResult('apiResult', `✅ API is healthy!<br><br>Status: ${response.status}<br>API đang chạy tốt trên port 7071.`, 'success');
+                } else {
+                    showResult('apiResult', `⚠️ API returned: ${response.status}<br><br>Có thể cần restart.`, 'error');
+                }
+            } catch (error) {
+                showResult('apiResult', `❌ API không phản hồi!<br><br>${error.message}<br><br>Kiểm tra: <code>cd api && func start</code>`, 'error');
+            }
+        }
+
+        async function testCoursesAPI() {
+            showResult('apiResult', '🔄 Testing /api/courses...', 'info');
+
+            try {
+                const response = await fetch(`${API_URL}/courses`);
+                const data = await response.json();
+
+                if (response.ok && Array.isArray(data)) {
+                    const sampleCourse = data[0];
+                    showResult('apiResult', `
+                        ✅ Courses API OK!<br><br>
+                        <strong>Tổng số môn:</strong> ${data.length}<br>
+                        <strong>Sample course:</strong><br>
+                        <code>${JSON.stringify(sampleCourse, null, 2)}</code>
+                    `, 'success');
+                } else {
+                    showResult('apiResult', `⚠️ Unexpected response format`, 'error');
+                }
+            } catch (error) {
+                showResult('apiResult', `❌ Error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testAuthAPI() {
+            showResult('apiResult', '🔄 Testing auth endpoints...', 'info');
+
+            const endpoints = [
+                '/auth/validate',
+                '/auth/profile',
+                '/auth/login'
+            ];
+
+            let results = '<strong>Auth Endpoints Test:</strong><br><br>';
+
+            for (const endpoint of endpoints) {
+                try {
+                    const response = await fetch(`${API_URL}${endpoint}`);
+                    const status = response.status;
+                    const statusText = response.ok ? '✅' : '⚠️';
+                    results += `${statusText} ${endpoint}: ${status}<br>`;
+                } catch (error) {
+                    results += `❌ ${endpoint}: ${error.message}<br>`;
+                }
+            }
+
+            results += '<br><strong>Note:</strong> 401/403 là bình thường (chưa login)';
+            showResult('apiResult', results, 'info');
+        }
+
+        // Quick Actions
+        function clearStorage() {
+            localStorage.clear();
+            sessionStorage.clear();
+            showResult('quickResult', '✅ Đã xóa toàn bộ LocalStorage & SessionStorage!<br><br>Reload app để test lại từ đầu.', 'success');
+        }
+
+        function resetToDemo() {
+            const instructions = `
+                <strong>🔄 Reset về Demo Mode:</strong><br><br>
+                
+                1. Edit <code>.env.local</code> với nội dung:<br>
+                <pre style="background: #f7fafc; padding: 10px; border-radius: 5px; overflow-x: auto;">
+VITE_API_URL=http://localhost:7071/api
+VITE_REDIRECT_URI=http://localhost:5173
+
+# Demo Mode (ACTIVE)
+VITE_ENTRA_CLIENT_ID=demo-mode
+VITE_ENTRA_TENANT_ID=demo-mode
+
+# Microsoft Login (COMMENTED)
+# VITE_ENTRA_CLIENT_ID=37ff0c04-1d21-4a5f-b5b4-303c13358afb
+# VITE_ENTRA_TENANT_ID=5f802bcb-2987-4495-bc98-97f3d78164a3</pre><br>
+                
+                2. Click này:<br>
+                <button onclick="clearStorage(); alert('Storage cleared! Bây giờ restart frontend với npm run dev')" style="padding: 8px 15px; margin: 10px 0; border: none; background: #f56565; color: white; border-radius: 5px; cursor: pointer; font-weight: 600;">Clear Storage</button><br><br>
+                
+                3. Restart frontend: <code>npm run dev</code><br>
+                4. Reload app và test!
+            `;
+            showResult('quickResult', instructions, 'info');
+        }
+
+        function showStorageData() {
+            const storage = { ...localStorage };
+            const keys = Object.keys(storage);
+
+            if (keys.length === 0) {
+                showResult('quickResult', '📦 LocalStorage trống!<br><br>Không có dữ liệu login.', 'info');
+            } else {
+                let result = '<strong>📦 LocalStorage Data:</strong><br><br>';
+                keys.forEach(key => {
+                    const value = storage[key];
+                    const displayValue = value.length > 50 ? value.substring(0, 50) + '...' : value;
+                    result += `<strong>${key}:</strong><br><code>${displayValue}</code><br><br>`;
+                });
+                showResult('quickResult', result, 'info');
+            }
+        }
+
+        async function checkServers() {
+            showResult('quickResult', '🔄 Checking servers...', 'info');
+
+            let result = '<strong>🖥️ Server Status:</strong><br><br>';
+
+            // Check Frontend
+            try {
+                const frontendRes = await fetch(APP_URL);
+                result += `✅ Frontend (5173): ${frontendRes.ok ? 'Running' : 'Error'}<br>`;
+            } catch (e) {
+                result += `❌ Frontend (5173): Not running<br>`;
+            }
+
+            // Check API
+            try {
+                const apiRes = await fetch(`${API_URL}/courses`);
+                result += `✅ API (7071): ${apiRes.ok ? 'Running' : 'Error'}<br>`;
+            } catch (e) {
+                result += `❌ API (7071): Not running<br>`;
+            }
+
+            result += '<br><strong>Cần chạy:</strong><br>';
+            result += '• Frontend: <code>cd frontend && npm run dev</code><br>';
+            result += '• API: <code>cd api && func start</code>';
+
+            showResult('quickResult', result, 'info');
+        }
+    </script>
+</body>
+
+</html>

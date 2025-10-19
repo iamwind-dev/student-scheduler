@@ -1,0 +1,6942 @@
+[
+    {
+        "ID":1,
+        "Name":"An toàn bảo mật thông tin tài chính (1)_TA",
+        "Credits":2,
+        "Lecturer":"TS.Hoàng Hữu Đức",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"V.A304",
+        "Weeks":"4->16",
+        "Quantity":60
+    },
+    {
+        "ID":2,
+        "Name":"An toàn và bảo mật trong E-logistics (1)",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.A111",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":3,
+        "Name":"An toàn và bảo mật trong E-logistics (2)",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.A111",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":4,
+        "Name":"An toàn và bảo mật trong TMĐT (1)_GBA,BA_TA",
+        "Credits":2,
+        "Lecturer":"TS.Hoàng Hữu Đức",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"V.A302",
+        "Weeks":"4,6->17",
+        "Quantity":60
+    },
+    {
+        "ID":5,
+        "Name":"An toàn và bảo mật trong TMĐT (2)_TA",
+        "Credits":2,
+        "Lecturer":"TS.Hoàng Hữu Đức",
+        "Time":"Thứ Hai | Tiết 6->8",
+        "Room":"V.A302",
+        "Weeks":"4,6->17",
+        "Quantity":60
+    },
+    {
+        "ID":6,
+        "Name":"Automat và ngôn ngữ hình thức (1)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Đức Hiển",
+        "Time":"Thứ Tư | Tiết 3->4",
+        "Room":"K.A211",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":7,
+        "Name":"Bảo mật và An toàn hệ thống thông tin (1)_GIT,SE_TA",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Sáu | Tiết 1->3",
+        "Room":"V.A301",
+        "Weeks":"4->16",
+        "Quantity":70
+    },
+    {
+        "ID":8,
+        "Name":"Bảo mật và An toàn hệ thống thông tin (2)",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"V.A206",
+        "Weeks":"4,6->17",
+        "Quantity":70
+    },
+    {
+        "ID":9,
+        "Name":"Bảo mật và An toàn hệ thống thông tin (3)",
+        "Credits":2,
+        "Lecturer":"TS.Hoàng Hữu Đức",
+        "Time":"Thứ Sáu | Tiết 1->3",
+        "Room":"V.A206",
+        "Weeks":"4->16",
+        "Quantity":70
+    },
+    {
+        "ID":10,
+        "Name":"Cấu kiện điện tử (1)_GIC_TA",
+        "Credits":2,
+        "Lecturer":"TS.Phan Thị Lan Anh",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"K.A305",
+        "Weeks":"7->19",
+        "Quantity":60
+    },
+    {
+        "ID":11,
+        "Name":"Cấu kiện điện tử (2)_GCE_TA",
+        "Credits":2,
+        "Lecturer":"TS.Phan Thị Lan Anh",
+        "Time":"Thứ Hai | Tiết 6->8",
+        "Room":"K.A301",
+        "Weeks":"7->19",
+        "Quantity":60
+    },
+    {
+        "ID":12,
+        "Name":"Cấu kiện điện tử (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Thị Quỳnh Hương",
+        "Time":"Thứ Tư | Tiết 6->8",
+        "Room":"K.A313",
+        "Weeks":"7->19",
+        "Quantity":60
+    },
+    {
+        "ID":13,
+        "Name":"Cấu kiện điện tử (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Thị Quỳnh Hương",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"K.A213",
+        "Weeks":"7->19",
+        "Quantity":60
+    },
+    {
+        "ID":14,
+        "Name":"Chiến lược Digital Marketing (1)_GBA,DM_TA",
+        "Credits":2,
+        "Lecturer":"TS.Lê Phước Cửu Long",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"V.A302",
+        "Weeks":"4->15",
+        "Quantity":60
+    },
+    {
+        "ID":15,
+        "Name":"Chiến lược Digital Marketing (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Bá Thúy Diệu",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A304",
+        "Weeks":"4,6->16",
+        "Quantity":60
+    },
+    {
+        "ID":16,
+        "Name":"Chiến lược kinh doanh điện tử (1)_GBA,BA_TA",
+        "Credits":2,
+        "Lecturer":"TS.Văn Hùng Trọng",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.A113",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":17,
+        "Name":"Chiến lược kinh doanh điện tử (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Bùi Trần Huân",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.A112",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":18,
+        "Name":"Chiến lược kinh doanh điện tử (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Bùi Trần Huân",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.A112",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":19,
+        "Name":"Chủ nghĩa xã hội khoa học (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Lương Xuân Thành",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.C106",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":20,
+        "Name":"Chủ nghĩa xã hội khoa học (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Lương Xuân Thành",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.C106",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":21,
+        "Name":"Chủ nghĩa xã hội khoa học (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Lương Xuân Thành",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.C106",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":22,
+        "Name":"Chủ nghĩa xã hội khoa học (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Lương Xuân Thành",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.C106",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":23,
+        "Name":"Chủ nghĩa xã hội khoa học (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Lương Xuân Thành",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.C105",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":24,
+        "Name":"Chủ nghĩa xã hội khoa học (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mỹ Hạnh",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.C205",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":25,
+        "Name":"Chương trình dịch (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Đình Sơn",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.A212",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":26,
+        "Name":"Chương trình dịch (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Đình Sơn",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.A212",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":27,
+        "Name":"Chương trình dịch (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Đình Sơn",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A113",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":28,
+        "Name":"Chương trình dịch (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Đình Sơn",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.A113",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":29,
+        "Name":"Chương trình dịch (5)",
+        "Credits":2,
+        "Lecturer":"TS.Lê Tân",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.A311",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":30,
+        "Name":"Chương trình dịch (6)",
+        "Credits":2,
+        "Lecturer":"TS.Lê Tân",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.A311",
+        "Weeks":"4,6->19",
+        "Quantity":60
+    },
+    {
+        "ID":31,
+        "Name":"Chuyên đề 1 (BA) (1)_GBA,DM_Trực quan hóa dữ liệu_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thanh Hoài",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"V.A302",
+        "Weeks":"4->16",
+        "Quantity":60
+    },
+    {
+        "ID":32,
+        "Name":"Chuyên đề 1 (BA) (2)_DM_Trực quan hóa dữ liệu",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thanh Hoài",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"V.A303",
+        "Weeks":"4,6->17",
+        "Quantity":60
+    },
+    {
+        "ID":33,
+        "Name":"Chuyên đề 1 (CE) (1)_ES_Thiết bị đo",
+        "Credits":2,
+        "Lecturer":"TS.Phan Thị Lan Anh",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A211",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":34,
+        "Name":"Chuyên đề 1 (CE) (2)_IC_Ngôn ngữ mô tả phần cứng_TA",
+        "Credits":2,
+        "Lecturer":"TS.Dương Ngọc Pháp",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A311",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":35,
+        "Name":"Chuyên đề 1 (IT) (1)_AI,AD_Phân tích dữ liệu tài chính",
+        "Credits":2,
+        "Lecturer":"TS.Phan Văn Thành",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.A213",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":36,
+        "Name":"Chuyên đề 1 (IT) (2)_MC_Luật phối cảnh",
+        "Credits":2,
+        "Lecturer":"ThS.Đặng Đại Việt",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.A213",
+        "Weeks":"4,6->19",
+        "Quantity":60
+    },
+    {
+        "ID":37,
+        "Name":"Chuyên đề 1 (IT) (3)_NS_Chuyển mạch, định tuyến và bảo mật hạ tầng mạng",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Bảy | Tiết 1->4",
+        "Room":"K.A113",
+        "Weeks":"4->11",
+        "Quantity":50
+    },
+    {
+        "ID":38,
+        "Name":"Chuyên đề 1 (IT) (4)_NS_Chuyển mạch, định tuyến và bảo mật hạ tầng mạng",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Bảy | Tiết 6->9",
+        "Room":"K.A113",
+        "Weeks":"4->11",
+        "Quantity":50
+    },
+    {
+        "ID":39,
+        "Name":"Chuyên đề 2 (BA) (1)_GBA,BA_Blockchain trong TMĐT",
+        "Credits":2,
+        "Lecturer":"ThS.Võ Văn Đức",
+        "Time":"Thứ Bảy | Tiết 1->3",
+        "Room":"K.A101",
+        "Weeks":"4->16",
+        "Quantity":60
+    },
+    {
+        "ID":40,
+        "Name":"Chuyên đề 2 (BA) (2)_BA_Blockchain trong TMĐT",
+        "Credits":2,
+        "Lecturer":"ThS.Võ Văn Đức",
+        "Time":"Thứ Bảy | Tiết 6->8",
+        "Room":"K.A101",
+        "Weeks":"4->16",
+        "Quantity":60
+    },
+    {
+        "ID":41,
+        "Name":"Chuyên đề 2 (BA) (3)_ET_Du lịch bền vững",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Lê Ngọc Trâm",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"V.A209",
+        "Weeks":"4,6->17",
+        "Quantity":60
+    },
+    {
+        "ID":42,
+        "Name":"Chuyên đề 2 (BA) (4)_EF_Đổi mới sáng tạo trong tài chính",
+        "Credits":2,
+        "Lecturer":"ThS.Lương Thủy Tiên",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.A114",
+        "Weeks":"4,6->19",
+        "Quantity":60
+    },
+    {
+        "ID":43,
+        "Name":"Chuyên đề 2 (CE) (1)_ES,IC_Matlab",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Thị Quỳnh Hương",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.A212",
+        "Weeks":"4,6->19",
+        "Quantity":40
+    },
+    {
+        "ID":44,
+        "Name":"Chuyên đề 2 (IT) (1)_GIT,SE_Lập trình xe tự hành_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Nhật Ân",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.A214",
+        "Weeks":"4,6->19",
+        "Quantity":60
+    },
+    {
+        "ID":45,
+        "Name":"Chuyên đề 2 (IT) (2)_SE_Xe tự hành",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Vũ Anh Quang",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.A113",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":46,
+        "Name":"Chuyên đề 2 (IT) (3)_SE_Xe tự hành",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Vũ Anh Quang",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.A113",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":47,
+        "Name":"Chuyên đề 2 (IT) (4)_JIT,KIT_Khởi nghiệp thực tế",
+        "Credits":2,
+        "Lecturer":"TS.Đinh Thị Đông Phương",
+        "Time":"Thứ Bảy | Tiết 1->3",
+        "Room":"K.C106",
+        "Weeks":"4->13",
+        "Quantity":65
+    },
+    {
+        "ID":48,
+        "Name":"Chuyên đề 2 (IT) (5)_KIT_PosgresQL",
+        "Credits":2,
+        "Lecturer":"TS.Trần Văn Đại",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.A107",
+        "Weeks":"4,6->19",
+        "Quantity":65
+    },
+    {
+        "ID":49,
+        "Name":"Chuyên đề 2 (IT) (6)_DA_Giải phẫu tạo hình",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Trọng Công Thành",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A313",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":50,
+        "Name":"Chuyên đề 3 (CE) (1)_ES_Lập trình ô tô",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Vũ Anh Quang",
+        "Time":"Thứ Bảy | Tiết 1->3",
+        "Room":"K.A114",
+        "Weeks":"4->13",
+        "Quantity":60
+    },
+    {
+        "ID":51,
+        "Name":"Chuyên đề 3 (IT) (1)_GIT,SE_AI-Data Science Projects_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Lương Vương",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"V.A207",
+        "Weeks":"4->13",
+        "Quantity":70
+    },
+    {
+        "ID":52,
+        "Name":"Chuyên đề 3 (IT) (10)_DA_Chất liệu tạo hình",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Đăng Thiếu Hiệp",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.C107",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":53,
+        "Name":"Chuyên đề 3 (IT) (11)_IR_Hệ thống thông minh",
+        "Credits":2,
+        "Lecturer":"TS.Vương Công Đạt",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.A205",
+        "Weeks":"4,6->19",
+        "Quantity":60
+    },
+    {
+        "ID":54,
+        "Name":"Chuyên đề 3 (IT) (12)_NS_Tấn công và phòng thủ ứng dụng web",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Bảy | Tiết 1->5",
+        "Room":"K.A113",
+        "Weeks":"12->17",
+        "Quantity":65
+    },
+    {
+        "ID":55,
+        "Name":"Chuyên đề 3 (IT) (13)_MC_Quy trình sản xuất phim và Game",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Đăng Thiếu Hiệp",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.C206",
+        "Weeks":"4,6->19",
+        "Quantity":55
+    },
+    {
+        "ID":56,
+        "Name":"Chuyên đề 3 (IT) (2)_SE_Low code, No code & Automation",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Anh Tuấn",
+        "Time":"Thứ Bảy | Tiết 1->2",
+        "Room":"K.A112",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":57,
+        "Name":"Chuyên đề 3 (IT) (3)_SE_Low code, No code & Automation",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Anh Tuấn",
+        "Time":"Thứ Bảy | Tiết 3->4",
+        "Room":"K.A112",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":58,
+        "Name":"Chuyên đề 3 (IT) (4)_SE_Hệ khuyến nghị",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Sĩ Thìn",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.A214",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":59,
+        "Name":"Chuyên đề 3 (IT) (5)_SE_Hệ khuyến nghị",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Sĩ Thìn",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A214",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":60,
+        "Name":"Chuyên đề 3 (IT) (6)_JIT,KIT_Blockchain",
+        "Credits":2,
+        "Lecturer":"ThS.Trương Quốc Tuấn",
+        "Time":"Thứ Tư | Tiết 3->4",
+        "Room":"K.A105 (P. tiếng Hàn)",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":61,
+        "Name":"Chuyên đề 3 (IT) (7)_Ite_Blockchain",
+        "Credits":2,
+        "Lecturer":"ThS.Trương Quốc Tuấn",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.A105 (P. tiếng Hàn)",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":62,
+        "Name":"Chuyên đề 3 (IT) (8)_AD,AI_Sentiment analysis",
+        "Credits":2,
+        "Lecturer":"TS.Trần Uyên Trang",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.A214",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":63,
+        "Name":"Chuyên đề 3 (IT) (9)_MC_Quy trình sản xuất phim và Game",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Đăng Thiếu Hiệp",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.C206",
+        "Weeks":"4,6->19",
+        "Quantity":55
+    },
+    {
+        "ID":64,
+        "Name":"Chuyên đề Thiết kế mạch (1)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Vũ Anh Quang",
+        "Time":"Thứ Bảy | Tiết 6->7",
+        "Room":"D2-104",
+        "Weeks":"6->12",
+        "Quantity":1
+    },
+    {
+        "ID":65,
+        "Name":"Chuyển mạch và định tuyến (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Tự Thanh",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"V.A304",
+        "Weeks":"4->18",
+        "Quantity":55
+    },
+    {
+        "ID":66,
+        "Name":"Chuyển mạch và định tuyến (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Tự Thanh",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.A312",
+        "Weeks":"4->18",
+        "Quantity":55
+    },
+    {
+        "ID":67,
+        "Name":"Cơ sở dữ liệu (1)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Hồ Văn Phi",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.A303",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":68,
+        "Name":"Cơ sở dữ liệu (10)_GIC_TA",
+        "Credits":2,
+        "Lecturer":"TS.Hồ Văn Phi",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.A307",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":69,
+        "Name":"Cơ sở dữ liệu (13)_GCE",
+        "Credits":2,
+        "Lecturer":"ThS.Lương Khánh Tý",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"K.A315",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":70,
+        "Name":"Cơ sở dữ liệu (14)",
+        "Credits":2,
+        "Lecturer":"ThS.Lương Khánh Tý",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"K.A303",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":71,
+        "Name":"Cơ sở dữ liệu (15)",
+        "Credits":2,
+        "Lecturer":"ThS.Lương Khánh Tý",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.A207",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":72,
+        "Name":"Cơ sở dữ liệu (16)",
+        "Credits":2,
+        "Lecturer":"ThS.Mai Lam",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A212",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":73,
+        "Name":"Cơ sở dữ liệu (17)",
+        "Credits":2,
+        "Lecturer":"ThS.Mai Lam",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.A305",
+        "Weeks":"7->20",
+        "Quantity":50
+    },
+    {
+        "ID":74,
+        "Name":"Cơ sở dữ liệu (2)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Văn Lợi",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"K.A114",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":75,
+        "Name":"Cơ sở dữ liệu (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Viết Trương",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"K.A307",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":76,
+        "Name":"Cơ sở dữ liệu (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Dương Thị Mai Nga",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.A107",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":77,
+        "Name":"Cơ sở dữ liệu (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Dương Thị Mai Nga",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.A312",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":78,
+        "Name":"Cơ sở dữ liệu (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Viết Trương",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"K.A207",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":79,
+        "Name":"Cơ sở dữ liệu (7)_GITe_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Văn Lợi",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A111",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":80,
+        "Name":"Cơ sở dữ liệu (8)_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Văn Lợi",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.A305",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":81,
+        "Name":"Cơ sở dữ liệu (9)_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Văn Lợi",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.A111",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":82,
+        "Name":"Cơ sở tạo hình 1 (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Thúy Ngọc",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.C104",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":83,
+        "Name":"Cơ sở tạo hình 1 (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Thúy Ngọc",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.C104",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":84,
+        "Name":"Cơ sở tạo hình 1 (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thắng",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.C104",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":85,
+        "Name":"Công nghệ và lập trình web (1)_GIT_TA",
+        "Credits":3,
+        "Lecturer":"TS.Trần Văn Đại",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.A303",
+        "Weeks":"6->20",
+        "Quantity":68
+    },
+    {
+        "ID":86,
+        "Name":"Công nghệ và lập trình web (10)",
+        "Credits":3,
+        "Lecturer":"ThS.Võ Ngọc Đạt",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A214",
+        "Weeks":"6->20",
+        "Quantity":68
+    },
+    {
+        "ID":87,
+        "Name":"Công nghệ và lập trình web (11)_AI",
+        "Credits":3,
+        "Lecturer":"ThS.Võ Ngọc Đạt",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"V.A214",
+        "Weeks":"5->19",
+        "Quantity":68
+    },
+    {
+        "ID":88,
+        "Name":"Công nghệ và lập trình web (2)_GIT_TA",
+        "Credits":3,
+        "Lecturer":"TS.Trần Văn Đại",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A401",
+        "Weeks":"5->19",
+        "Quantity":68
+    },
+    {
+        "ID":89,
+        "Name":"Công nghệ và lập trình web (3)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Văn Bình",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"V.A212",
+        "Weeks":"6->20",
+        "Quantity":68
+    },
+    {
+        "ID":90,
+        "Name":"Công nghệ và lập trình web (4)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Văn  Bình",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"V.A212",
+        "Weeks":"6->20",
+        "Quantity":68
+    },
+    {
+        "ID":91,
+        "Name":"Công nghệ và lập trình web (5)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Văn  Bình",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.A101",
+        "Weeks":"5->19",
+        "Quantity":68
+    },
+    {
+        "ID":92,
+        "Name":"Công nghệ và lập trình web (6)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Văn  Bình",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"V.A214",
+        "Weeks":"5->19",
+        "Quantity":68
+    },
+    {
+        "ID":93,
+        "Name":"Công nghệ và lập trình web (7)_JIT",
+        "Credits":3,
+        "Lecturer":"ThS.Ngô Lê Quân",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A205",
+        "Weeks":"5->19",
+        "Quantity":68
+    },
+    {
+        "ID":94,
+        "Name":"Công nghệ và lập trình web (8)",
+        "Credits":3,
+        "Lecturer":"ThS.Ngô Lê Quân",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.A315",
+        "Weeks":"5->19",
+        "Quantity":68
+    },
+    {
+        "ID":95,
+        "Name":"Công nghệ và lập trình web (9)_GITe_TA",
+        "Credits":3,
+        "Lecturer":"TS.Trần Văn Đại",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"V.A401",
+        "Weeks":"5->19",
+        "Quantity":68
+    },
+    {
+        "ID":96,
+        "Name":"Công nghệ website (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Ngô Lê Quân",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"V.A209",
+        "Weeks":"4,6->17",
+        "Quantity":70
+    },
+    {
+        "ID":97,
+        "Name":"Công nghệ website (2)",
+        "Credits":0,
+        "Lecturer":".",
+        "Time":"Thứ Ba | Tiết 1->3",
+        "Room":"(Chọn)",
+        "Weeks":"4,6->17",
+        "Quantity":0
+    },
+    {
+        "ID":98,
+        "Name":"Digital Marketing (1)_GDM,DM_TA",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thị Kiều Trang",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A302",
+        "Weeks":"5->16",
+        "Quantity":60
+    },
+    {
+        "ID":99,
+        "Name":"Digital Marketing (2)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Phạm Huyền Trang",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"V.A302",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":100,
+        "Name":"Đảm bảo chất lượng và Kiểm thử phần mềm (1)_GIT_TA",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Quang Vũ",
+        "Time":"Thứ Năm | Tiết 8->10",
+        "Room":"K.A111",
+        "Weeks":"4->6",
+        "Quantity":65
+    },
+    {
+        "ID":101,
+        "Name":"Đảm bảo chất lượng và Kiểm thử phần mềm (2)",
+        "Credits":3,
+        "Lecturer":"ThS.Dương Thị Mai Nga",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"V.A209",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":102,
+        "Name":"Đảm bảo chất lượng và Kiểm thử phần mềm (3)",
+        "Credits":3,
+        "Lecturer":"ThS.Dương Thị Mai Nga",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A207",
+        "Weeks":"4,6->16",
+        "Quantity":65
+    },
+    {
+        "ID":103,
+        "Name":"Đảm bảo chất lượng và Kiểm thử phần mềm (4)_JIT,KIT",
+        "Credits":3,
+        "Lecturer":"ThS.Dương Thị Mai Nga",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.A105 (P. tiếng Hàn)",
+        "Weeks":"4,6->16",
+        "Quantity":65
+    },
+    {
+        "ID":104,
+        "Name":"Đạo đức trong kinh doanh (1)_GBA",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Khánh Hà",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.A214",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":105,
+        "Name":"Đạo đức trong kinh doanh (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Khánh Hà",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A214",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":106,
+        "Name":"Đạo đức trong kinh doanh (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Mỹ Châu",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A207",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":107,
+        "Name":"Đạo đức trong kinh doanh (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Mỹ Châu",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.A301",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":108,
+        "Name":"Đạo đức trong kinh doanh (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Lê Ngọc Trâm",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.A205",
+        "Weeks":"4,6->19",
+        "Quantity":60
+    },
+    {
+        "ID":109,
+        "Name":"Đạo đức trong kinh doanh (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Mỹ Châu",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.A113",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":110,
+        "Name":"Đầu tư tài chính (1)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thị Thu Đến",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.A114",
+        "Weeks":"4,6->19",
+        "Quantity":60
+    },
+    {
+        "ID":111,
+        "Name":"Đề án 2 (BA) (1)",
+        "Credits":1,
+        "Lecturer":"Khoa.KTS _TMĐT",
+        "Time":"Thứ Tiết ->",
+        "Room":"Chưa xếp phòng",
+        "Weeks":"6->19",
+        "Quantity":500
+    },
+    {
+        "ID":112,
+        "Name":"Đề án 2 (BA)_2 tín chỉ",
+        "Credits":1,
+        "Lecturer":"Khoa.KTS _TMĐT",
+        "Time":"Thứ _ | Tiết _",
+        "Room":"(Chọn)",
+        "Weeks":"6->19",
+        "Quantity":40
+    },
+    {
+        "ID":113,
+        "Name":"Đề án 4 (BA) (1)",
+        "Credits":1,
+        "Lecturer":"Khoa.KTS _TMĐT",
+        "Time":"Thứ Tiết ->",
+        "Room":"Chưa xếp phòng",
+        "Weeks":"4->17",
+        "Quantity":500
+    },
+    {
+        "ID":114,
+        "Name":"Điện toán đám mây (1)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"V.A212",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":115,
+        "Name":"Điện toán đám mây (2)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Hà Huy Cường",
+        "Time":"Thứ Hai | Tiết 6->8",
+        "Room":"V.A403",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":116,
+        "Name":"Điện toán đám mây (3)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Hà Huy Cường",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"V.A403",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":117,
+        "Name":"Điện toán đám mây (4)_JIT,KIT",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"K.A105 (P. tiếng Hàn)",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":118,
+        "Name":"Điện tử ứng dụng (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Thị Quỳnh Hương",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"V.A309",
+        "Weeks":"4,6->19",
+        "Quantity":40
+    },
+    {
+        "ID":119,
+        "Name":"Đồ họa 2D (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Hạ Quyên",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"V.A401",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":120,
+        "Name":"Đồ họa máy tính (1)_GIT",
+        "Credits":3,
+        "Lecturer":"TS.Lê Thị Thu Nga",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A212",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":121,
+        "Name":"Đồ họa máy tính (2)",
+        "Credits":3,
+        "Lecturer":"TS.Lê Thị Thu Nga",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"V.A212",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":122,
+        "Name":"Đồ họa máy tính (3)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Đức Hiển",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.A114",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":123,
+        "Name":"Đồ họa máy tính (4)_JIT,KIT",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Đức Hiển",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"K.A205",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":124,
+        "Name":"Đồ họa máy tính (5)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Đức Hiển",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.B302",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":125,
+        "Name":"GDTC 2 (Bóng chuyền) (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.Sân bóng chuyền 1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":126,
+        "Name":"GDTC 2 (Bóng chuyền) (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.Sân bóng chuyền 1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":127,
+        "Name":"GDTC 2 (Bóng chuyền) (3)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.Sân bóng chuyền 1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":128,
+        "Name":"GDTC 2 (Bóng chuyền) (4)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.Sân bóng chuyền 1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":129,
+        "Name":"GDTC 2 (Bóng rổ) (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.Sân bóng rổ 1",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":130,
+        "Name":"GDTC 2 (Bóng rổ) (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.Sân bóng rổ 1",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":131,
+        "Name":"GDTC 2 (Bóng rổ) (3)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.Sân bóng rổ 1",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":132,
+        "Name":"GDTC 2 (Bóng rổ) (4)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.Sân bóng rổ 1",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":133,
+        "Name":"GDTC 2 (Cầu lông) (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.Tầng 3-TTSV",
+        "Weeks":"5->19",
+        "Quantity":48
+    },
+    {
+        "ID":134,
+        "Name":"GDTC 2 (Cầu lông) (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.Tầng 3-TTSV",
+        "Weeks":"5->19",
+        "Quantity":48
+    },
+    {
+        "ID":135,
+        "Name":"GDTC 3 (Bóng bàn) (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Ngọc Huy",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.Tầng 1-TTSV",
+        "Weeks":"5->19",
+        "Quantity":48
+    },
+    {
+        "ID":136,
+        "Name":"GDTC 3 (Bóng bàn) (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Ngọc Huy",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.Tầng 1-TTSV",
+        "Weeks":"5->19",
+        "Quantity":48
+    },
+    {
+        "ID":137,
+        "Name":"GDTC 3 (Bóng chuyền) (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.Sân bóng chuyền 1",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":138,
+        "Name":"GDTC 3 (Bóng chuyền) (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.Sân bóng chuyền 1",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":139,
+        "Name":"GDTC 3 (Bóng chuyền) (3)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.Sân bóng chuyền 1",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":140,
+        "Name":"GDTC 3 (Bóng chuyền) (4)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.Sân bóng chuyền 1",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":141,
+        "Name":"GDTC 3 (Bóng rổ) (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.Sân bóng rổ 1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":142,
+        "Name":"GDTC 3 (Bóng rổ) (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.Sân bóng rổ 1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":143,
+        "Name":"GDTC 3 (Bóng rổ) (3)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.Sân bóng rổ 1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":144,
+        "Name":"GDTC 3 (Bóng rổ) (4)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.Sân bóng rổ 1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":145,
+        "Name":"GDTC 3 (Bóng rổ) (5)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.Sân bóng rổ 1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":146,
+        "Name":"GDTC 3 (Bóng rổ) (6)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.Sân bóng rổ 1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":147,
+        "Name":"GDTC 3 (Cầu lông) (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.T3-TTSV.1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":148,
+        "Name":"GDTC 3 (Cầu lông) (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.T3-TTSV.1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":149,
+        "Name":"GDTC 3 (Nhịp điệu) (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Trần Thị Vi Vân",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.điền kinh.1",
+        "Weeks":"6->20",
+        "Quantity":48
+    },
+    {
+        "ID":150,
+        "Name":"GDTC 3 (Nhịp điệu) (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Trần Thị Vi Vân",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.Tầng 2-TTSV",
+        "Weeks":"6->20",
+        "Quantity":48
+    },
+    {
+        "ID":151,
+        "Name":"GDTC 3 (Nhịp điệu) (3)",
+        "Credits":1,
+        "Lecturer":"ThS.Trần Thị Vi Vân",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.điền kinh.1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":152,
+        "Name":"GDTC 3 (Nhịp điệu) (4)",
+        "Credits":1,
+        "Lecturer":"ThS.Trần Thị Vi Vân",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.Sân điền kinh 1",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":153,
+        "Name":"GDTC 3 (Võ Vinam) (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Phạm Hữu Thật",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"5->19",
+        "Quantity":48
+    },
+    {
+        "ID":154,
+        "Name":"GDTC 3 (Võ Vinam) (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Phạm Hữu Thật",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.Sân điền kinh 1",
+        "Weeks":"5->19",
+        "Quantity":48
+    },
+    {
+        "ID":155,
+        "Name":"GDTC 3 (Yoga) (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Trần Thị Vi Vân",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.Tầng 2-TTSV",
+        "Weeks":"6->20",
+        "Quantity":48
+    },
+    {
+        "ID":156,
+        "Name":"GDTC 3 (Yoga) (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Trần Thị Vi Vân",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.Tầng 2-TTSV",
+        "Weeks":"6->20",
+        "Quantity":48
+    },
+    {
+        "ID":157,
+        "Name":"GDTC 4 (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Bảy | Tiết 1->2",
+        "Room":"K.điền kinh.1",
+        "Weeks":"5->19",
+        "Quantity":55
+    },
+    {
+        "ID":158,
+        "Name":"GDTC 4 (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Bảy | Tiết 1->2",
+        "Room":"K.điền kinh.1",
+        "Weeks":"5->19",
+        "Quantity":55
+    },
+    {
+        "ID":159,
+        "Name":"GDTC1 (Điền kinh) (1)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":160,
+        "Name":"GDTC1 (Điền kinh) (10)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":161,
+        "Name":"GDTC1 (Điền kinh) (11)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":162,
+        "Name":"GDTC1 (Điền kinh) (12)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":163,
+        "Name":"GDTC1 (Điền kinh) (13)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Gia Huy",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":164,
+        "Name":"GDTC1 (Điền kinh) (14)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Gia Huy",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":165,
+        "Name":"GDTC1 (Điền kinh) (15)",
+        "Credits":1,
+        "Lecturer":"ThS.Trần Đăng Chiến",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.Sân điền kinh 1",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":166,
+        "Name":"GDTC1 (Điền kinh) (16)",
+        "Credits":1,
+        "Lecturer":"ThS.Trần Đăng Chiến",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.Sân điền kinh 1",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":167,
+        "Name":"GDTC1 (Điền kinh) (17)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Ngô Anh Quân",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":168,
+        "Name":"GDTC1 (Điền kinh) (18)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Ngô Anh Quân",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":169,
+        "Name":"GDTC1 (Điền kinh) (19)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Ngô Anh Quân",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":170,
+        "Name":"GDTC1 (Điền kinh) (2)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":171,
+        "Name":"GDTC1 (Điền kinh) (20)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Ngô Anh Quân",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":172,
+        "Name":"GDTC1 (Điền kinh) (21)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":173,
+        "Name":"GDTC1 (Điền kinh) (22)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":174,
+        "Name":"GDTC1 (Điền kinh) (23)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":175,
+        "Name":"GDTC1 (Điền kinh) (24)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":176,
+        "Name":"GDTC1 (Điền kinh) (25)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":177,
+        "Name":"GDTC1 (Điền kinh) (26)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":178,
+        "Name":"GDTC1 (Điền kinh) (27)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":179,
+        "Name":"GDTC1 (Điền kinh) (28)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Quang Phước",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":180,
+        "Name":"GDTC1 (Điền kinh) (29)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":181,
+        "Name":"GDTC1 (Điền kinh) (3)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":182,
+        "Name":"GDTC1 (Điền kinh) (30)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":183,
+        "Name":"GDTC1 (Điền kinh) (4)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":184,
+        "Name":"GDTC1 (Điền kinh) (5)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":185,
+        "Name":"GDTC1 (Điền kinh) (6)",
+        "Credits":1,
+        "Lecturer":"ThS.Nguyễn Văn Thắng",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":186,
+        "Name":"GDTC1 (Điền kinh) (7)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Ngô Anh Quân",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":187,
+        "Name":"GDTC1 (Điền kinh) (8)",
+        "Credits":1,
+        "Lecturer":"ThS.Lê Ngô Anh Quân",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":188,
+        "Name":"GDTC1 (Điền kinh) (9)",
+        "Credits":1,
+        "Lecturer":"ThS.Hồ Anh Hưng",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K. Sân điền kinh",
+        "Weeks":"7->21",
+        "Quantity":48
+    },
+    {
+        "ID":189,
+        "Name":"Giải tích 1 (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Thị Hồng Liên",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.A113",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":190,
+        "Name":"Giải tích 1 (11)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Quốc Thịnh",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.A211",
+        "Weeks":"7->21",
+        "Quantity":70
+    },
+    {
+        "ID":191,
+        "Name":"Giải tích 1 (12)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Quốc Thịnh",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.A107",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":192,
+        "Name":"Giải tích 1 (13)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Quốc Thịnh",
+        "Time":"Thứ Tư | Tiết 3->4",
+        "Room":"K.A107",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":193,
+        "Name":"Giải tích 1 (14)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Quốc Thịnh",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.A212",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":194,
+        "Name":"Giải tích 1 (15)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Quốc Thịnh",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A212",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":195,
+        "Name":"Giải tích 1 (16)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Thị Hồng Liên",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.A113",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":196,
+        "Name":"Giải tích 1 (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Thị Hồng Liên",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.A113",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":197,
+        "Name":"Giải tích 1 (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Thị Hồng Liên",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.A110",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":198,
+        "Name":"Giải tích 1 (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Thị Hồng Liên",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.A110",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":199,
+        "Name":"Giải tích 1 (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Thị Hồng Liên",
+        "Time":"Thứ Sáu | Tiết 6->7",
+        "Room":"K.A213",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":200,
+        "Name":"Giải tích 1 (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Thị Hồng Liên",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.A213",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":201,
+        "Name":"Giải tích 1 (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Thị Hồng Liên",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.A113",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":202,
+        "Name":"Giải tích 1 (8)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Quốc Thịnh",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.A213",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":203,
+        "Name":"Giải tích 1 (9)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Quốc Thịnh",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.A213",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":204,
+        "Name":"Giải tích 2 (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.A212",
+        "Weeks":"5->19",
+        "Quantity":69
+    },
+    {
+        "ID":205,
+        "Name":"Giải tích 2 (11)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.A212",
+        "Weeks":"6->20",
+        "Quantity":69
+    },
+    {
+        "ID":206,
+        "Name":"Giải tích 2 (12)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.A212",
+        "Weeks":"6->20",
+        "Quantity":69
+    },
+    {
+        "ID":207,
+        "Name":"Giải tích 2 (13)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.A213",
+        "Weeks":"5->19",
+        "Quantity":69
+    },
+    {
+        "ID":208,
+        "Name":"Giải tích 2 (14)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A213",
+        "Weeks":"5->19",
+        "Quantity":69
+    },
+    {
+        "ID":209,
+        "Name":"Giải tích 2 (15)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.A212",
+        "Weeks":"5->19",
+        "Quantity":69
+    },
+    {
+        "ID":210,
+        "Name":"Giải tích 2 (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Sáu | Tiết 6->7",
+        "Room":"K.A212",
+        "Weeks":"5->19",
+        "Quantity":69
+    },
+    {
+        "ID":211,
+        "Name":"Giải tích 2 (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A215",
+        "Weeks":"5->19",
+        "Quantity":69
+    },
+    {
+        "ID":212,
+        "Name":"Giải tích 2 (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.A215",
+        "Weeks":"5->19",
+        "Quantity":69
+    },
+    {
+        "ID":213,
+        "Name":"Giải tích 2 (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.A103",
+        "Weeks":"6->20",
+        "Quantity":69
+    },
+    {
+        "ID":214,
+        "Name":"Giải tích 2 (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.A103",
+        "Weeks":"6->20",
+        "Quantity":69
+    },
+    {
+        "ID":215,
+        "Name":"Giải tích 2 (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.A211",
+        "Weeks":"6->20",
+        "Quantity":69
+    },
+    {
+        "ID":216,
+        "Name":"Giải tích 2 (8)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.A112",
+        "Weeks":"6->20",
+        "Quantity":69
+    },
+    {
+        "ID":217,
+        "Name":"Giải tích 2 (9)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Bích Hòa",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.A212",
+        "Weeks":"5->19",
+        "Quantity":69
+    },
+    {
+        "ID":218,
+        "Name":"Hành vi người tiêu dùng (1)_GDM,DM_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thanh Hoài",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"V.A303",
+        "Weeks":"6->17",
+        "Quantity":68
+    },
+    {
+        "ID":219,
+        "Name":"Hành vi người tiêu dùng (2)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thị Kiều Trang",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A313",
+        "Weeks":"5->16",
+        "Quantity":70
+    },
+    {
+        "ID":220,
+        "Name":"Hành vi tiêu dùng du lịch (1)",
+        "Credits":3,
+        "Lecturer":"TS.Trần Lương Nguyệt",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.A110",
+        "Weeks":"4->15",
+        "Quantity":60
+    },
+    {
+        "ID":221,
+        "Name":"Hệ thống di động và cảm biến (1)",
+        "Credits":2,
+        "Lecturer":"TS.Trần Thế Sơn",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.B302",
+        "Weeks":"4->15",
+        "Quantity":40
+    },
+    {
+        "ID":222,
+        "Name":"Hệ thống số - A (1)_GIC_TA",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Thị Quỳnh Hương",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A401",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":223,
+        "Name":"Hệ thống số (1)_GCE,CE_TA",
+        "Credits":2,
+        "Lecturer":"TS.Dương Ngọc Pháp",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"K.A303",
+        "Weeks":"6->18",
+        "Quantity":60
+    },
+    {
+        "ID":224,
+        "Name":"Hệ thống số (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Trà Vinh",
+        "Time":"Thứ Tư | Tiết 7->9",
+        "Room":"V.A209",
+        "Weeks":"6->18",
+        "Quantity":67
+    },
+    {
+        "ID":225,
+        "Name":"Hệ thống thanh toán quốc tế (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Vũ Thị Tuyết Mai",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.A213",
+        "Weeks":"4,6->19",
+        "Quantity":60
+    },
+    {
+        "ID":226,
+        "Name":"Hệ thống thời gian thực (1)_TA",
+        "Credits":2,
+        "Lecturer":"TS.Vương Công Đạt",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"V.A502",
+        "Weeks":"4->15",
+        "Quantity":40
+    },
+    {
+        "ID":227,
+        "Name":"Hệ thống thông tin quản lý (1)_GBA_TA",
+        "Credits":2,
+        "Lecturer":"TS.Văn Hùng Trọng",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"V.A209",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":228,
+        "Name":"Hệ thống thông tin quản lý (2)_GDM,DM_TA",
+        "Credits":2,
+        "Lecturer":"TS.Văn Hùng Trọng",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"V.A209",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":229,
+        "Name":"Hệ thống thông tin quản lý (3)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thị Thanh Huyền",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"V.A206",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":230,
+        "Name":"Hệ thống thông tin quản lý (4)_GEL_TA",
+        "Credits":2,
+        "Lecturer":"TS.Trần Thiện Vũ",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A301",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":231,
+        "Name":"Hệ thống thông tin quản lý (5)",
+        "Credits":2,
+        "Lecturer":"TS.Trần Thiện Vũ",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.A301",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":232,
+        "Name":"Hệ thống thông tin quản lý (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Bùi Trần Huân",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.A314",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":233,
+        "Name":"Hệ thống thông tin quản lý (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Bùi Trần Huân",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.A314",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":234,
+        "Name":"Hình họa 1 (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Trọng Công Thành",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.C107",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":235,
+        "Name":"Hình họa 1 (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Trọng Công Thành",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.C107",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":236,
+        "Name":"Hình họa 1 (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Trọng Công Thành",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.C107",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":237,
+        "Name":"Học máy (1)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Sĩ Thìn",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A214",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":238,
+        "Name":"Học sâu (1)",
+        "Credits":3,
+        "Lecturer":"TS.Trần Uyên Trang",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"V.A214",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":239,
+        "Name":"Khai phá và lưu trữ dữ liệu Logistics (1)",
+        "Credits":2,
+        "Lecturer":"TS.Lê Thị Thu Nga",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"V.A303",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":240,
+        "Name":"Khai phá và lưu trữ dữ liệu Logistics (2)",
+        "Credits":2,
+        "Lecturer":"TS.Lê Thị Thu Nga",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"V.A303",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":241,
+        "Name":"Kho dữ liệu (1)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Trần Văn Đại",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"V.A401",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":242,
+        "Name":"Kho dữ liệu (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thanh Liêm",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"V.A402",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":243,
+        "Name":"Kho dữ liệu (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thanh Liêm",
+        "Time":"Thứ Ba | Tiết 1->3",
+        "Room":"V.A402",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":244,
+        "Name":"Kho dữ liệu (4)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Trần Văn Đại",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"V.A311",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":245,
+        "Name":"Kho dữ liệu (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Mai Lam",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"V.A214",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":246,
+        "Name":"Kho dữ liệu (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Mai Lam",
+        "Time":"Thứ Hai | Tiết 6->8",
+        "Room":"V.A402",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":247,
+        "Name":"Kho dữ liệu (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Mai Lam",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"V.A505",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":248,
+        "Name":"Kho dữ liệu (8)",
+        "Credits":2,
+        "Lecturer":"ThS.Mai Lam",
+        "Time":"Thứ Sáu | Tiết 1->3",
+        "Room":"V.A402",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":249,
+        "Name":"Khởi nghiệp và đổi mới sáng tạo (1)_GCE,CE_TA",
+        "Credits":2,
+        "Lecturer":"ThS.Đinh Nguyễn Khánh Phương",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.A112",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":250,
+        "Name":"Khởi nghiệp và đổi mới sáng tạo (2)_GIC_TA",
+        "Credits":2,
+        "Lecturer":"ThS.Đinh Nguyễn Khánh Phương",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A112",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":251,
+        "Name":"Khởi nghiệp và đổi mới sáng tạo (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Như Quỳnh",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.A214",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":252,
+        "Name":"Khởi sự kinh doanh (1)_GBA_TA",
+        "Credits":3,
+        "Lecturer":"ThS.Huỳnh Thị Kim Hà",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A405",
+        "Weeks":"4,6->16",
+        "Quantity":60
+    },
+    {
+        "ID":253,
+        "Name":"Khởi sự kinh doanh (2)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Thị Như Quỳnh",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"V.A301",
+        "Weeks":"4->15",
+        "Quantity":68
+    },
+    {
+        "ID":254,
+        "Name":"Khởi sự kinh doanh (3)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Thị Hải Vân",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"V.A209",
+        "Weeks":"4,6->16",
+        "Quantity":68
+    },
+    {
+        "ID":255,
+        "Name":"Khởi sự kinh doanh (4)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Thị Hải Vân",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"V.A309",
+        "Weeks":"4->15",
+        "Quantity":68
+    },
+    {
+        "ID":256,
+        "Name":"Khởi sự kinh doanh (5)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Thị Hải Vân",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A209",
+        "Weeks":"4->15",
+        "Quantity":68
+    },
+    {
+        "ID":257,
+        "Name":"Khởi sự kinh doanh (6)",
+        "Credits":3,
+        "Lecturer":"ThS.Huỳnh Thị Kim Hà",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"V.A303",
+        "Weeks":"4->15",
+        "Quantity":68
+    },
+    {
+        "ID":258,
+        "Name":"Kịch bản truyền thông (1)",
+        "Credits":3,
+        "Lecturer":"ThS.Phan Đăng Thiếu Hiệp",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"V.A210",
+        "Weeks":"4->15",
+        "Quantity":50
+    },
+    {
+        "ID":259,
+        "Name":"Kịch bản truyền thông (2)",
+        "Credits":3,
+        "Lecturer":"ThS.Phan Đăng Thiếu Hiệp",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"V.A210",
+        "Weeks":"4->15",
+        "Quantity":50
+    },
+    {
+        "ID":260,
+        "Name":"Kiểm thử xâm nhập (1)",
+        "Credits":3,
+        "Lecturer":"TS.Trần Thế Sơn",
+        "Time":"Thứ Năm | Tiết 6->8",
+        "Room":"K.B302",
+        "Weeks":"4->16",
+        "Quantity":68
+    },
+    {
+        "ID":261,
+        "Name":"Kiến trúc máy tính (1)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.A112",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":262,
+        "Name":"Kiến trúc máy tính (10)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thu Thủy",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.A212",
+        "Weeks":"6->20",
+        "Quantity":68
+    },
+    {
+        "ID":263,
+        "Name":"Kiến trúc máy tính (11)_GCE,CE_TA",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Huyền Trang",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A103",
+        "Weeks":"5->19",
+        "Quantity":68
+    },
+    {
+        "ID":264,
+        "Name":"Kiến trúc máy tính (12)_GIC_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Vũ Anh Quang",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A312",
+        "Weeks":"5->19",
+        "Quantity":68
+    },
+    {
+        "ID":265,
+        "Name":"Kiến trúc máy tính (13)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thu Thủy",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.A212",
+        "Weeks":"6->20",
+        "Quantity":68
+    },
+    {
+        "ID":266,
+        "Name":"Kiến trúc máy tính (14)_NS_3 tín chỉ",
+        "Credits":2,
+        "Lecturer":"TS.Phan Thị Lan Anh",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"K.A303",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":267,
+        "Name":"Kiến trúc máy tính (2)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.A112",
+        "Weeks":"6->20",
+        "Quantity":60
+    },
+    {
+        "ID":268,
+        "Name":"Kiến trúc máy tính (3)",
+        "Credits":2,
+        "Lecturer":"TS.Đoàn Duy Bình",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.A110",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":269,
+        "Name":"Kiến trúc máy tính (4)",
+        "Credits":2,
+        "Lecturer":"TS.Đoàn Duy Bình",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.A110",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":270,
+        "Name":"Kiến trúc máy tính (5)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Hữu Ái",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.A111",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":271,
+        "Name":"Kiến trúc máy tính (6)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Hữu Ái",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A211",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":272,
+        "Name":"Kiến trúc máy tính (7)_JIT",
+        "Credits":2,
+        "Lecturer":"ThS.Ninh Khánh Chi",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.A207",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":273,
+        "Name":"Kiến trúc máy tính (8)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Hữu Ái",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.A211",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":274,
+        "Name":"Kiến trúc máy tính (9)_GITe_TA",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Quang Hiển",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.A112",
+        "Weeks":"6->20",
+        "Quantity":60
+    },
+    {
+        "ID":275,
+        "Name":"Kinh doanh quốc tế (1)_GBA_TA",
+        "Credits":3,
+        "Lecturer":"TS.Võ Thị Thanh Thảo",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"V.A311",
+        "Weeks":"4->15",
+        "Quantity":65
+    },
+    {
+        "ID":276,
+        "Name":"Kinh doanh quốc tế (2)",
+        "Credits":3,
+        "Lecturer":"ThS.Ngô Thị Hiền Trang",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"V.A207",
+        "Weeks":"4->15",
+        "Quantity":67
+    },
+    {
+        "ID":277,
+        "Name":"Kinh doanh quốc tế (3)",
+        "Credits":3,
+        "Lecturer":"ThS.Huỳnh Bá Thúy Diệu",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"V.A207",
+        "Weeks":"4,6->16",
+        "Quantity":67
+    },
+    {
+        "ID":278,
+        "Name":"Kinh doanh quốc tế (4)",
+        "Credits":3,
+        "Lecturer":"ThS.Huỳnh Bá Thúy Diệu",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A206",
+        "Weeks":"4->15",
+        "Quantity":67
+    },
+    {
+        "ID":279,
+        "Name":"Kinh doanh quốc tế (5)",
+        "Credits":3,
+        "Lecturer":"ThS.Ngô Thị Hiền Trang",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"V.A206",
+        "Weeks":"4->15",
+        "Quantity":67
+    },
+    {
+        "ID":280,
+        "Name":"Kinh tế chính trị Mác - Lênin (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mỹ Hạnh",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.C205",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":281,
+        "Name":"Kinh tế chính trị Mác - Lênin (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mỹ Hạnh",
+        "Time":"Thứ Sáu | Tiết 6->7",
+        "Room":"K.C205",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":282,
+        "Name":"Kinh tế chính trị Mác - Lênin (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mỹ Hạnh",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.C105",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":283,
+        "Name":"Kinh tế chính trị Mác - Lênin (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mỹ Hạnh",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.C105",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":284,
+        "Name":"Kinh tế chính trị Mác - Lênin (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mỹ Hạnh",
+        "Time":"Thứ Tư | Tiết 3->4",
+        "Room":"K.C105",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":285,
+        "Name":"Kinh tế chính trị Mác - Lênin (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mỹ Hạnh",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.C105",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":286,
+        "Name":"Kinh tế chính trị Mác - Lênin (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mỹ Hạnh",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.C205",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":287,
+        "Name":"Kinh tế vi mô (1)_GBA",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Ngọc Thảo Vy",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"K.A312",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":288,
+        "Name":"Kinh tế vi mô (2)_GDM",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Phạm Huyền Trang",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.A312",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":289,
+        "Name":"Kinh tế vi mô (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Khánh My",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.A314",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":290,
+        "Name":"Kinh tế vi mô (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Phạm Huyền Trang",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.A207",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":291,
+        "Name":"Kinh tế vi mô (5)_GEL",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Phạm Huyền Trang",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.A312",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":292,
+        "Name":"Kinh tế vi mô (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Khánh My",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"K.A313",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":293,
+        "Name":"Kinh tế vi mô (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Khánh My",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.A313",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":294,
+        "Name":"Kinh tế vi mô (8)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Thanh Nhàn",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.A103",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":295,
+        "Name":"Kỹ thuật chụp ảnh và quay phim (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Trọng Công Thành",
+        "Time":"Thứ Hai | Tiết 6->10",
+        "Room":"K.C101",
+        "Weeks":"4,6->16",
+        "Quantity":50
+    },
+    {
+        "ID":296,
+        "Name":"Kỹ thuật chụp ảnh và quay phim (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Trọng Công Thành",
+        "Time":"Thứ Hai | Tiết 1->5",
+        "Room":"K.C101",
+        "Weeks":"4,6->16",
+        "Quantity":50
+    },
+    {
+        "ID":297,
+        "Name":"Kỹ thuật Robot (1)",
+        "Credits":3,
+        "Lecturer":"TS.Dương Hữu Ái",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.A214",
+        "Weeks":"4,6->19",
+        "Quantity":60
+    },
+    {
+        "ID":298,
+        "Name":"Lập dự án đầu tư (1)",
+        "Credits":2,
+        "Lecturer":"TS.Bùi Nữ Thanh Hà",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.A314",
+        "Weeks":"4->17",
+        "Quantity":40
+    },
+    {
+        "ID":299,
+        "Name":"Lập dự án đầu tư (2)",
+        "Credits":2,
+        "Lecturer":"TS.Bùi Nữ Thanh Hà",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A304",
+        "Weeks":"4->17",
+        "Quantity":50
+    },
+    {
+        "ID":300,
+        "Name":"Lập trình cơ bản (1)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"PGS.TS.Nguyễn Thanh Bình",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.A110",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":301,
+        "Name":"Lập trình cơ bản (10)",
+        "Credits":2,
+        "Lecturer":"ThS.Đỗ Công Đức",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.A305",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":302,
+        "Name":"Lập trình cơ bản (11)",
+        "Credits":2,
+        "Lecturer":"ThS.Đỗ Công Đức",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.A305",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":303,
+        "Name":"Lập trình cơ bản (12)_GIC_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Quang Vũ",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.A111",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":304,
+        "Name":"Lập trình cơ bản (13)_GCE",
+        "Credits":2,
+        "Lecturer":"ThS.Đặng Thị Kim Ngân",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.A110",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":305,
+        "Name":"Lập trình cơ bản (14)",
+        "Credits":2,
+        "Lecturer":"ThS.Đặng Thị Kim Ngân",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.A112",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":306,
+        "Name":"Lập trình cơ bản (15)",
+        "Credits":2,
+        "Lecturer":"ThS.Phạm Tuấn Anh",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.A111",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":307,
+        "Name":"Lập trình cơ bản (16)",
+        "Credits":2,
+        "Lecturer":"ThS.Trịnh Thị Ngọc Linh",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.A103",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":308,
+        "Name":"Lập trình cơ bản (17)_Olympic TH_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Quang Vũ",
+        "Time":"Thứ Bảy | Tiết 1->4",
+        "Room":"K.A111",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":309,
+        "Name":"Lập trình cơ bản (2)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Quang Vũ",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A207",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":310,
+        "Name":"Lập trình cơ bản (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Đỗ Công Đức",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.A114",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":311,
+        "Name":"Lập trình cơ bản (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Đỗ Công Đức",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.A114",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":312,
+        "Name":"Lập trình cơ bản (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Đặng Thị Kim Ngân",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.A110",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":313,
+        "Name":"Lập trình cơ bản (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Phạm Tuấn Anh",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.A111",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":314,
+        "Name":"Lập trình cơ bản (7)_GITe",
+        "Credits":2,
+        "Lecturer":"ThS.Trịnh Thị Ngọc Linh",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.A103",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":315,
+        "Name":"Lập trình cơ bản (8)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Đức Hiển",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.A103",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":316,
+        "Name":"Lập trình cơ bản (9)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Đức Hiển",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.A103",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":317,
+        "Name":"Lập trình di động (1)",
+        "Credits":3,
+        "Lecturer":"ThS.Võ Ngọc Đạt",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"V.A403",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":318,
+        "Name":"Lập trình di động (2)",
+        "Credits":3,
+        "Lecturer":"ThS.Ngô Lê Quân",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.A301",
+        "Weeks":"4->18",
+        "Quantity":50
+    },
+    {
+        "ID":319,
+        "Name":"Lập trình game (1)_GIT",
+        "Credits":2,
+        "Lecturer":"ThS.Trịnh Thị Ngọc Linh",
+        "Time":"Thứ Ba | Tiết 1->3",
+        "Room":"V.A401",
+        "Weeks":"4,6->17",
+        "Quantity":70
+    },
+    {
+        "ID":320,
+        "Name":"Lập trình game (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Trịnh Thị Ngọc Linh",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"V.A212",
+        "Weeks":"4->16",
+        "Quantity":70
+    },
+    {
+        "ID":321,
+        "Name":"Lập trình game (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Trịnh Thị Ngọc Linh",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"V.A401",
+        "Weeks":"4->16",
+        "Quantity":70
+    },
+    {
+        "ID":322,
+        "Name":"Lập trình hệ thống (1)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Hoàng Hữu Đức",
+        "Time":"Thứ Ba | Tiết 1->3",
+        "Room":"K.A207",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":323,
+        "Name":"Lập trình hệ thống (2)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Nhật Ân",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"K.A101",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":324,
+        "Name":"Lập trình hệ thống (3)_TA",
+        "Credits":2,
+        "Lecturer":"TS.Hoàng Hữu Đức",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"V.A405",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":325,
+        "Name":"Lập trình hệ thống (4)_JIT,KIT",
+        "Credits":2,
+        "Lecturer":"TS.Hoàng Hữu Đức",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"K.A205",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":326,
+        "Name":"Lập trình hệ thống nhúng (1)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Nhật Ân",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"V.A403",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":327,
+        "Name":"Lập trình hướng đối tượng (1)_GIT_TA",
+        "Credits":3,
+        "Lecturer":"PGS.TS.Huỳnh Công Pháp",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.A103",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":328,
+        "Name":"Lập trình hướng đối tượng (12)_GIC_TA",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Sĩ Thìn",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.A207",
+        "Weeks":"7->21",
+        "Quantity":68
+    },
+    {
+        "ID":329,
+        "Name":"Lập trình hướng đối tượng (13)_GCE_TA",
+        "Credits":3,
+        "Lecturer":"TS.Lý Quỳnh Trân",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.A214",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":330,
+        "Name":"Lập trình hướng đối tượng (14)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Thành Công",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.A110",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":331,
+        "Name":"Lập trình hướng đối tượng (15)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Thành Công",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.A110",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":332,
+        "Name":"Lập trình hướng đối tượng (16)_NS_2 tín chỉ",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Đình Nguyên",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.A113",
+        "Weeks":"6->20",
+        "Quantity":70
+    },
+    {
+        "ID":333,
+        "Name":"Lập trình hướng đối tượng (2)_GIT_TA",
+        "Credits":3,
+        "Lecturer":"ThS.Hà Thị Minh Phương",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.A103",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":334,
+        "Name":"Lập trình hướng đối tượng (3)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Thành Công",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.A110",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":335,
+        "Name":"Lập trình hướng đối tượng (4)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Thành Công",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.A110",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":336,
+        "Name":"Lập trình hướng đối tượng (6)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Đình Nguyên",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.A113",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":337,
+        "Name":"Lập trình hướng đối tượng (7)_GITe_TA",
+        "Credits":3,
+        "Lecturer":"ThS.Hà Thị Minh Phương",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.A101",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":338,
+        "Name":"Lập trình hướng đối tượng (8)",
+        "Credits":3,
+        "Lecturer":"TS.Huỳnh Ngọc Thọ",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A112",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":339,
+        "Name":"Lập trình hướng đối tượng (9)",
+        "Credits":3,
+        "Lecturer":"TS.Huỳnh Ngọc Thọ",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"K.A112",
+        "Weeks":"7->21",
+        "Quantity":60
+    },
+    {
+        "ID":340,
+        "Name":"Lập trình mạng (1)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"PGS.TS.Huỳnh Công Pháp",
+        "Time":"Thứ Tư | Tiết 3->5",
+        "Room":"K.A101",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":341,
+        "Name":"Lập trình mạng (10)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thanh Cẩm",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"V.A309",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":342,
+        "Name":"Lập trình mạng (11)",
+        "Credits":2,
+        "Lecturer":"TS.Lê Tân",
+        "Time":"Thứ Năm | Tiết 6->8",
+        "Room":"V.A211",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":343,
+        "Name":"Lập trình mạng (12)",
+        "Credits":2,
+        "Lecturer":"TS.Lê Tân",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"V.A211",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":344,
+        "Name":"Lập trình mạng (2)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"PGS.TS.Huỳnh Công Pháp",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"K.A103",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":345,
+        "Name":"Lập trình mạng (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thanh Cẩm",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"V.A502",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":346,
+        "Name":"Lập trình mạng (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thanh Cẩm",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"V.A405",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":347,
+        "Name":"Lập trình mạng (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thanh Cẩm",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"K.A114",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":348,
+        "Name":"Lập trình mạng (6)_JIT,KIT",
+        "Credits":2,
+        "Lecturer":"TS.Lê Tân",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"K.A205",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":349,
+        "Name":"Lập trình mạng (7)_JIT,KIT",
+        "Credits":2,
+        "Lecturer":"TS.Lê Tân",
+        "Time":"Thứ Ba | Tiết 1->3",
+        "Room":"K.A107",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":350,
+        "Name":"Lập trình mạng (8)",
+        "Credits":2,
+        "Lecturer":"TS.Lê Tân",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"V.A505",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":351,
+        "Name":"Lập trình mạng (9)",
+        "Credits":2,
+        "Lecturer":"TS.Lê Tân",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"K.A311",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":352,
+        "Name":"Lập trình Python (1)",
+        "Credits":3,
+        "Lecturer":"TS.Phạm Nguyễn Minh Nhựt",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"V.A401",
+        "Weeks":"4,6->19",
+        "Quantity":77
+    },
+    {
+        "ID":353,
+        "Name":"Lập trình Python (2)",
+        "Credits":3,
+        "Lecturer":"TS.Phạm Nguyễn Minh Nhựt",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"V.A211",
+        "Weeks":"5->19",
+        "Quantity":77
+    },
+    {
+        "ID":354,
+        "Name":"Lập trình Python (BA)_2 tín chỉ",
+        "Credits":3,
+        "Lecturer":"TS.Phạm Nguyễn Minh Nhựt",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.B107",
+        "Weeks":"4->18",
+        "Quantity":50
+    },
+    {
+        "ID":355,
+        "Name":"Lập trình Python (BA)_3 tín chỉ",
+        "Credits":3,
+        "Lecturer":"TS.Phạm Nguyễn Minh Nhựt",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.A101",
+        "Weeks":"7->15",
+        "Quantity":70
+    },
+    {
+        "ID":356,
+        "Name":"Lập trình Python cho hệ thống nhúng (1)_TA",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Vũ Anh Quang",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"K.A314",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":357,
+        "Name":"Lập trình Python cho hệ thống nhúng (2)_TA",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Vũ Anh Quang",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"V.A505",
+        "Weeks":"4,6->19",
+        "Quantity":65
+    },
+    {
+        "ID":358,
+        "Name":"Lịch sử Đảng Cộng sản Việt Nam (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mai",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.C105",
+        "Weeks":"4,6->19",
+        "Quantity":75
+    },
+    {
+        "ID":359,
+        "Name":"Lịch sử Đảng Cộng sản Việt Nam (10)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mai",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.C205",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":360,
+        "Name":"Lịch sử Đảng Cộng sản Việt Nam (11)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mai",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.C205",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":361,
+        "Name":"Lịch sử Đảng cộng sản Việt Nam (12)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mai",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.C205",
+        "Weeks":"4->18",
+        "Quantity":75
+    },
+    {
+        "ID":362,
+        "Name":"Lịch sử Đảng Cộng sản Việt Nam (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mai",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.C105",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":363,
+        "Name":"Lịch sử Đảng Cộng sản Việt Nam (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mai",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.C105",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":364,
+        "Name":"Lịch sử Đảng Cộng sản Việt Nam (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mai",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.C105",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":365,
+        "Name":"Lịch sử Đảng Cộng sản Việt Nam (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mai",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.C105",
+        "Weeks":"4->18",
+        "Quantity":75
+    },
+    {
+        "ID":366,
+        "Name":"Lịch sử Đảng Cộng sản Việt Nam (8)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mai",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.C105",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":367,
+        "Name":"Lịch sử Đảng Cộng sản Việt Nam (9)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Mai",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.C205",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":368,
+        "Name":"Lịch sử mỹ thuật Việt nam và thế giới (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Trọng Công Thành",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.A313",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":369,
+        "Name":"Linux và phần mềm nguồn mở (1)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Hữu Nhật Minh",
+        "Time":"Thứ Sáu | Tiết 1->3",
+        "Room":"K.A315",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":370,
+        "Name":"Linux và phần mềm nguồn mở (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Ninh Khánh Chi",
+        "Time":"Thứ Ba | Tiết 1->3",
+        "Room":"K.A101",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":371,
+        "Name":"Linux và phần mềm nguồn mở (3)_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Hữu Nhật Minh",
+        "Time":"Thứ Hai | Tiết 6->8",
+        "Room":"V.A211",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":372,
+        "Name":"Linux và phần mềm nguồn mở (4)_JIT,KIT",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Hữu Nhật Minh",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"K.A105",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":373,
+        "Name":"Linux và phần mềm nguồn mở (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Ninh Khánh Chi",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"K.A307",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":374,
+        "Name":"Linux và phần mềm nguồn mở (6)_TA",
+        "Credits":2,
+        "Lecturer":"TS.Vương Công Đạt",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"K.A315",
+        "Weeks":"4->16",
+        "Quantity":60
+    },
+    {
+        "ID":375,
+        "Name":"Mạng cảm biến không dây (1)",
+        "Credits":2,
+        "Lecturer":"TS.Trần Thế Sơn",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"K.B302",
+        "Weeks":"4->16",
+        "Quantity":40
+    },
+    {
+        "ID":376,
+        "Name":"Mạng máy tính (1)_AI_TA",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Vũ Anh Quang",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"V.A211",
+        "Weeks":"5->19",
+        "Quantity":45
+    },
+    {
+        "ID":377,
+        "Name":"Mạng máy tính (2)_TA",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Vũ Anh Quang",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.B301",
+        "Weeks":"4->18",
+        "Quantity":45
+    },
+    {
+        "ID":378,
+        "Name":"Marketing căn bản (1)",
+        "Credits":3,
+        "Lecturer":"TS.Ngô Hải Quỳnh",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.A312",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":379,
+        "Name":"Marketing truyền thông xã hội (1)_GBA,DM_TA",
+        "Credits":2,
+        "Lecturer":"ThS.Đặng Thị Thanh Minh",
+        "Time":"Thứ Năm | Tiết 6->8",
+        "Room":"V.A304",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":380,
+        "Name":"Marketing truyền thông xã hội (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Phạm Huyền Trang",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"V.A302",
+        "Weeks":"4,6->17",
+        "Quantity":70
+    },
+    {
+        "ID":381,
+        "Name":"Nghệ thuật chữ (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Đăng Thiếu Hiệp",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A210",
+        "Weeks":"4->15",
+        "Quantity":70
+    },
+    {
+        "ID":382,
+        "Name":"Nghiệp vụ hướng dẫn du lịch (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Lê Ngọc Trâm",
+        "Time":"Thứ Ba | Tiết 1->3",
+        "Room":"V.A304",
+        "Weeks":"4,6->17",
+        "Quantity":60
+    },
+    {
+        "ID":383,
+        "Name":"Nguyên lý hệ điều hành (1)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Nhật Ân",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.A111",
+        "Weeks":"6->20",
+        "Quantity":67
+    },
+    {
+        "ID":384,
+        "Name":"Nguyên lý hệ điều hành (10)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thu Thủy",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.A213",
+        "Weeks":"5->19",
+        "Quantity":67
+    },
+    {
+        "ID":385,
+        "Name":"Nguyên lý hệ điều hành (2)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Nhật Ân",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.A111",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":386,
+        "Name":"Nguyên lý hệ điều hành (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Ninh Khánh Chi",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.A212",
+        "Weeks":"5->19",
+        "Quantity":67
+    },
+    {
+        "ID":387,
+        "Name":"Nguyên lý hệ điều hành (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thu Thủy",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.A212",
+        "Weeks":"5->19",
+        "Quantity":67
+    },
+    {
+        "ID":388,
+        "Name":"Nguyên lý hệ điều hành (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thu Thủy",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.A213",
+        "Weeks":"5->19",
+        "Quantity":67
+    },
+    {
+        "ID":389,
+        "Name":"Nguyên lý hệ điều hành (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Kim Trọng",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.A103",
+        "Weeks":"5->19",
+        "Quantity":67
+    },
+    {
+        "ID":390,
+        "Name":"Nguyên lý hệ điều hành (7)_JIT",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thu Thủy",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.A207",
+        "Weeks":"5->19",
+        "Quantity":67
+    },
+    {
+        "ID":391,
+        "Name":"Nguyên lý hệ điều hành (8)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Kim Trọng",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A103",
+        "Weeks":"5->19",
+        "Quantity":67
+    },
+    {
+        "ID":392,
+        "Name":"Nguyên lý hệ điều hành (9)_GITe_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Nhật Ân",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.A107",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":393,
+        "Name":"Nguyên lý kế toán (1)_GBA_TA",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thị Thu Đến",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"V.A207",
+        "Weeks":"5->16",
+        "Quantity":69
+    },
+    {
+        "ID":394,
+        "Name":"Nguyên lý kế toán (2)_GEL",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Thị Mỹ Châu",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"V.A311",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":395,
+        "Name":"Nguyên lý kế toán (3)",
+        "Credits":3,
+        "Lecturer":"ThS.Vũ Thị Tuyết Mai",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A312",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":396,
+        "Name":"Nguyên lý kế toán (4)",
+        "Credits":3,
+        "Lecturer":"ThS.Vũ Thị Tuyết Mai",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"V.A302",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":397,
+        "Name":"Nguyên lý kế toán (5)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thị Thu Đến",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"V.A304",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":398,
+        "Name":"Nguyên lý thiết kế đồ họa (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Thúy Ngọc",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.A114",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":399,
+        "Name":"Nhập môn E-logistics (1)_GEL_TA",
+        "Credits":3,
+        "Lecturer":"TS.Võ Thị Thanh Thảo",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"V.A209",
+        "Weeks":"5->16",
+        "Quantity":60
+    },
+    {
+        "ID":400,
+        "Name":"Nhập môn E-logistics (2)",
+        "Credits":3,
+        "Lecturer":"TS.Võ Thị Thanh  Thảo",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.A205",
+        "Weeks":"6->17",
+        "Quantity":60
+    },
+    {
+        "ID":401,
+        "Name":"Nhập môn ngành & kỹ năng mềm (BA) (1)_GBA_TA",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Thảo Nhi",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"K.A211",
+        "Weeks":"7->19",
+        "Quantity":5
+    },
+    {
+        "ID":402,
+        "Name":"Nhập môn ngành & kỹ năng mềm (BA) (2)_GDM",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Lê Ngọc Trâm",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"K.A214",
+        "Weeks":"7->19",
+        "Quantity":5
+    },
+    {
+        "ID":403,
+        "Name":"Nhập môn ngành & kỹ năng mềm (BA) (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Lê Ngọc Trâm",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"K.A213",
+        "Weeks":"7->19",
+        "Quantity":5
+    },
+    {
+        "ID":404,
+        "Name":"Nhập môn ngành & kỹ năng mềm (BA) (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Lê Ngọc Trâm",
+        "Time":"Thứ Năm | Tiết 6->8",
+        "Room":"K.A314",
+        "Weeks":"7->19",
+        "Quantity":5
+    },
+    {
+        "ID":405,
+        "Name":"Nhập môn ngành & kỹ năng mềm (BA) (5)_GEL_TA",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Thảo Nhi",
+        "Time":"Thứ Sáu | Tiết 1->3",
+        "Room":"K.A313",
+        "Weeks":"7->19",
+        "Quantity":5
+    },
+    {
+        "ID":406,
+        "Name":"Nhập môn ngành & kỹ năng mềm (BA) (6)",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Vinh",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"K.A314",
+        "Weeks":"7->19",
+        "Quantity":5
+    },
+    {
+        "ID":407,
+        "Name":"Nhập môn ngành & kỹ năng mềm (BA) (7)",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Vinh",
+        "Time":"Thứ Tư | Tiết 6->8",
+        "Room":"K.A211",
+        "Weeks":"7->19",
+        "Quantity":5
+    },
+    {
+        "ID":408,
+        "Name":"Nhập môn ngành & kỹ năng mềm (BA) (8)",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Vinh",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"K.A214",
+        "Weeks":"7->19",
+        "Quantity":20
+    },
+    {
+        "ID":409,
+        "Name":"Nhập môn quản lý dự án (1)",
+        "Credits":2,
+        "Lecturer":"TS.Bùi Nữ Thanh Hà",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.A207",
+        "Weeks":"5->19",
+        "Quantity":60
+    },
+    {
+        "ID":410,
+        "Name":"Nhập môn Tài chính số (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Kim Ngọc",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.A111",
+        "Weeks":"5->19",
+        "Quantity":60
+    },
+    {
+        "ID":411,
+        "Name":"Phân tích Marketing số (1)_GBA,DM_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thị Kiều Trang",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"V.A304",
+        "Weeks":"4,6->17",
+        "Quantity":60
+    },
+    {
+        "ID":412,
+        "Name":"Phân tích Marketing số (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Khánh Hà",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"V.A301",
+        "Weeks":"4->16",
+        "Quantity":60
+    },
+    {
+        "ID":413,
+        "Name":"Phân tích tài chính doanh nghiệp (1)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thị Thanh Huyền",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.B107",
+        "Weeks":"4->18",
+        "Quantity":40
+    },
+    {
+        "ID":414,
+        "Name":"Phân tích và thiết kế giải thuật (1)_GIT,SE_TA",
+        "Credits":2,
+        "Lecturer":"PGS.TS.Nguyễn Thanh Bình",
+        "Time":"Thứ Hai | Tiết 3->5",
+        "Room":"K.A110",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":415,
+        "Name":"Phân tích và thiết kế giải thuật (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Phạm Tuấn Anh",
+        "Time":"Thứ Tư | Tiết 6->8",
+        "Room":"V.A303",
+        "Weeks":"4->16",
+        "Quantity":68
+    },
+    {
+        "ID":416,
+        "Name":"Phân tích và thiết kế giải thuật (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Phạm Tuấn  Anh",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"V.A207",
+        "Weeks":"4,6->17",
+        "Quantity":68
+    },
+    {
+        "ID":417,
+        "Name":"Phân tích và thiết kế giải thuật (4)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Hồ Văn Phi",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"V.A303",
+        "Weeks":"4->16",
+        "Quantity":68
+    },
+    {
+        "ID":418,
+        "Name":"Phân tích và thiết kế giải thuật (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thanh Cẩm",
+        "Time":"Thứ Hai | Tiết 6->8",
+        "Room":"V.A210",
+        "Weeks":"4,6->17",
+        "Quantity":68
+    },
+    {
+        "ID":419,
+        "Name":"Phân tích và thiết kế giải thuật (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Phạm Tuấn Anh",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"V.A405",
+        "Weeks":"4->16",
+        "Quantity":68
+    },
+    {
+        "ID":420,
+        "Name":"Phân tích và thiết kế giải thuật (7)_JIT,KIT",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thanh Cẩm",
+        "Time":"Thứ Năm | Tiết 6->8",
+        "Room":"K.A205",
+        "Weeks":"4->16",
+        "Quantity":68
+    },
+    {
+        "ID":421,
+        "Name":"Phân tích và thiết kế giải thuật (8)",
+        "Credits":2,
+        "Lecturer":"TS.Hồ Văn Phi",
+        "Time":"Thứ Năm | Tiết 6->8",
+        "Room":"K.A101",
+        "Weeks":"4->16",
+        "Quantity":68
+    },
+    {
+        "ID":422,
+        "Name":"Phân tích và thiết kế hệ thống (1)_GIT_TA",
+        "Credits":3,
+        "Lecturer":"PGS.TS.Nguyễn Thanh Bình",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A110",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":423,
+        "Name":"Phân tích và thiết kế hệ thống (10)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Ngọc Huyền Trân",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"V.A405",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":424,
+        "Name":"Phân tích và thiết kế hệ thống (11)_AI",
+        "Credits":3,
+        "Lecturer":"ThS.Võ Văn Lường",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A311",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":425,
+        "Name":"Phân tích và thiết kế hệ thống (12)",
+        "Credits":3,
+        "Lecturer":"ThS.Võ Văn Lường",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"V.A206",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":426,
+        "Name":"Phân tích và thiết kế hệ thống (13)_GCE,CE",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thanh",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.A312",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":427,
+        "Name":"Phân tích và thiết kế hệ thống (14)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Ngọc Huyền Trân",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A314",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":428,
+        "Name":"Phân tích và thiết kế hệ thống (15)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thanh",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.A301",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":429,
+        "Name":"Phân tích và thiết kế hệ thống (2)_GIT_TA",
+        "Credits":3,
+        "Lecturer":"ThS.Hà Thị Minh Phương",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"V.A207",
+        "Weeks":"5->16",
+        "Quantity":60
+    },
+    {
+        "ID":430,
+        "Name":"Phân tích và thiết kế hệ thống (3)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Ngọc Huyền Trân",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.A315",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":431,
+        "Name":"Phân tích và thiết kế hệ thống (4)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Ngọc Huyền Trân",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.A315",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":432,
+        "Name":"Phân tích và thiết kế hệ thống (5)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thanh",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A502",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":433,
+        "Name":"Phân tích và thiết kế hệ thống (6)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Viết Trương",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"V.A206",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":434,
+        "Name":"Phân tích và thiết kế hệ thống (7)_JIT",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Viết Trương",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.A107",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":435,
+        "Name":"Phân tích và thiết kế hệ thống (8)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Viết Trương",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.A313",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":436,
+        "Name":"Phân tích và thiết kế hệ thống (9)_GITe_TA",
+        "Credits":3,
+        "Lecturer":"PGS.TS.Nguyễn Thanh Bình",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.A110",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":437,
+        "Name":"Pháp luật đại cương (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.C206",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":438,
+        "Name":"Pháp luật đại cương (10)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.C205",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":439,
+        "Name":"Pháp luật đại cương (11)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.C105",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":440,
+        "Name":"Pháp luật đại cương (12)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.C105",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":441,
+        "Name":"Pháp luật đại cương (13)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.C105",
+        "Weeks":"7->21",
+        "Quantity":0
+    },
+    {
+        "ID":442,
+        "Name":"Pháp luật đại cương (14)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.C105",
+        "Weeks":"7->21",
+        "Quantity":0
+    },
+    {
+        "ID":443,
+        "Name":"Pháp luật đại cương (15)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Sáu | Tiết 6->7",
+        "Room":"K.C105",
+        "Weeks":"7->21",
+        "Quantity":0
+    },
+    {
+        "ID":444,
+        "Name":"Pháp luật đại cương (16)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.C105",
+        "Weeks":"7->21",
+        "Quantity":0
+    },
+    {
+        "ID":445,
+        "Name":"Pháp luật đại cương (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.C206",
+        "Weeks":"7->21",
+        "Quantity":0
+    },
+    {
+        "ID":446,
+        "Name":"Pháp luật đại cương (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.C106",
+        "Weeks":"7->21",
+        "Quantity":70
+    },
+    {
+        "ID":447,
+        "Name":"Pháp luật đại cương (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.C106",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":448,
+        "Name":"Pháp luật đại cương (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.C205",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":449,
+        "Name":"Pháp luật đại cương (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.C205",
+        "Weeks":"7->21",
+        "Quantity":80
+    },
+    {
+        "ID":450,
+        "Name":"Pháp luật đại cương (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.C205",
+        "Weeks":"7->21",
+        "Quantity":0
+    },
+    {
+        "ID":451,
+        "Name":"Pháp luật đại cương (8)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.C205",
+        "Weeks":"7->21",
+        "Quantity":0
+    },
+    {
+        "ID":452,
+        "Name":"Pháp luật đại cương (9)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Phương Thảo",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.C205",
+        "Weeks":"7->21",
+        "Quantity":0
+    },
+    {
+        "ID":453,
+        "Name":"Phát triển ứng dụng di động đa nền tảng (1)_GIT_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thanh Tuấn",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"V.A210",
+        "Weeks":"4,6->17",
+        "Quantity":60
+    },
+    {
+        "ID":454,
+        "Name":"Phát triển ứng dụng di động đa nền tảng (2)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thanh Tuấn",
+        "Time":"Thứ Sáu | Tiết 1->3",
+        "Room":"V.A401",
+        "Weeks":"4->16",
+        "Quantity":60
+    },
+    {
+        "ID":455,
+        "Name":"Phát triển ứng dụng di động đa nền tảng (3)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thanh Tuấn",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"V.A502",
+        "Weeks":"4->16",
+        "Quantity":60
+    },
+    {
+        "ID":456,
+        "Name":"Phát triển ứng dụng di động đa nền tảng (4)_JIT,KIT",
+        "Credits":2,
+        "Lecturer":"ThS.Ngô Lê Quân",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"K.A105",
+        "Weeks":"4->16",
+        "Quantity":60
+    },
+    {
+        "ID":457,
+        "Name":"Phát triển ứng dụng di động đa nền tảng (5)_JIT,KIT",
+        "Credits":2,
+        "Lecturer":"ThS.Ngô Lê Quân",
+        "Time":"Thứ Sáu | Tiết 1->3",
+        "Room":"K.A105",
+        "Weeks":"4->16",
+        "Quantity":60
+    },
+    {
+        "ID":458,
+        "Name":"Phương pháp NCKH trong KD (4)_GDM_TA_3 tín chỉ",
+        "Credits":3,
+        "Lecturer":"TS.Trần Lương Nguyệt",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.A211",
+        "Weeks":"6->19",
+        "Quantity":60
+    },
+    {
+        "ID":459,
+        "Name":"Phương pháp NCKH trong KD (5)_3 tín chỉ",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thanh Hoài",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A311",
+        "Weeks":"6->19",
+        "Quantity":66
+    },
+    {
+        "ID":460,
+        "Name":"Phương pháp NCKH trong kinh doanh (1)_GBA_TA_2 tín chỉ",
+        "Credits":2,
+        "Lecturer":"TS.Văn Hùng Trọng",
+        "Time":"Thứ Hai | Tiết 6->8",
+        "Room":"K.A307",
+        "Weeks":"4,6->17",
+        "Quantity":66
+    },
+    {
+        "ID":461,
+        "Name":"Phương pháp NCKH trong kinh doanh (2)_2 tín chỉ",
+        "Credits":2,
+        "Lecturer":"TS.Văn Hùng Trọng",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"K.A307",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":462,
+        "Name":"Phương pháp NCKH trong kinh doanh (3)_2 tín chỉ",
+        "Credits":2,
+        "Lecturer":"TS.Trần Lương Nguyệt",
+        "Time":"Thứ Ba | Tiết 1->3",
+        "Room":"K.A211",
+        "Weeks":"4,6->17",
+        "Quantity":65
+    },
+    {
+        "ID":463,
+        "Name":"Quản lý dự án Công nghệ thông tin (1)",
+        "Credits":3,
+        "Lecturer":"ThS.Võ Văn Lường",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"V.A405",
+        "Weeks":"4,6->18",
+        "Quantity":40
+    },
+    {
+        "ID":464,
+        "Name":"Quản lý rủi ro dự án CNTT (1)",
+        "Credits":3,
+        "Lecturer":"ThS.Đoàn Xuân Bích",
+        "Time":"Thứ Bảy | Tiết 1->4",
+        "Room":"K.A107",
+        "Weeks":"4->17",
+        "Quantity":50
+    },
+    {
+        "ID":465,
+        "Name":"Quản trị bán hàng (1)_GBA,BA",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Như Quỳnh",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.A213",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":466,
+        "Name":"Quản trị bán hàng (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Như Quỳnh",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A213",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":467,
+        "Name":"Quản trị chất lượng dịch vụ du lịch (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Thảo Nhi",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.A211",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":468,
+        "Name":"Quản trị chuỗi cung ứng (1)_GBA,BA_TA",
+        "Credits":2,
+        "Lecturer":"ThS.Đặng Thị Thanh Minh",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.A113",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":469,
+        "Name":"Quản trị chuỗi cung ứng (2)",
+        "Credits":2,
+        "Lecturer":"TS.Trần Thiện Vũ",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.A107",
+        "Weeks":"4,6->19",
+        "Quantity":65
+    },
+    {
+        "ID":470,
+        "Name":"Quản trị chuỗi cung ứng (3)",
+        "Credits":2,
+        "Lecturer":"TS.Trần Thiện Vũ",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.A214",
+        "Weeks":"4,6->19",
+        "Quantity":65
+    },
+    {
+        "ID":471,
+        "Name":"Quản trị cơ sở dữ liệu (1)_GEL_TA",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Văn Lợi",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"K.A107",
+        "Weeks":"6->18",
+        "Quantity":60
+    },
+    {
+        "ID":472,
+        "Name":"Quản trị cơ sở dữ liệu (2)",
+        "Credits":3,
+        "Lecturer":"ThS.Lương Khánh Tý",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"V.A311",
+        "Weeks":"6->18",
+        "Quantity":60
+    },
+    {
+        "ID":473,
+        "Name":"Quản trị dự án phần mềm (1)_GIT,SE_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Quang Vũ",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A111",
+        "Weeks":"4->6",
+        "Quantity":65
+    },
+    {
+        "ID":474,
+        "Name":"Quản trị dự án phần mềm (2)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thanh Tuấn",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.A312",
+        "Weeks":"4->18",
+        "Quantity":67
+    },
+    {
+        "ID":475,
+        "Name":"Quản trị dự án phần mềm (3)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thanh Tuấn",
+        "Time":"Thứ Sáu | Tiết 6->7",
+        "Room":"K.A214",
+        "Weeks":"4->18",
+        "Quantity":67
+    },
+    {
+        "ID":476,
+        "Name":"Quản trị dự án phần mềm (4)_JIT,KIT",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thanh Tuấn",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A207",
+        "Weeks":"4->18",
+        "Quantity":67
+    },
+    {
+        "ID":477,
+        "Name":"Quản trị học (1)_GBA_TA",
+        "Credits":3,
+        "Lecturer":"ThS.Huỳnh Bá Thúy Diệu",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"K.A110",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":478,
+        "Name":"Quản trị học (2)_GDM_TA",
+        "Credits":3,
+        "Lecturer":"ThS.Huỳnh Bá Thúy Diệu",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.A215",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":479,
+        "Name":"Quản trị học (3)",
+        "Credits":3,
+        "Lecturer":"TS.Đặng Vinh",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.A314",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":480,
+        "Name":"Quản trị học (4)_GEL",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Thị Kim Ánh",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.A205",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":481,
+        "Name":"Quản trị học (5)",
+        "Credits":3,
+        "Lecturer":"ThS.Vũ Thành Nhân",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.A214",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":482,
+        "Name":"Quản trị học (6)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Ngọc Phương Thảo",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"K.A215",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":483,
+        "Name":"Quản trị học (7)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Linh Giang",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.A314",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":484,
+        "Name":"Quản trị kho hàng (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Ngọc Thảo Vy",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A215",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":485,
+        "Name":"Quản trị kho hàng (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Khánh My",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.A215",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":486,
+        "Name":"Quản trị kinh doanh lữ hành (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Ngọc Phương Thảo",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.A211",
+        "Weeks":"4,6->16",
+        "Quantity":65
+    },
+    {
+        "ID":487,
+        "Name":"Quản trị tài chính (1)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thị Thu Đến",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"V.A311",
+        "Weeks":"4->15",
+        "Quantity":60
+    },
+    {
+        "ID":488,
+        "Name":"Quản trị thương hiệu (1)_GBA,BA_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thanh Hoài",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A212",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":489,
+        "Name":"Quản trị thương hiệu (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Kim Ánh",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.A111",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":490,
+        "Name":"Quản trị trải nghiệm khách hàng (1)_GBA,DM",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Kim Ánh",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A111",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":491,
+        "Name":"Quản trị trải nghiệm khách hàng (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Thị Hải Vân",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.A212",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":492,
+        "Name":"Quản trị xuất nhập khẩu (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Ngô Thị Hiền Trang",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.A103",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":493,
+        "Name":"Quản trị xuất nhập khẩu (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Ngô Thị Hiền Trang",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.A103",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":494,
+        "Name":"Quảng cáo hiển thị và video (1)_GBA,DM_TA",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Thị Kiều Trang",
+        "Time":"Thứ Năm | Tiết 6->8",
+        "Room":"V.A301",
+        "Weeks":"4->16",
+        "Quantity":60
+    },
+    {
+        "ID":495,
+        "Name":"Quảng cáo hiển thị và video (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Khánh Hà",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"V.A303",
+        "Weeks":"4,6->17",
+        "Quantity":62
+    },
+    {
+        "ID":496,
+        "Name":"Thanh toán điện tử (1)_GBA,BA",
+        "Credits":2,
+        "Lecturer":"ThS.Ngô Thị Hiền Trang",
+        "Time":"Thứ Tư | Tiết 6->8",
+        "Room":"V.A301",
+        "Weeks":"4->16",
+        "Quantity":65
+    },
+    {
+        "ID":497,
+        "Name":"Thị giác máy tính (1)",
+        "Credits":3,
+        "Lecturer":"TS.Lê Thị Thu Nga",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A402",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":498,
+        "Name":"Thiết kế bộ ấn phẩm văn phòng (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Thúy Ngọc",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"V.A211",
+        "Weeks":"4,6->16",
+        "Quantity":65
+    },
+    {
+        "ID":499,
+        "Name":"Thiết kế FPGA\/ASIC với Verilog (1)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Ngọc Pháp",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.A315",
+        "Weeks":"4,6->19",
+        "Quantity":40
+    },
+    {
+        "ID":500,
+        "Name":"Thiết kế hình hiệu (TV intro) (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Đăng Thiếu Hiệp",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"V.A210",
+        "Weeks":"4->15",
+        "Quantity":60
+    },
+    {
+        "ID":501,
+        "Name":"Thiết kế hoạt hình 2 chiều (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Thanh Thúy",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A403",
+        "Weeks":"4->15",
+        "Quantity":65
+    },
+    {
+        "ID":502,
+        "Name":"Thiết kế IC tương tự (1)_TA",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Thị Huyền Trang",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"V.A212",
+        "Weeks":"4->18",
+        "Quantity":30
+    },
+    {
+        "ID":503,
+        "Name":"Thiết kế Logo (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Đăng Thiếu Hiệp",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"V.A210",
+        "Weeks":"4->15",
+        "Quantity":65
+    },
+    {
+        "ID":504,
+        "Name":"Thiết kế Poster (1)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Thị Thúy Ngọc",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"V.A401",
+        "Weeks":"4->15",
+        "Quantity":60
+    },
+    {
+        "ID":505,
+        "Name":"Thiết kế UX\/UI (1)_GIT,SE_TA",
+        "Credits":2,
+        "Lecturer":"TS.Trần Văn Đại",
+        "Time":"Thứ Tư | Tiết 6->8",
+        "Room":"V.A211",
+        "Weeks":"4->16",
+        "Quantity":67
+    },
+    {
+        "ID":506,
+        "Name":"Thiết kế UX\/UI (2)",
+        "Credits":2,
+        "Lecturer":"TS.Lý Quỳnh Trân",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"V.A214",
+        "Weeks":"4->16",
+        "Quantity":67
+    },
+    {
+        "ID":507,
+        "Name":"Thiết kế UX\/UI (3)",
+        "Credits":2,
+        "Lecturer":"TS.Lý Quỳnh Trân",
+        "Time":"Thứ Năm | Tiết 6->8",
+        "Room":"V.A214",
+        "Weeks":"4->16",
+        "Quantity":67
+    },
+    {
+        "ID":508,
+        "Name":"Thiết kế UX\/UI (4)_JIT,KIT",
+        "Credits":2,
+        "Lecturer":"TS.Lý Quỳnh Trân",
+        "Time":"Thứ Năm | Tiết 1->3",
+        "Room":"K.A301",
+        "Weeks":"4->16",
+        "Quantity":67
+    },
+    {
+        "ID":509,
+        "Name":"Thiết kế VLSI (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Anh Trang",
+        "Time":"Thứ Bảy | Tiết 6->9",
+        "Room":"K.A103",
+        "Weeks":"4->6",
+        "Quantity":60
+    },
+    {
+        "ID":510,
+        "Name":"Thiết kế VLSI (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Anh  Trang",
+        "Time":"Thứ Bảy | Tiết 1->4",
+        "Room":"K.A103",
+        "Weeks":"4->6",
+        "Quantity":50
+    },
+    {
+        "ID":511,
+        "Name":"Thiết kế website (1)",
+        "Credits":3,
+        "Lecturer":"ThS.Võ Ngọc Đạt",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"K.A303",
+        "Weeks":"4,6->17",
+        "Quantity":60
+    },
+    {
+        "ID":512,
+        "Name":"Thiết kế Website Thương mại điện tử 2 (1)_GBA,BA",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Ngọc Huyền Trân",
+        "Time":"Thứ Ba | Tiết 1->3",
+        "Room":"V.A211",
+        "Weeks":"4,6->17",
+        "Quantity":60
+    },
+    {
+        "ID":513,
+        "Name":"Thiết kế Website Thương mại điện tử 2 (2)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Ngọc Huyền Trân",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"V.A211",
+        "Weeks":"4,6->17",
+        "Quantity":60
+    },
+    {
+        "ID":514,
+        "Name":"Thống kê kinh doanh (1)_GBA",
+        "Credits":3,
+        "Lecturer":"TS.Lê Thị Minh Đức",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A301",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":515,
+        "Name":"Thống kê kinh doanh (2)_GEL",
+        "Credits":3,
+        "Lecturer":"TS.Lê Thị Minh Đức",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A206",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":516,
+        "Name":"Thống kê kinh doanh (3)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Ngọc Phương Thảo",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"V.A206",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":517,
+        "Name":"Thống kê kinh doanh (4)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thị Thu Đến",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.A303",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":518,
+        "Name":"Thống kê kinh doanh (5)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thị Thu Đến",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A303",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":519,
+        "Name":"Thực hành mô phỏng trong Logistics (1)",
+        "Credits":2,
+        "Lecturer":"TS.Lê Phước Cửu Long",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"V.A301",
+        "Weeks":"4,6->19",
+        "Quantity":65
+    },
+    {
+        "ID":520,
+        "Name":"Thực hành mô phỏng trong Logistics (2)",
+        "Credits":2,
+        "Lecturer":"TS.Lê Phước Cửu Long",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A301",
+        "Weeks":"4,6->19",
+        "Quantity":65
+    },
+    {
+        "ID":521,
+        "Name":"Thương mại điện tử (1)_GBA",
+        "Credits":3,
+        "Lecturer":"ThS.Trương Thị Viên",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.A303",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":522,
+        "Name":"Thương mại điện tử cơ bản (1)",
+        "Credits":3,
+        "Lecturer":"ThS.Trương Thị Viên",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.A213",
+        "Weeks":"4,6->19",
+        "Quantity":65
+    },
+    {
+        "ID":523,
+        "Name":"Tiếng anh 1 (1)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Xuân Việt Hương",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.B102",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":524,
+        "Name":"Tiếng anh 1 (10)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Thị Hải Yến",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.B101",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":525,
+        "Name":"Tiếng anh 1 (11)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Thị Hải Yến",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.B101",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":526,
+        "Name":"Tiếng anh 1 (12)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Vũ Mai Yên",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.B102",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":527,
+        "Name":"Tiếng anh 1 (13)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Vũ Mai Yên",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.B303",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":528,
+        "Name":"Tiếng anh 1 (14)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Văn Thành",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.B304",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":529,
+        "Name":"Tiếng anh 1 (15)",
+        "Credits":3,
+        "Lecturer":"ThS.Tôn Nữ Xuân Phương",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.B106",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":530,
+        "Name":"Tiếng anh 1 (16)",
+        "Credits":3,
+        "Lecturer":"ThS.Huỳnh Thị Bích Ngọc",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.B304",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":531,
+        "Name":"Tiếng anh 1 (17)",
+        "Credits":3,
+        "Lecturer":"ThS.Tôn Nữ Xuân Phương",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.B304",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":532,
+        "Name":"Tiếng anh 1 (18)",
+        "Credits":3,
+        "Lecturer":"TS.Phạm Thị Tài",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"K.B102",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":533,
+        "Name":"Tiếng anh 1 (19)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Thanh Hồng Ngọc",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.B303",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":534,
+        "Name":"Tiếng anh 1 (2)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Xuân Việt Hương",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.B102",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":535,
+        "Name":"Tiếng anh 1 (20)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thị Thu Hướng",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.B106",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":536,
+        "Name":"Tiếng anh 1 (21)",
+        "Credits":3,
+        "Lecturer":"ThS.Chế Viết Xuân",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"K.B103",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":537,
+        "Name":"Tiếng anh 1 (22)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Đặng Nguyên Phương",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.B305",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":538,
+        "Name":"Tiếng anh 1 (23)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Thanh Hồng Ngọc",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"K.B303",
+        "Weeks":"10->21",
+        "Quantity":60
+    },
+    {
+        "ID":539,
+        "Name":"Tiếng anh 1 (24)",
+        "Credits":3,
+        "Lecturer":"TS.Lê Mai Anh",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.B307",
+        "Weeks":"10->21",
+        "Quantity":60
+    },
+    {
+        "ID":540,
+        "Name":"Tiếng anh 1 (25)",
+        "Credits":3,
+        "Lecturer":"ThS.Tôn Nữ Xuân Phương",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.B307",
+        "Weeks":"10->21",
+        "Quantity":60
+    },
+    {
+        "ID":541,
+        "Name":"Tiếng anh 1 (3)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Thị Diệu Thanh",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.B103",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":542,
+        "Name":"Tiếng anh 1 (4)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Thị Diệu Thanh",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.B103",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":543,
+        "Name":"Tiếng anh 1 (5)",
+        "Credits":3,
+        "Lecturer":"TS.Lê Mai Anh",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.B106",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":544,
+        "Name":"Tiếng anh 1 (6)",
+        "Credits":3,
+        "Lecturer":"TS.Lê Mai Anh",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.B106",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":545,
+        "Name":"Tiếng anh 1 (7)",
+        "Credits":3,
+        "Lecturer":"TS.Lê Mai Anh",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.B106",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":546,
+        "Name":"Tiếng anh 1 (8)",
+        "Credits":3,
+        "Lecturer":"TS.Lê Mai Anh",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"K.B106",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":547,
+        "Name":"Tiếng anh 1 (9)",
+        "Credits":3,
+        "Lecturer":"TS.Lê Mai Anh",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.B106",
+        "Weeks":"10->21",
+        "Quantity":50
+    },
+    {
+        "ID":548,
+        "Name":"Tiếng anh 2 (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Xuân Việt Hương",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.B101",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":549,
+        "Name":"Tiếng anh 2 (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Xuân Việt Hương",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.B101",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":550,
+        "Name":"Tiếng anh 2 (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Xuân Việt Hương",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.B101",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":551,
+        "Name":"Tiếng anh 3 (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Diệu Thanh",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.B102",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":552,
+        "Name":"Tiếng anh 3 (10)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Phạm Xuân Phương",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.B102",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":553,
+        "Name":"Tiếng anh 3 (11)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Thị Nhi",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.B102",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":554,
+        "Name":"Tiếng anh 3 (12)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Thị Nhi",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.B102",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":555,
+        "Name":"Tiếng anh 3 (13)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Thị Nhi",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.B107",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":556,
+        "Name":"Tiếng anh 3 (14)",
+        "Credits":2,
+        "Lecturer":"TS.Phạm Thị Tài",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.B107",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":557,
+        "Name":"Tiếng anh 3 (15)",
+        "Credits":2,
+        "Lecturer":"TS.Phạm Thị Tài",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.B107",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":558,
+        "Name":"Tiếng anh 3 (16)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Nữ Thùy Uyên",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.B101",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":559,
+        "Name":"Tiếng anh 3 (17)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Nữ Thùy Uyên",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.B101",
+        "Weeks":"5->19",
+        "Quantity":50
+    },
+    {
+        "ID":560,
+        "Name":"Tiếng anh 3 (18)",
+        "Credits":2,
+        "Lecturer":"ThS.Tôn Nữ Xuân Phương",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.B103",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":561,
+        "Name":"Tiếng anh 3 (19)",
+        "Credits":2,
+        "Lecturer":"ThS.Tôn Nữ Xuân Phương",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.B103",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":562,
+        "Name":"Tiếng anh 3 (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Diệu Thanh",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.B102",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":563,
+        "Name":"Tiếng anh 3 (20)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Thanh Nhã",
+        "Time":"Thứ Ba | Tiết 1->2",
+        "Room":"K.B106",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":564,
+        "Name":"Tiếng anh 3 (21)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Thanh Nhã",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.B106",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":565,
+        "Name":"Tiếng anh 3 (22)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Thị Nhi",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.B107",
+        "Weeks":"6->20",
+        "Quantity":60
+    },
+    {
+        "ID":566,
+        "Name":"Tiếng anh 3 (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Diệu Thanh",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.B102",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":567,
+        "Name":"Tiếng anh 3 (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Diệu Thanh",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.B102",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":568,
+        "Name":"Tiếng anh 3 (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Túy Phượng",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.B101",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":569,
+        "Name":"Tiếng anh 3 (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Túy Phượng",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.B101",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":570,
+        "Name":"Tiếng anh 3 (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Túy Phượng",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.B101",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":571,
+        "Name":"Tiếng anh 3 (8)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Túy Phượng",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.B101",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":572,
+        "Name":"Tiếng anh 3 (9)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Phạm Xuân Phương",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.B102",
+        "Weeks":"6->20",
+        "Quantity":50
+    },
+    {
+        "ID":573,
+        "Name":"Tiếng Anh chuyên ngành 1 (BA) (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Bùi Trần Huân",
+        "Time":"Thứ Sáu | Tiết 1->3",
+        "Room":"K.B101",
+        "Weeks":"7->19",
+        "Quantity":50
+    },
+    {
+        "ID":574,
+        "Name":"Tiếng Anh chuyên ngành 1 (BA) (2)",
+        "Credits":2,
+        "Lecturer":"TS.Ngô Hải Quỳnh",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"K.B103",
+        "Weeks":"7->19",
+        "Quantity":50
+    },
+    {
+        "ID":575,
+        "Name":"Tiếng Anh chuyên ngành 1 (BA) (3)",
+        "Credits":2,
+        "Lecturer":"TS.Ngô Hải Quỳnh",
+        "Time":"Thứ Năm | Tiết 6->8",
+        "Room":"K.B107",
+        "Weeks":"7->19",
+        "Quantity":50
+    },
+    {
+        "ID":576,
+        "Name":"Tiếng Anh chuyên ngành 1 (BA) (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Thảo Nhi",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"K.B103",
+        "Weeks":"7->19",
+        "Quantity":50
+    },
+    {
+        "ID":577,
+        "Name":"Tiếng Anh chuyên ngành 1 (BA) (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Thảo Nhi",
+        "Time":"Thứ Ba | Tiết 1->3",
+        "Room":"K.B107",
+        "Weeks":"7->19",
+        "Quantity":50
+    },
+    {
+        "ID":578,
+        "Name":"Tiếng Anh chuyên ngành 1 (BA) (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Đinh Nguyễn Khánh Phương",
+        "Time":"Thứ Ba | Tiết 6->8",
+        "Room":"K.B107",
+        "Weeks":"7->19",
+        "Quantity":50
+    },
+    {
+        "ID":579,
+        "Name":"Tiếng Anh chuyên ngành 1 (BA) (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Vũ Thành Nhân",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"K.B304",
+        "Weeks":"7->19",
+        "Quantity":50
+    },
+    {
+        "ID":580,
+        "Name":"Tiếng Anh chuyên ngành 1 (BA) (8)",
+        "Credits":2,
+        "Lecturer":"ThS.Vũ Thành Nhân",
+        "Time":"Thứ Hai | Tiết 6->8",
+        "Room":"K.B306",
+        "Weeks":"7->19",
+        "Quantity":50
+    },
+    {
+        "ID":581,
+        "Name":"Tiếng Anh chuyên ngành 1 (BA) (9)",
+        "Credits":2,
+        "Lecturer":"ThS.Vũ Thành Nhân",
+        "Time":"Thứ Sáu | Tiết 6->8",
+        "Room":"K.B303",
+        "Weeks":"7->19",
+        "Quantity":50
+    },
+    {
+        "ID":582,
+        "Name":"Tiếng Anh chuyên ngành 1 (CE) (1)",
+        "Credits":2,
+        "Lecturer":"TS.Vương Công Đạt",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.B308",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":583,
+        "Name":"Tiếng Anh chuyên ngành 1 (CE) (2)",
+        "Credits":2,
+        "Lecturer":"TS.Vương Công Đạt",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.B305",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":584,
+        "Name":"Tiếng Anh chuyên ngành 1 (CE) (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Huyền Trang",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.B303",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":585,
+        "Name":"Tiếng Anh chuyên ngành 1 (CE) (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Huyền Trang",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.B303",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":586,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (1)",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Đại Thọ",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.B107",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":587,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (10)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Đỗ Công Pháp",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.B303",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":588,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (11)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Đỗ Công Pháp",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"K.B303",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":589,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (12)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Đình Nguyên",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.B306",
+        "Weeks":"7->18",
+        "Quantity":50
+    },
+    {
+        "ID":590,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (13)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Đình  Nguyên",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"K.B304",
+        "Weeks":"7->18",
+        "Quantity":50
+    },
+    {
+        "ID":591,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (14)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Văn Lợi",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.B107",
+        "Weeks":"7->18",
+        "Quantity":50
+    },
+    {
+        "ID":592,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (15)",
+        "Credits":2,
+        "Lecturer":"ThS.Mai Lam",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.B305",
+        "Weeks":"7->18",
+        "Quantity":50
+    },
+    {
+        "ID":593,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (16)_NS",
+        "Credits":2,
+        "Lecturer":"ThS.Ninh Khánh Chi",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.B303",
+        "Weeks":"7->18",
+        "Quantity":60
+    },
+    {
+        "ID":594,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (2)",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Đại Thọ",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.B103",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":595,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (3)",
+        "Credits":2,
+        "Lecturer":"TS.Lý Quỳnh Trân",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.B106",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":596,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (4)",
+        "Credits":2,
+        "Lecturer":"TS.Lý Quỳnh Trân",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.B306",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":597,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (5)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Văn Lợi",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.A114",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":598,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Bank Agribank",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"(Chọn)",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":599,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Hà Thị Minh Phương",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"K.B106",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":600,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (8)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Sĩ Thìn",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.B307",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":601,
+        "Name":"Tiếng Anh chuyên ngành 1 (IT) (9)",
+        "Credits":2,
+        "Lecturer":"TS.Nguyễn Sĩ Thìn",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"K.B107",
+        "Weeks":"7->18",
+        "Quantity":0
+    },
+    {
+        "ID":602,
+        "Name":"Tiếng anh nâng cao 1 (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Thị Hồng Việt",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.B103",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":603,
+        "Name":"Tiếng Anh nâng cao 2 (1)",
+        "Credits":2,
+        "Lecturer":"TS.Trần Thị Thùy Liên",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.B103",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":604,
+        "Name":"Tiếng Anh nâng cao 2 (2)",
+        "Credits":2,
+        "Lecturer":"TS.Trần Thị Thùy Liên",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.B103",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":605,
+        "Name":"Tiếng Anh nâng cao 2 (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Thị Hồng Việt",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.B101",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":606,
+        "Name":"Tiếng Anh nâng cao 2 (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Thị Hồng Việt",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.B101",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":607,
+        "Name":"Tiếng Anh nâng cao 2 (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Phan Thị Hồng Việt",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.B103",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":608,
+        "Name":"Tiếng Anh nâng cao 2 (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Phạm Trần Mộc Miêng",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.B107",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":609,
+        "Name":"Tiếng Anh nâng cao 2 (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Phạm Trần Mộc Miêng",
+        "Time":"Thứ Tư | Tiết 3->4",
+        "Room":"K.B107",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":610,
+        "Name":"Tiếng Anh nâng cao 2 (8)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Thị Kim Tuyến",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.A211",
+        "Weeks":"6->18",
+        "Quantity":50
+    },
+    {
+        "ID":611,
+        "Name":"Tiếng Anh nâng cao 3 (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Thị Kim Tuyến",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.B102",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":612,
+        "Name":"Tiếng Anh nâng cao 3 (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Lê Thị Kim Tuyến",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.B102",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":613,
+        "Name":"Tiếng Anh nâng cao 3 (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Võ Thị Thanh Ngà",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.B102",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":614,
+        "Name":"Tiếng Anh nâng cao 3 (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Võ Thị Thanh Ngà",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.B102",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":615,
+        "Name":"Tiếng Anh nâng cao 3 (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Tuyết",
+        "Time":"Thứ Sáu | Tiết 6->7",
+        "Room":"K.B101",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":616,
+        "Name":"Tiếng Anh nâng cao 3 (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Tuyết",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.B101",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":617,
+        "Name":"Tiếng Hàn 1 (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Hà Phương",
+        "Time":"Thứ Năm | Tiết 7->9",
+        "Room":"K.A107",
+        "Weeks":"6->15",
+        "Quantity":60
+    },
+    {
+        "ID":618,
+        "Name":"Tin học đại cương (1)_GBA",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thị Thanh Huyền",
+        "Time":"Thứ Hai | Tiết 1->3",
+        "Room":"K.A215",
+        "Weeks":"7->19",
+        "Quantity":60
+    },
+    {
+        "ID":619,
+        "Name":"Tin học đại cương (2)_GDM",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Thị Thanh Huyền",
+        "Time":"Thứ Hai | Tiết 6->8",
+        "Room":"K.A215",
+        "Weeks":"7->19",
+        "Quantity":60
+    },
+    {
+        "ID":620,
+        "Name":"Tin học đại cương (3)",
+        "Credits":3,
+        "Lecturer":"TS.Phan Văn Thành",
+        "Time":"Thứ Ba | Tiết 1->3",
+        "Room":"K.A215",
+        "Weeks":"7->19",
+        "Quantity":60
+    },
+    {
+        "ID":621,
+        "Name":"Tin học đại cương (4)_GEL_TA",
+        "Credits":3,
+        "Lecturer":"ThS.Đặng Thị Thanh Minh",
+        "Time":"Thứ Tư | Tiết 6->8",
+        "Room":"K.A215",
+        "Weeks":"7->19",
+        "Quantity":60
+    },
+    {
+        "ID":622,
+        "Name":"Tin học đại cương (5)",
+        "Credits":3,
+        "Lecturer":"ThS.Vũ Thu Hà",
+        "Time":"Thứ Hai | Tiết 7->9",
+        "Room":"K.A207",
+        "Weeks":"7->19",
+        "Quantity":60
+    },
+    {
+        "ID":623,
+        "Name":"Tin học đại cương (6)",
+        "Credits":3,
+        "Lecturer":"TS.Lê Thị Minh Đức",
+        "Time":"Thứ Tư | Tiết 1->3",
+        "Room":"K.A215",
+        "Weeks":"7->19",
+        "Quantity":60
+    },
+    {
+        "ID":624,
+        "Name":"Tin học đại cương (7)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Thị Thu Ngân",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.B204",
+        "Weeks":"7->20",
+        "Quantity":60
+    },
+    {
+        "ID":625,
+        "Name":"Tin học đại cương (7)_Nhóm 1",
+        "Credits":3,
+        "Lecturer":"ThS.Bank Agribank",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"(Chọn)",
+        "Weeks":"12->19",
+        "Quantity":30
+    },
+    {
+        "ID":626,
+        "Name":"Tin học đại cương (7)_Nhóm 2",
+        "Credits":3,
+        "Lecturer":"ThS.Bank Agribank",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"(Chọn)",
+        "Weeks":"12->19",
+        "Quantity":30
+    },
+    {
+        "ID":627,
+        "Name":"Tổ chức vận tải đa phương thức (1)",
+        "Credits":2,
+        "Lecturer":"TS.Võ Thị Thanh Thảo",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.A112",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":628,
+        "Name":"Tổ chức vận tải đa phương thức (2)",
+        "Credits":2,
+        "Lecturer":"TS.Võ Thị Thanh Thảo",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.A112",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":629,
+        "Name":"Toán cho học máy (1)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Hữu Nhật Minh",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.A305",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":630,
+        "Name":"Toán rời rạc (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Đặng Thị Kim Ngân",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.A112",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":631,
+        "Name":"Toán ứng dụng trong kinh tế (1)_GBA",
+        "Credits":3,
+        "Lecturer":"ThS.Ngô Thị Bích Thủy",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"V.A301",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":632,
+        "Name":"Toán ứng dụng trong kinh tế (2)_GEL",
+        "Credits":3,
+        "Lecturer":"ThS.Ngô Thị Bích Thủy",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"V.A301",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":633,
+        "Name":"Toán ứng dụng trong kinh tế (3)",
+        "Credits":3,
+        "Lecturer":"ThS.Ngô Thị Bích Thủy",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"V.A311",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":634,
+        "Name":"Toán ứng dụng trong kinh tế (4)",
+        "Credits":3,
+        "Lecturer":"TS.Phan Văn Thành",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A309",
+        "Weeks":"6->17",
+        "Quantity":65
+    },
+    {
+        "ID":635,
+        "Name":"Toán ứng dụng trong kinh tế (5)",
+        "Credits":3,
+        "Lecturer":"TS.Phan Văn Thành",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.A305",
+        "Weeks":"5->16",
+        "Quantity":65
+    },
+    {
+        "ID":636,
+        "Name":"Tổng quan về du lịch (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Ngọc Phương Thảo",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"V.A302",
+        "Weeks":"5->16",
+        "Quantity":50
+    },
+    {
+        "ID":637,
+        "Name":"Trí tuệ nhân tạo (1)_GIT_TA",
+        "Credits":3,
+        "Lecturer":"TS.Đặng Đại Thọ",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.A313",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":638,
+        "Name":"Trí tuệ nhân tạo (10)",
+        "Credits":3,
+        "Lecturer":"TS.Đặng Đại  Thọ",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.A114",
+        "Weeks":"4,6->19",
+        "Quantity":65
+    },
+    {
+        "ID":639,
+        "Name":"Trí tuệ nhân tạo (11)",
+        "Credits":3,
+        "Lecturer":"ThS.Lê Đình Nguyên",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"V.A211",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":640,
+        "Name":"Trí tuệ nhân tạo (2)_GIT_TA",
+        "Credits":3,
+        "Lecturer":"TS.Đặng Đại Thọ",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"V.A402",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":641,
+        "Name":"Trí tuệ nhân tạo (3)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Đỗ Công Pháp",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"V.A505",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":642,
+        "Name":"Trí tuệ nhân tạo (4)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Đỗ Công Pháp",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"V.A505",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":643,
+        "Name":"Trí tuệ nhân tạo (5)",
+        "Credits":3,
+        "Lecturer":"TS.Trần Uyên Trang",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"V.A214",
+        "Weeks":"4,6->19",
+        "Quantity":65
+    },
+    {
+        "ID":644,
+        "Name":"Trí tuệ nhân tạo (6)_JIT,KIT",
+        "Credits":3,
+        "Lecturer":"TS.Lê Thị Thu Nga",
+        "Time":"Thứ Tư | Tiết 6->10",
+        "Room":"K.A205",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":645,
+        "Name":"Trí tuệ nhân tạo (7)_JIT,KIT",
+        "Credits":3,
+        "Lecturer":"TS.Lê Thị Thu Nga",
+        "Time":"Thứ Sáu | Tiết 1->5",
+        "Room":"K.A205",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":646,
+        "Name":"Trí tuệ nhân tạo (8)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Đỗ Công Pháp",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"V.A212",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":647,
+        "Name":"Trí tuệ nhân tạo (9)",
+        "Credits":3,
+        "Lecturer":"TS.Nguyễn Sĩ Thìn",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"V.A403",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":648,
+        "Name":"Triết học Mác - Lênin (1)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Văn Thái",
+        "Time":"Thứ Hai | Tiết 1->4",
+        "Room":"K.C204",
+        "Weeks":"4,6->16",
+        "Quantity":68
+    },
+    {
+        "ID":649,
+        "Name":"Triết học Mác - Lênin (2)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Văn Thái",
+        "Time":"Thứ Năm | Tiết 6->9",
+        "Room":"K.C204",
+        "Weeks":"4->15",
+        "Quantity":68
+    },
+    {
+        "ID":650,
+        "Name":"Triết học Mác - Lênin (3)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Văn Thái",
+        "Time":"Thứ Năm | Tiết 1->4",
+        "Room":"K.C204",
+        "Weeks":"4->15",
+        "Quantity":68
+    },
+    {
+        "ID":651,
+        "Name":"Triết học Mác - Lênin (4)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Văn Thái",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.C204",
+        "Weeks":"4,6->16",
+        "Quantity":68
+    },
+    {
+        "ID":652,
+        "Name":"Triết học Mác - Lênin (5)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Văn Thái",
+        "Time":"Thứ Ba | Tiết 1->4",
+        "Room":"K.C204",
+        "Weeks":"4,6->16",
+        "Quantity":68
+    },
+    {
+        "ID":653,
+        "Name":"Triết học Mác - Lênin (6)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Văn Thái",
+        "Time":"Thứ Tư | Tiết 6->9",
+        "Room":"K.C204",
+        "Weeks":"4->15",
+        "Quantity":68
+    },
+    {
+        "ID":654,
+        "Name":"Triết học Mác - Lênin (7)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Văn Thái",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"K.C204",
+        "Weeks":"4->15",
+        "Quantity":68
+    },
+    {
+        "ID":655,
+        "Name":"Triết học Mác - Lênin (8)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Văn Thái",
+        "Time":"Thứ Sáu | Tiết 6->9",
+        "Room":"K.C204",
+        "Weeks":"4->15",
+        "Quantity":68
+    },
+    {
+        "ID":656,
+        "Name":"Triết học Mác - Lênin (9)",
+        "Credits":3,
+        "Lecturer":"ThS.Trần Văn Thái",
+        "Time":"Thứ Sáu | Tiết 1->4",
+        "Room":"K.C204",
+        "Weeks":"4->15",
+        "Quantity":68
+    },
+    {
+        "ID":657,
+        "Name":"Truyền số liệu (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Trần Thị Trà Vinh",
+        "Time":"Thứ Tư | Tiết 3->4",
+        "Room":"K.A114",
+        "Weeks":"4->18",
+        "Quantity":68
+    },
+    {
+        "ID":658,
+        "Name":"Truyền số liệu (2)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Hữu Ái",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.A214",
+        "Weeks":"4,6->19",
+        "Quantity":68
+    },
+    {
+        "ID":659,
+        "Name":"Truyền thông marketing tích hợp (IMC) (1)_GBA,DM_TA",
+        "Credits":3,
+        "Lecturer":"TS.Ngô Hải Quỳnh",
+        "Time":"Thứ Tư | Tiết 1->4",
+        "Room":"V.A207",
+        "Weeks":"4->15",
+        "Quantity":68
+    },
+    {
+        "ID":660,
+        "Name":"Truyền thông marketing tích hợp (IMC) (2)",
+        "Credits":3,
+        "Lecturer":"ThS.Nguyễn Thị Khánh Hà",
+        "Time":"Thứ Hai | Tiết 6->9",
+        "Room":"V.A303",
+        "Weeks":"4,6->16",
+        "Quantity":68
+    },
+    {
+        "ID":661,
+        "Name":"Tư tưởng Hồ Chí Minh (1)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Sáu | Tiết 6->7",
+        "Room":"K.C106",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":662,
+        "Name":"Tư tưởng Hồ Chí Minh (10)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.C106",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":663,
+        "Name":"Tư tưởng Hồ Chí Minh (11)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.C106",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":664,
+        "Name":"Tư tưởng Hồ Chí Minh (12)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.C106",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":665,
+        "Name":"Tư tưởng Hồ Chí Minh (2)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.C106",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":666,
+        "Name":"Tư tưởng Hồ Chí Minh (3)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.C106",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":667,
+        "Name":"Tư tưởng Hồ Chí Minh (4)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.C106",
+        "Weeks":"4,6->19",
+        "Quantity":70
+    },
+    {
+        "ID":668,
+        "Name":"Tư tưởng Hồ Chí Minh (5)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.C106",
+        "Weeks":"4->18",
+        "Quantity":76
+    },
+    {
+        "ID":669,
+        "Name":"Tư tưởng Hồ Chí Minh (6)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Tư | Tiết 3->4",
+        "Room":"K.C106",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":670,
+        "Name":"Tư tưởng Hồ Chí Minh (7)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Tư | Tiết 8->9",
+        "Room":"K.C106",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":671,
+        "Name":"Tư tưởng Hồ Chí Minh (8)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Tư | Tiết 6->7",
+        "Room":"K.C106",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":672,
+        "Name":"Tư tưởng Hồ Chí Minh (9)",
+        "Credits":2,
+        "Lecturer":"TS.Dương Thị Phượng",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.C106",
+        "Weeks":"4->18",
+        "Quantity":70
+    },
+    {
+        "ID":673,
+        "Name":"Vật lý (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Sáu | Tiết 6->7",
+        "Room":"K.A111",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":674,
+        "Name":"Vật lý (10)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Ba | Tiết 3->4",
+        "Room":"K.A214",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":675,
+        "Name":"Vật lý (11)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Hai | Tiết 6->7",
+        "Room":"K.A213",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":676,
+        "Name":"Vật lý (12)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Hai | Tiết 8->9",
+        "Room":"K.A213",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":677,
+        "Name":"Vật lý (13)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Năm | Tiết 6->7",
+        "Room":"K.A112",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":678,
+        "Name":"Vật lý (14)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Năm | Tiết 8->9",
+        "Room":"K.A112",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":679,
+        "Name":"Vật lý (15)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Năm | Tiết 3->4",
+        "Room":"K.A114",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":680,
+        "Name":"Vật lý (2)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.A111",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":681,
+        "Name":"Vật lý (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.A113",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":682,
+        "Name":"Vật lý (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A113",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":683,
+        "Name":"Vật lý (5)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Ba | Tiết 6->7",
+        "Room":"K.A114",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":684,
+        "Name":"Vật lý (6)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Ba | Tiết 8->9",
+        "Room":"K.A114",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":685,
+        "Name":"Vật lý (7)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Hai | Tiết 1->2",
+        "Room":"K.A211",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":686,
+        "Name":"Vật lý (8)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Hai | Tiết 3->4",
+        "Room":"K.A212",
+        "Weeks":"6->20",
+        "Quantity":65
+    },
+    {
+        "ID":687,
+        "Name":"Vật lý (9)",
+        "Credits":2,
+        "Lecturer":"ThS.Huỳnh Thị Thanh Tuyền",
+        "Time":"Thứ Năm | Tiết 1->2",
+        "Room":"K.A114",
+        "Weeks":"5->19",
+        "Quantity":65
+    },
+    {
+        "ID":688,
+        "Name":"Xác suất thống kê (1)_AI",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Văn Cường",
+        "Time":"Thứ Sáu | Tiết 6->7",
+        "Room":"K.A112",
+        "Weeks":"4->18",
+        "Quantity":60
+    },
+    {
+        "ID":689,
+        "Name":"Xác suất thống kê (2)_AI_TA",
+        "Credits":2,
+        "Lecturer":"TS.Đặng Văn Cường",
+        "Time":"Thứ Sáu | Tiết 8->9",
+        "Room":"K.A112",
+        "Weeks":"5->19",
+        "Quantity":60
+    },
+    {
+        "ID":690,
+        "Name":"Xác suất thống kê (3)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Thị Hồng Liên",
+        "Time":"Thứ Tư | Tiết 3->4",
+        "Room":"K.A113",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":691,
+        "Name":"Xác suất thống kê (4)",
+        "Credits":2,
+        "Lecturer":"ThS.Hồ Thị Hồng Liên",
+        "Time":"Thứ Tư | Tiết 1->2",
+        "Room":"K.A113",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":692,
+        "Name":"Xử lý ảnh cơ bản (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Thanh Thúy",
+        "Time":"Thứ Ba | Tiết 6->9",
+        "Room":"K.B301",
+        "Weeks":"4,6->16",
+        "Quantity":65
+    },
+    {
+        "ID":693,
+        "Name":"Xử lý tín hiệu số (1)",
+        "Credits":2,
+        "Lecturer":"ThS.Nguyễn Thị Huyền Trang",
+        "Time":"Thứ Sáu | Tiết 1->2",
+        "Room":"K.C106",
+        "Weeks":"4->18",
+        "Quantity":65
+    },
+    {
+        "ID":694,
+        "Name":"Xúc tiến du lịch (1)",
+        "Credits":2,
+        "Lecturer":"TS.Trần Lương Nguyệt",
+        "Time":"Thứ Sáu | Tiết 3->4",
+        "Room":"K.A301",
+        "Weeks":"4->18",
+        "Quantity":60
+    }
+]

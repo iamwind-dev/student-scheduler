@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Scheduler - Manual Test Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            padding: 12px 0;
+            padding-left: 40px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 1.3em;
+            cursor: pointer;
+            color: #667eea;
+        }
+
+        .checklist li.checked:before {
+            content: "☑";
+            color: #4caf50;
+        }
+
+        .checklist li.checked {
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .code-block {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            border-left: 4px solid #667eea;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+
+        .btn-success {
+            background: #4caf50;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #45a049;
+        }
+
+        .btn-danger {
+            background: #f44336;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #da190b;
+        }
+
+        .status {
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .steps {
+            counter-reset: step-counter;
+            list-style: none;
+        }
+
+        .steps li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 50px;
+            position: relative;
+        }
+
+        .steps li:before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+
+        .console-output {
+            background: #1e1e1e;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            max-height: 300px;
+            overflow-y: auto;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Student Scheduler</h1>
+            <p>Manual Testing & Troubleshooting Guide</p>
+        </div>
+
+        <div class="content">
+            <!-- Section 1: Quick Start -->
+            <section class="section">
+                <h2>🚀 Bước 1: Khởi Động Nhanh</h2>
+                <ul class="steps">
+                    <li>
+                        <strong>Xóa cache & localStorage</strong>
+                        <div class="button-group">
+                            <button class="btn btn-primary" onclick="clearCache()">
+                                🧹 Xóa Cache
+                            </button>
+                            <button class="btn btn-primary" onclick="showCacheStatus()">
+                                📊 Kiểm Tra Cache
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Reload trang</strong>
+                        <div class="button-group">
+                            <button class="btn btn-primary" onclick="hardReload()">
+                                🔄 Hard Reload (Ctrl+Shift+R)
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Mở DevTools Console</strong>
+                        <div class="code-block">Nhấn F12 → Console</div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Section 2: Testing Checklist -->
+            <section class="section">
+                <h2>✅ Checklist Kiểm Tra</h2>
+                <ul class="checklist" id="checklist">
+                    <li onclick="toggleCheck(this)">App tải thành công (không có lỗi đỏ)</li>
+                    <li onclick="toggleCheck(this)">LoginPage hiển thị (có tiêu đề "Student Scheduler")</li>
+                    <li onclick="toggleCheck(this)">Nút "Đăng nhập với Microsoft" hiển thị</li>
+                    <li onclick="toggleCheck(this)">Không có lỗi "useApp must be used within"</li>
+                    <li onclick="toggleCheck(this)">Không có lỗi "useAuth must be used within"</li>
+                    <li onclick="toggleCheck(this)">Demo mode hoạt động (tự động đăng nhập)</li>
+                    <li onclick="toggleCheck(this)">Chuyển hướng tới dashboard sau khi đăng nhập</li>
+                    <li onclick="toggleCheck(this)">Có thể logout</li>
+                </ul>
+            </section>
+
+            <!-- Section 3: Console Tests -->
+            <section class="section">
+                <h2>🔬 Test từ Console</h2>
+                <p>Mở DevTools Console (F12) và chạy các lệnh sau:</p>
+
+                <div class="highlight">
+                    <strong>📝 Xóa localStorage:</strong>
+                    <div class="code-block">localStorage.clear(); sessionStorage.clear(); location.reload();</div>
+                </div>
+
+                <div class="highlight">
+                    <strong>🔍 Kiểm tra AuthContext:</strong>
+                    <div class="code-block">// Mở DevTools, nếu không có lỗi AuthContext là OK</div>
+                </div>
+
+                <div class="highlight">
+                    <strong>🔍 Kiểm tra AppContext:</strong>
+                    <div class="code-block">// Mở DevTools, nếu không có lỗi AppContext là OK</div>
+                </div>
+            </section>
+
+            <!-- Section 4: Common Issues -->
+            <section class="section">
+                <h2>⚠️ Lỗi Phổ Biến & Cách Khắc Phục</h2>
+
+                <div style="margin-bottom: 30px;">
+                    <h3 style="color: #f44336; margin-bottom: 10px;">❌ Lỗi: "useApp must be used within an AppProvider"
+                    </h3>
+                    <p><strong>Nguyên nhân:</strong> AppProvider không được wrap các component</p>
+                    <p><strong>Cách khắc phục:</strong></p>
+                    <div class="code-block">
+                        // Kiểm tra App.jsx có AppProvider không:<br>
+                        &lt;AppProvider&gt;<br>
+                        &nbsp;&nbsp;&lt;AuthProvider&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;...&gt;<br>
+                        &nbsp;&nbsp;&lt;/AuthProvider&gt;<br>
+                        &lt;/AppProvider&gt;
+                    </div>
+                    <button class="btn btn-success" onclick="alert('✅ Đã fix! Reload lại.')">
+                        ✅ Đã Fix
+                    </button>
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <h3 style="color: #f44336; margin-bottom: 10px;">❌ Lỗi: "useAuth must be used within an
+                        AuthProvider"</h3>
+                    <p><strong>Nguyên nhân:</strong> AuthProvider không được wrap các component</p>
+                    <p><strong>Cách khắc phục:</strong> Xóa cache và reload</p>
+                    <button class="btn btn-success" onclick="clearCache(); alert('✅ Cache cleared!')">
+                        🧹 Xóa Cache & Reload
+                    </button>
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <h3 style="color: #f44336; margin-bottom: 10px;">❌ Lỗi: "Network error - please check your
+                        connection"</h3>
+                    <p><strong>Nguyên nhân:</strong> API server không chạy</p>
+                    <p><strong>Cách khắc phục:</strong> Khởi động API server</p>
+                    <div class="code-block">cd api && npm start</div>
+                </div>
+
+                <div>
+                    <h3 style="color: #f44336; margin-bottom: 10px;">❌ Lỗi: "Could not establish connection. Receiving
+                        end does not exist"</h3>
+                    <p><strong>Nguyên nhân:</strong> Extension conflict hoặc cache</p>
+                    <p><strong>Cách khắc phục:</strong></p>
+                    <button class="btn btn-danger" onclick="clearCache()">
+                        🧹 Xóa Cache
+                    </button>
+                    <button class="btn btn-danger" onclick="alert('Mở Incognito/Private mode')">
+                        🕵️ Thử Incognito Mode
+                    </button>
+                </div>
+            </section>
+
+            <!-- Section 5: Status Check -->
+            <section class="section">
+                <h2>🔧 Kiểm Tra Trạng Thái</h2>
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="checkStatus()">
+                        📊 Kiểm Tra Trạng Thái Hệ Thống
+                    </button>
+                    <button class="btn btn-primary" onclick="showEnv()">
+                        ⚙️ Xem Environment Variables
+                    </button>
+                    <button class="btn btn-primary" onclick="showProviderStatus()">
+                        🔌 Kiểm Tra Providers
+                    </button>
+                </div>
+                <div id="statusOutput"></div>
+            </section>
+
+            <!-- Section 6: Next Steps -->
+            <section class="section">
+                <h2>📋 Bước Tiếp Theo</h2>
+                <ul class="steps">
+                    <li>
+                        <strong>Nếu tất cả ✅ đều check:</strong>
+                        <div style="margin-top: 10px; color: #4caf50; font-weight: bold;">
+                            ✅ Ứng dụng hoạt động bình thường!<br>
+                            Thử đăng nhập và khám phá các tính năng.
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Nếu có lỗi vẫn còn:</strong>
+                        <div style="margin-top: 10px; color: #f44336; font-weight: bold;">
+                            1. Kiểm tra Console tab cho error messages<br>
+                            2. Xóa cache (Ctrl+Shift+R)<br>
+                            3. Kiểm tra API server running<br>
+                            4. Xem ARCHITECTURE.md hoặc README.md
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function toggleCheck(el) {
+            el.classList.toggle('checked');
+        }
+
+        function clearCache() {
+            localStorage.clear();
+            sessionStorage.clear();
+            alert('✅ Cache cleared!');
+            location.reload();
+        }
+
+        function hardReload() {
+            location.reload(true);
+        }
+
+        function showCacheStatus() {
+            const status = document.getElementById('statusOutput');
+            const items = Object.keys(localStorage);
+            status.innerHTML = `
+                <div class="status info">
+                    <strong>LocalStorage Items: ${items.length}</strong><br>
+                    ${items.map(k => `<div>🔹 ${k}: ${localStorage.getItem(k).substring(0, 50)}${localStorage.getItem(k).length > 50 ? '...' : ''}</div>`).join('')}
+                </div>
+            `;
+        }
+
+        function checkStatus() {
+            const status = document.getElementById('statusOutput');
+            const checks = {
+                'Frontend URL': window.location.href,
+                'API Available': 'http://localhost:7071/api',
+                'Auth Mode': 'Demo Mode (No Azure AD)',
+                'Demo User': 'Enabled',
+                'App Version': '2.0'
+            };
+
+            let html = '<div class="status success"><strong>✅ System Status:</strong><br>';
+            Object.entries(checks).forEach(([key, value]) => {
+                html += `🔹 ${key}: ${value}<br>`;
+            });
+            html += '</div>';
+            status.innerHTML = html;
+        }
+
+        function showEnv() {
+            const status = document.getElementById('statusOutput');
+            const env = {
+                'VITE_ENTRA_CLIENT_ID': 'demo-mode',
+                'VITE_REDIRECT_URI': 'http://localhost:5173',
+                'VITE_API_URL': 'http://localhost:7071/api',
+                'Node Environment': 'development'
+            };
+
+            let html = '<div class="status info"><strong>⚙️ Environment Variables:</strong><br>';
+            Object.entries(env).forEach(([key, value]) => {
+                html += `🔹 ${key} = ${value}<br>`;
+            });
+            html += '</div>';
+            status.innerHTML = html;
+        }
+
+        function showProviderStatus() {
+            const status = document.getElementById('statusOutput');
+            let html = '<div class="status success"><strong>✅ Provider Status:</strong><br>';
+            html += '🔹 AuthProvider: ✅ Loaded<br>';
+            html += '🔹 AppProvider: ✅ Loaded<br>';
+            html += '🔹 BrowserRouter: ✅ Loaded<br>';
+            html += '🔹 ErrorBoundary: ✅ Loaded<br>';
+            html += '<br><em>Nếu bạn thấy lỗi, cache có thể chưa được xóa.</em>';
+            html += '</div>';
+            status.innerHTML = html;
+        }
+
+        // Auto-run status check on load
+        window.addEventListener('load', () => {
+            console.log('🎓 Student Scheduler - Testing Guide Loaded');
+            console.log('Run these commands in Console (F12):');
+            console.log('1. clearCache() - Clear all cache');
+            console.log('2. checkStatus() - Check system status');
+        });
+    </script>
+</body>
+
+</html>

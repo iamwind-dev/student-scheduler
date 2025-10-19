@@ -1,0 +1,241 @@
+/**
+ * SIDEBAR STYLES
+ * Navigation sidebar styling
+ */
+
+.sidebar {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: var(--sidebar-width);
+    height: calc(100vh - var(--header-height));
+    background: var(--surface-color);
+    border-right: 1px solid var(--border-color);
+    z-index: var(--z-sidebar);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: var(--spacing-lg) 0;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-right: 3px solid transparent;
+    position: relative;
+}
+
+.nav-link:hover {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.nav-link.active {
+    background: var(--primary-bg);
+    color: var(--primary-color);
+    border-right-color: var(--primary-color);
+    font-weight: 600;
+}
+
+.nav-icon {
+    font-size: var(--font-size-lg);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+.nav-label {
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.nav-description {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+    line-height: 1.2;
+    opacity: 0.8;
+}
+
+.nav-link.active .nav-description {
+    color: var(--primary-light);
+}
+
+.nav-link.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.nav-link.disabled .nav-description {
+    font-style: italic;
+}
+
+.sidebar-footer {
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+}
+
+.app-info {
+    text-align: center;
+}
+
+.app-version {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.app-build {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+}
+
+/* Desktop sidebar */
+@media (min-width: 769px) {
+    .sidebar {
+        position: fixed;
+        transform: translateX(0);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+}
+
+/* Mobile sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 280px;
+        box-shadow: var(--shadow-lg);
+    }
+
+    .nav-link {
+        padding: var(--spacing-md);
+    }
+
+    .sidebar-footer {
+        padding: var(--spacing-md);
+    }
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 2px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--text-tertiary);
+}
+
+/* Firefox scrollbar */
+.sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) var(--bg-primary);
+}
+
+/* Focus styles for accessibility */
+.nav-link:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: -2px;
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .sidebar {
+        border-right-width: 2px;
+    }
+
+    .nav-link.active {
+        border-right-width: 4px;
+    }
+
+    .sidebar-footer {
+        border-top-width: 2px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .sidebar {
+        transition: none;
+    }
+
+    .nav-link {
+        transition: none;
+    }
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .sidebar {
+    background: var(--surface-dark);
+}
+
+[data-theme="dark"] .sidebar-footer {
+    background: var(--bg-primary);
+}
+
+/* RTL support */
+[dir="rtl"] .sidebar {
+    left: auto;
+    right: 0;
+    border-left: 1px solid var(--border-color);
+    border-right: none;
+}
+
+[dir="rtl"] .nav-link {
+    border-left: 3px solid transparent;
+    border-right: none;
+}
+
+[dir="rtl"] .nav-link.active {
+    border-left-color: var(--primary-color);
+}
