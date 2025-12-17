@@ -27,14 +27,33 @@ dist-ssr
 *.sln
 *.sw?
 
-# Environment variables
+# ========================================
+# 🔐 SENSITIVE FILES - DO NOT COMMIT
+# ========================================
+
+# Environment variables (contains passwords, API keys)
 .env
 .env.local
+.env.production
 .env.production.local
 .env.development.local
 .env.test.local
 
+# API environment files
+api/.env
+api/.env.local
+api/.env.production
+
+# Frontend environment files (local only)
+frontend/.env
+frontend/.env.local
+
+# Database credentials
+database/.env
+
+# ========================================
 # Azure Functions
+# ========================================
 api/bin
 api/obj
 api/.python_packages
@@ -42,6 +61,7 @@ api/__blobstorage__
 api/__queuestorage__
 api/__azurite_db*__.json
 api/.python_version
+local.settings.json
 
 # Build files
 build/
@@ -61,3 +81,10 @@ coverage/
 *.temp
 tmp/
 temp/
+
+# Package locks (optional - uncomment if you want to ignore)
+# package-lock.json
+# yarn.lock
+
+# Kiro IDE
+.kiro/

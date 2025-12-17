@@ -71,7 +71,7 @@ const LoginPage = () => {
 
                         <button
                             className="login-btn demo-btn"
-                            onClick={() => window.location.href = '/'}
+                            onClick={handleLogin}
                         >
                             🎯 Truy cập Demo
                         </button>

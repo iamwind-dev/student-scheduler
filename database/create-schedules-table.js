@@ -4,10 +4,10 @@ const path = require('path');
 
 // SQL Server configuration
 const config = {
-    server: process.env.SQL_SERVER || 'student-scheduler-server.database.windows.net',
+    server: process.env.SQL_SERVER || 'student-schedule.database.windows.net',
     database: process.env.SQL_DATABASE || 'student-scheduler-db',
     user: process.env.SQL_USER || 'sqladmin',
-    password: process.env.SQL_PASSWORD || 'admin123@',
+    password: process.env.SQL_PASSWORD || 'Wind060304@',
     options: {
         encrypt: true,
         trustServerCertificate: false

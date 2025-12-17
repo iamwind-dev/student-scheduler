@@ -7,8 +7,8 @@ const sql = require('mssql');
 
 const config = {
     user: 'sqladmin',
-    password: 'admin123@',
-    server: 'student-scheduler-server.database.windows.net',
+    password: 'Wind060304@',
+    server: 'student-schedule.database.windows.net',
     database: 'student-scheduler-db',
     options: {
         encrypt: true,

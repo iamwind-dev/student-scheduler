@@ -12,6 +12,8 @@ const CoursesPage = () => {
     const [error, setError] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
     const [filterCredits, setFilterCredits] = useState('all');
+    const [filterLecturer, setFilterLecturer] = useState('all');
+    const [filterRoom, setFilterRoom] = useState('all');
 
     useEffect(() => {
         fetchCourses();
@@ -41,16 +43,27 @@ const CoursesPage = () => {
     const filteredCourses = courses.filter(course => {
         const matchesSearch =
             course.courseName?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            course.courseCode?.toLowerCase().includes(searchTerm.toLowerCase());
+            course.courseCode?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            course.lecturer?.toLowerCase().includes(searchTerm.toLowerCase());
 
         const matchesCredits =
             filterCredits === 'all' ||
             course.credits?.toString() === filterCredits;
 
-        return matchesSearch && matchesCredits;
+        const matchesLecturer =
+            filterLecturer === 'all' ||
+            course.lecturer === filterLecturer;
+
+        const matchesRoom =
+            filterRoom === 'all' ||
+            course.room?.startsWith(filterRoom);
+
+        return matchesSearch && matchesCredits && matchesLecturer && matchesRoom;
     });
 
-    const uniqueCredits = [...new Set(courses.map(c => c.credits))].sort((a, b) => a - b);
+    const uniqueCredits = [...new Set(courses.map(c => c.credits))].filter(Boolean).sort((a, b) => a - b);
+    const uniqueLecturers = [...new Set(courses.map(c => c.lecturer))].filter(Boolean).sort();
+    const uniqueCampuses = [...new Set(courses.map(c => c.room?.split('.')[0]))].filter(Boolean).sort();
 
     if (loading) {
         return <LoadingSpinner fullscreen message="Đang tải danh sách môn học..." />;
@@ -90,6 +103,28 @@ const CoursesPage = () => {
                         <option key={credit} value={credit}>{credit} tín chỉ</option>
                     ))}
                 </select>
+
+                <select
+                    value={filterLecturer}
+                    onChange={(e) => setFilterLecturer(e.target.value)}
+                    style={styles.filterSelect}
+                >
+                    <option value="all">Tất cả giảng viên</option>
+                    {uniqueLecturers.map(lecturer => (
+                        <option key={lecturer} value={lecturer}>{lecturer}</option>
+                    ))}
+                </select>
+
+                <select
+                    value={filterRoom}
+                    onChange={(e) => setFilterRoom(e.target.value)}
+                    style={styles.filterSelect}
+                >
+                    <option value="all">Tất cả cơ sở</option>
+                    {uniqueCampuses.map(campus => (
+                        <option key={campus} value={campus}>Cơ sở {campus}</option>
+                    ))}
+                </select>
             </div>
 
             <div style={styles.statsBar}>
@@ -121,12 +156,26 @@ const CoursesPage = () => {
                                 </span>
                             </div>
                             <div style={styles.cardBody}>
-                                <p style={styles.courseCode}>
-                                    <strong>Mã MH:</strong> {course.courseCode}
+                                <p style={styles.courseInfo}>
+                                    <span style={styles.infoIcon}>👨‍🏫</span>
+                                    <strong>Giảng viên:</strong> {course.lecturer || 'Chưa có'}
                                 </p>
-                                {course.courseDescription && (
-                                    <p style={styles.courseDesc}>{course.courseDescription}</p>
-                                )}
+                                <p style={styles.courseInfo}>
+                                    <span style={styles.infoIcon}>🕐</span>
+                                    <strong>Thời gian:</strong> {course.time || 'Chưa có'}
+                                </p>
+                                <p style={styles.courseInfo}>
+                                    <span style={styles.infoIcon}>🏫</span>
+                                    <strong>Phòng:</strong> {course.room || 'Chưa có'}
+                                </p>
+                                <p style={styles.courseInfo}>
+                                    <span style={styles.infoIcon}>📅</span>
+                                    <strong>Tuần học:</strong> {course.weeks || 'Chưa có'}
+                                </p>
+                                <p style={styles.courseInfo}>
+                                    <span style={styles.infoIcon}>👥</span>
+                                    <strong>Sỉ số:</strong> {course.quantity || 0} sinh viên
+                                </p>
                             </div>
                         </div>
                     ))
@@ -269,6 +318,18 @@ const styles = {
         fontSize: '0.9em',
         margin: 0,
         lineHeight: '1.5'
+    },
+    courseInfo: {
+        color: '#555',
+        fontSize: '0.9em',
+        margin: '6px 0',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '6px'
+    },
+    infoIcon: {
+        fontSize: '1em',
+        width: '20px'
     },
     emptyState: {
         gridColumn: '1 / -1',

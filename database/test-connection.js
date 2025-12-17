@@ -1,20 +1,22 @@
 const sql = require('mssql');
+require('dotenv').config();
 
 // Azure SQL Connection Config
 const config = {
-    user: 'sqladmin',
-    password: 'admin123@',  // Thay đổi nếu bạn dùng password khác
-    server: 'student-scheduler-server.database.windows.net',
-    database: 'student-scheduler-db',
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    server: process.env.DB_SERVER,
+    database: process.env.DB_DATABASE,
+    port: parseInt(process.env.DB_PORT) || 1433,
     options: {
-        encrypt: true,
-        trustServerCertificate: false,
+        encrypt: process.env.DB_ENCRYPT === 'true',
+        trustServerCertificate: process.env.DB_TRUST_SERVER_CERTIFICATE === 'true',
         enableArithAbort: true
     },
     pool: {
-        max: 10,
-        min: 0,
-        idleTimeoutMillis: 30000
+        max: parseInt(process.env.DB_POOL_MAX) || 10,
+        min: parseInt(process.env.DB_POOL_MIN) || 0,
+        idleTimeoutMillis: parseInt(process.env.DB_POOL_IDLE_TIMEOUT) || 30000
     }
 };
 
