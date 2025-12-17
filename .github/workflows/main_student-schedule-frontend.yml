@@ -36,7 +36,7 @@ jobs:
         working-directory: ./frontend
         run: npm run build
         env:
-          VITE_API_URL: https://student-api-funct-bmhuhadvheehgge2.eastasia-01.azurewebsites.net/api
+          VITE_API_URL: https://func-student-schedule-gbcpezaghachdkfn.eastasia-01.azurewebsites.net/api
           VITE_ENTRA_CLIENT_ID: ${{ secrets.VITE_ENTRA_CLIENT_ID }}
           VITE_ENTRA_TENANT_ID: common
           VITE_REDIRECT_URI: https://student-schedule-frontend.azurewebsites.net

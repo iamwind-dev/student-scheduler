@@ -66,7 +66,7 @@ const swaggerOptions = {
         },
         servers: isProduction ? [
             {
-                url: process.env.API_URL || 'https://student-api-funct-bmhuhadvheehgge2.eastasia-01.azurewebsites.net',
+                url: process.env.API_URL || 'https://func-student-schedule-gbcpezaghachdkfn.eastasia-01.azurewebsites.net',
                 description: 'Production server'
             }
         ] : [
