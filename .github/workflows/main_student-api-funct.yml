@@ -13,7 +13,7 @@ on:
 
 env:
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'api' # Path to your API project
-  NODE_VERSION: '18.x' # LTS version recommended
+  NODE_VERSION: '20.x' # LTS version recommended
 
 jobs:
   build:
@@ -63,7 +63,7 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_29A1F000E6E1424D91CD4AB2371875B8 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_29A1F000E6E1424D91CD4AB237187520 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_45D2C76136CC4BF0897CF0BF17103120 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3E781B5863F647AD8EBBF1797A5E5258 }}
 
