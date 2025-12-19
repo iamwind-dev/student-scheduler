@@ -168,12 +168,12 @@ export default function SchedulePage() {
         try {
             // Validation cơ bản
             if (!user || !user.id) {
-                alert('❌ Vui lòng đăng nhập để lưu thời khóa biểu!');
+                alert('Vui lòng đăng nhập để lưu thời khóa biểu!');
                 return;
             }
 
             if (selectedCourses.length === 0) {
-                alert('⚠️ Vui lòng chọn ít nhất một môn học!');
+                alert('Vui lòng chọn ít nhất một môn học!');
                 return;
             }
 
@@ -260,12 +260,12 @@ export default function SchedulePage() {
                     scheduleId: result.data?.scheduleId
                 }));
                 
-                let message = `✅ Đã lưu thành công vào Azure SQL Database!\n\n`;
-                message += `👤 User: ${user.name}\n`;
-                message += `📊 Schedule ID: ${result.data?.scheduleId || 'N/A'}\n`;
-                message += `📚 Số môn học: ${formattedCourses.length}\n`;
-                message += `🎓 Tổng tín chỉ: ${totalCredits}\n\n`;
-                message += `📖 Môn học đã lưu:\n`;
+                let message = `Đã lưu thành công vào Azure SQL Database!\n\n`;
+                message += `User: ${user.name}\n`;
+                message += `Schedule ID: ${result.data?.scheduleId || 'N/A'}\n`;
+                message += `Số môn học: ${formattedCourses.length}\n`;
+                message += `Tổng tín chỉ: ${totalCredits}\n\n`;
+                message += `Môn học đã lưu:\n`;
                 formattedCourses.slice(0, 5).forEach((course, index) => {
                     message += `${index + 1}. ${course.courseName} - ${course.lecturer} (${course.credits} TC)\n`;
                 });

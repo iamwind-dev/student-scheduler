@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { DashboardIcon, BookIcon, CalendarIcon, UserIcon, SettingsIcon } from '../common/Icons';
 import './Sidebar.css';
 
 const Sidebar = ({ isOpen, onClose, currentPath }) => {
@@ -14,32 +15,32 @@ const Sidebar = ({ isOpen, onClose, currentPath }) => {
         {
             path: '/',
             label: 'Dashboard',
-            icon: '📊',
+            icon: <DashboardIcon size={20} />,
             description: 'Tổng quan hệ thống'
         },
         {
             path: '/courses',
             label: 'Môn học',
-            icon: '📚',
+            icon: <BookIcon size={20} />,
             description: 'Quản lý môn học và tín chỉ'
         },
         // {
         //     path: '/preferences',
         //     label: 'Ràng buộc',
-        //     icon: '⚙️',
+        //     icon: <SettingsIcon size={20} />,
         //     description: 'Đang phát triển',
         //     disabled: true
         // },
         {
             path: '/schedule',
             label: 'Thời khóa biểu',
-            icon: '📅',
+            icon: <CalendarIcon size={20} />,
             description: 'Tự tạo & AI đề xuất'
         },
         {
             path: '/profile',
             label: 'Hồ sơ',
-            icon: '👤',
+            icon: <UserIcon size={20} />,
             description: 'Hồ sơ cá nhân'
         }
     ];

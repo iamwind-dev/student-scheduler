@@ -6,6 +6,7 @@
 import React from 'react';
 import { useAuth } from '../../contexts/AuthContext';
 import { useApp } from '../../contexts/AppContext';
+import { GraduationIcon } from '../common/Icons';
 import './Header.css';
 
 const Header = ({ onToggleSidebar, sidebarOpen }) => {
@@ -37,7 +38,7 @@ const Header = ({ onToggleSidebar, sidebarOpen }) => {
 
                 <div className="header-brand">
                     <h1 className="brand-title">
-                        🎓 Student Scheduler
+                        <GraduationIcon size={24} /> Student Scheduler
                     </h1>
                     <span className="brand-version"></span>
                 </div>

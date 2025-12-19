@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
+import { BookIcon, TeacherIcon, ClockIcon, LocationIcon, CalendarIcon, WarningIcon } from '../../components/common/Icons';
 
 const CoursesPage = () => {
     const [courses, setCourses] = useState([]);
@@ -72,13 +73,13 @@ const CoursesPage = () => {
     return (
         <div className="courses-page" style={styles.container}>
             <div style={styles.header}>
-                <h1 style={styles.title}>📚 Quản lý môn học</h1>
+                <h1 style={styles.title}><BookIcon size={28} /> Quản lý môn học</h1>
                 <p style={styles.subtitle}>Tổng số: {courses.length} môn học</p>
             </div>
 
             {error && (
                 <div style={styles.errorBox}>
-                    <span>⚠️</span>
+                    <span><WarningIcon size={20} /></span>
                     <p>{error}</p>
                     <button onClick={fetchCourses} style={styles.retryBtn}>Thử lại</button>
                 </div>
@@ -157,23 +158,23 @@ const CoursesPage = () => {
                             </div>
                             <div style={styles.cardBody}>
                                 <p style={styles.courseInfo}>
-                                    <span style={styles.infoIcon}>👨‍🏫</span>
+                                    <span style={styles.infoIcon}><TeacherIcon size={16} /></span>
                                     <strong>Giảng viên:</strong> {course.lecturer || 'Chưa có'}
                                 </p>
                                 <p style={styles.courseInfo}>
-                                    <span style={styles.infoIcon}>🕐</span>
+                                    <span style={styles.infoIcon}><ClockIcon size={16} /></span>
                                     <strong>Thời gian:</strong> {course.time || 'Chưa có'}
                                 </p>
                                 <p style={styles.courseInfo}>
-                                    <span style={styles.infoIcon}>🏫</span>
+                                    <span style={styles.infoIcon}><LocationIcon size={16} /></span>
                                     <strong>Phòng:</strong> {course.room || 'Chưa có'}
                                 </p>
                                 <p style={styles.courseInfo}>
-                                    <span style={styles.infoIcon}>📅</span>
+                                    <span style={styles.infoIcon}><CalendarIcon size={16} /></span>
                                     <strong>Tuần học:</strong> {course.weeks || 'Chưa có'}
                                 </p>
                                 <p style={styles.courseInfo}>
-                                    <span style={styles.infoIcon}>👥</span>
+                                    <span style={styles.infoIcon}><TeacherIcon size={16} /></span>
                                     <strong>Sỉ số:</strong> {course.quantity || 0} sinh viên
                                 </p>
                             </div>

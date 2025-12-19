@@ -327,14 +327,16 @@ export function AuthProvider({ children }) {
             console.error('Backend logout error:', error);
         }
 
-        // Microsoft logout (skip in demo mode)
+        // Clear Microsoft account from MSAL cache (without popup)
         if (!isDemoMode && msalInstance) {
             try {
-                await msalInstance.logoutPopup({
-                    postLogoutRedirectUri: window.location.origin
-                });
+                const accounts = msalInstance.getAllAccounts();
+                if (accounts.length > 0) {
+                    // Clear account from cache silently - no popup
+                    await msalInstance.clearCache();
+                }
             } catch (error) {
-                console.error('Microsoft logout error:', error);
+                console.error('Microsoft cache clear error:', error);
             }
         }
 

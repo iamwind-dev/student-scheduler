@@ -4,6 +4,7 @@
  */
 
 import React, { useEffect, useState, useCallback } from 'react';
+import { CheckIcon, ErrorIcon, InfoIcon, WarningIcon } from './Icons';
 import './Toast.css';
 
 const Toast = ({ message, type = 'success', duration = 3000, onClose }) => {
@@ -19,10 +20,10 @@ const Toast = ({ message, type = 'success', duration = 3000, onClose }) => {
     }, [duration, onClose]);
 
     const icons = {
-        success: '✅',
-        error: '❌',
-        info: 'ℹ️',
-        warning: '⚠️'
+        success: <CheckIcon size={18} />,
+        error: <ErrorIcon size={18} />,
+        info: <InfoIcon size={18} />,
+        warning: <WarningIcon size={18} />
     };
 
     return (

@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
+import { 
+    BookIcon, StarIcon, CalendarIcon, SunIcon, MoonIcon, 
+    LocationIcon, TeacherIcon, GraduationIcon, CheckIcon, TrashIcon 
+} from '../../components/common/Icons';
 import './ProfilePage.css';
 
 const DAYS = ['Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
@@ -96,7 +100,7 @@ const ProfilePage = () => {
     };
 
     const deleteSchedule = async () => {
-        if (!confirm('Bạn có chắc muốn xóa TẤT CẢ thời khóa biểu đã lưu?\n\n⚠️ Hành động này sẽ xóa:\n- Tất cả data trong localStorage\n- Tất cả schedules trong Azure SQL Database')) {
+        if (!confirm('Bạn có chắc muốn xóa TẤT CẢ thời khóa biểu đã lưu?\n\nHành động này sẽ xóa:\n- Tất cả data trong localStorage\n- Tất cả schedules trong Azure SQL Database')) {
             return;
         }
 
@@ -124,7 +128,7 @@ const ProfilePage = () => {
             
             setSavedSchedule(null);
             setScheduleTable({});
-            alert('✅ Đã xóa tất cả thời khóa biểu thành công!');
+            alert('Đã xóa tất cả thời khóa biểu thành công!');
             
         } catch (error) {
             console.error('Delete error:', error);
@@ -132,7 +136,7 @@ const ProfilePage = () => {
             localStorage.clear();
             setSavedSchedule(null);
             setScheduleTable({});
-            alert('⚠️ Đã xóa localStorage. Có thể còn data trong database.');
+            alert('Đã xóa localStorage. Có thể còn data trong database.');
         }
     };
 
@@ -155,8 +159,8 @@ const ProfilePage = () => {
                         >
                             <div className="course-name">{course.courseName}</div>
                             <div className="course-info">
-                                <span>📍 {course.room}</span>
-                                <span>👨‍🏫 {course.lecturer}</span>
+                                <span><LocationIcon size={14} /> {course.room}</span>
+                                <span><TeacherIcon size={14} /> {course.lecturer}</span>
                             </div>
                             <div className="course-credits">{course.credits || 2} TC</div>
                         </div>
@@ -179,8 +183,8 @@ const ProfilePage = () => {
                     <h1 className="profile-name">{user?.name || 'Sinh viên'}</h1>
                     <p className="profile-email">{user?.email || 'student@example.com'}</p>
                     <div className="profile-badges">
-                        <span className="badge badge-primary">🎓 Sinh viên</span>
-                        <span className="badge badge-success">✅ Đã xác thực</span>
+                        <span className="badge badge-primary"><GraduationIcon size={14} /> Sinh viên</span>
+                        <span className="badge badge-success"><CheckIcon size={14} /> Đã xác thực</span>
                     </div>
                 </div>
             </div>
@@ -188,10 +192,10 @@ const ProfilePage = () => {
             {/* Schedule Section */}
             <div className="schedule-section">
                 <div className="section-header">
-                    <h2>📅 Thời khóa biểu đã lưu</h2>
+                    <h2><CalendarIcon size={20} /> Thời khóa biểu đã lưu</h2>
                     {savedSchedule && (
                         <button className="btn-delete-modern" onClick={deleteSchedule}>
-                            🗑️ Xóa lịch
+                            <TrashIcon size={16} /> Xóa lịch
                         </button>
                     )}
                 </div>
@@ -201,21 +205,21 @@ const ProfilePage = () => {
                         {/* Stats Cards */}
                         <div className="stats-grid">
                             <div className="stat-card stat-primary">
-                                <div className="stat-icon">📚</div>
+                                <div className="stat-icon"><BookIcon size={24} /></div>
                                 <div className="stat-content">
                                     <div className="stat-value">{savedSchedule.courses.length}</div>
                                     <div className="stat-label">Môn học</div>
                                 </div>
                             </div>
                             <div className="stat-card stat-success">
-                                <div className="stat-icon">✨</div>
+                                <div className="stat-icon"><StarIcon size={24} /></div>
                                 <div className="stat-content">
                                     <div className="stat-value">{savedSchedule.totalCredits}</div>
                                     <div className="stat-label">Tín chỉ</div>
                                 </div>
                             </div>
                             <div className="stat-card stat-info">
-                                <div className="stat-icon">📆</div>
+                                <div className="stat-icon"><CalendarIcon size={24} /></div>
                                 <div className="stat-content">
                                     <div className="stat-value">
                                         {new Date(savedSchedule.createdAt).toLocaleDateString('vi-VN')}
@@ -227,11 +231,11 @@ const ProfilePage = () => {
 
                         {/* Schedule Table */}
                         <div className="schedule-table-container">
-                            <h3 className="table-title">🗓️ Lịch học trong tuần</h3>
+                            <h3 className="table-title"><CalendarIcon size={18} /> Lịch học trong tuần</h3>
 
                             {/* Morning Schedule */}
                             <div className="period-section">
-                                <h4 className="period-header">☀️ Buổi sáng (Tiết 1-5)</h4>
+                                <h4 className="period-header"><SunIcon size={18} /> Buổi sáng (Tiết 1-5)</h4>
                                 <div className="schedule-table">
                                     <div className="table-header">
                                         <div className="header-cell period-cell">Tiết</div>
@@ -255,7 +259,7 @@ const ProfilePage = () => {
 
                             {/* Afternoon Schedule */}
                             <div className="period-section">
-                                <h4 className="period-header">🌙 Buổi chiều (Tiết 6-10)</h4>
+                                <h4 className="period-header"><MoonIcon size={18} /> Buổi chiều (Tiết 6-10)</h4>
                                 <div className="schedule-table">
                                     <div className="table-header">
                                         <div className="header-cell period-cell">Tiết</div>

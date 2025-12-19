@@ -5,6 +5,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { HomeIcon } from './Icons';
 import './ErrorFallback.css';
 
 const ErrorFallback = ({ error, resetErrorBoundary, resetKeys = [] }) => {
@@ -99,7 +100,7 @@ const ErrorFallback = ({ error, resetErrorBoundary, resetKeys = [] }) => {
                         className="btn btn-outline"
                         onClick={handleGoHome}
                     >
-                        🏠 Về trang chủ
+                        <HomeIcon size={16} /> Về trang chủ
                     </button>
                 </div>
 
@@ -108,7 +109,7 @@ const ErrorFallback = ({ error, resetErrorBoundary, resetKeys = [] }) => {
                         className="btn btn-text btn-sm"
                         onClick={handleReport}
                     >
-                        📤 Báo cáo lỗi
+                        Báo cáo lỗi
                     </button>
 
                     <span className="error-id">

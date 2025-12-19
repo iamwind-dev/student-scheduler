@@ -139,16 +139,6 @@ const LoginPage = () => {
 
                     <form onSubmit={handleEmailLogin} className="login-form">
                         <div className="form-group">
-                            <label htmlFor="name">Name</label>
-                            <input
-                                type="text"
-                                id="name"
-                                placeholder="Chi"
-                                className="form-input"
-                            />
-                        </div>
-
-                        <div className="form-group">
                             <label htmlFor="email">Email</label>
                             <input
                                 type="email"
