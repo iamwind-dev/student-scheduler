@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node -e \"require('fs').copyFileSync('package.azure.json', 'dist/package.json')\"",
+    "build": "vite build --mode production && node -e \"require('fs').copyFileSync('package.azure.json', 'dist/package.json')\"",
+    "build:dev": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
