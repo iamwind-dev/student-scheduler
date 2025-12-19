@@ -33,46 +33,44 @@ const ProfilePage = () => {
             const response = await fetch(`${API_URL}/schedules/user/${encodeURIComponent(userId)}`);
             const result = await response.json();
 
-            if (result.success && result.schedules && result.schedules.length > 0) {
-                // Lấy schedule mới nhất
-                const latestSchedule = result.schedules[0];
+            // API returns: { success, data: { success, schedules: [...] } }
+            const schedules = result.data?.schedules || result.schedules || [];
+            
+            if (result.success && schedules.length > 0) {
+                // Lấy schedule mới nhất - API đã trả về courses trong schedules
+                const latestSchedule = schedules[0];
                 
-                // Load chi tiết schedule
-                const detailResponse = await fetch(`${API_URL}/schedules/${latestSchedule.ScheduleId}`);
-                const detailResult = await detailResponse.json();
+                // Courses đã có sẵn trong schedule (từ coursesJson)
+                const courses = latestSchedule.courses || [];
                 
-                if (detailResult.success) {
-                    const data = {
-                        scheduleId: latestSchedule.ScheduleId,
-                        scheduleName: latestSchedule.ScheduleName,
-                        courses: detailResult.data.courses,
-                        totalCredits: latestSchedule.TotalCredits,
-                        createdAt: latestSchedule.CreatedAt
-                    };
-                    
-                    // Rebuild schedule object từ courses
-                    const scheduleObj = {};
-                    detailResult.data.courses.forEach(course => {
-                        const timeInfo = parseCourseTime(course.Time || course.time);
-                        if (timeInfo) {
-                            const key = `${timeInfo.day}-${timeInfo.startPeriod}-${timeInfo.endPeriod}`;
-                            scheduleObj[key] = {
-                                ...course,
-                                courseName: course.CourseName || course.courseName,
-                                lecturer: course.Lecturer || course.lecturer,
-                                credits: course.Credits || course.credits
-                            };
-                        }
-                    });
-                    
-                    data.schedule = scheduleObj;
-                    setSavedSchedule(data);
-                    setScheduleTable(scheduleObj);
-                    
-                    console.log(`✅ Loaded schedule: ${data.scheduleName} (${data.courses.length} courses)`);
-                } else {
-                    console.log('⚠️ Không có schedule chi tiết');
-                }
+                const data = {
+                    scheduleId: latestSchedule.scheduleId,
+                    scheduleName: latestSchedule.scheduleName || `Lịch học ${new Date(latestSchedule.createdAt).toLocaleDateString('vi-VN')}`,
+                    courses: courses,
+                    totalCredits: latestSchedule.totalCredits,
+                    createdAt: latestSchedule.createdAt
+                };
+                
+                // Rebuild schedule object từ courses
+                const scheduleObj = {};
+                courses.forEach(course => {
+                    const timeInfo = parseCourseTime(course.time || course.Time);
+                    if (timeInfo) {
+                        const key = `${timeInfo.day}-${timeInfo.startPeriod}-${timeInfo.endPeriod}`;
+                        scheduleObj[key] = {
+                            ...course,
+                            courseName: course.courseName || course.CourseName,
+                            lecturer: course.lecturer || course.Lecturer,
+                            credits: course.credits || course.Credits
+                        };
+                    }
+                });
+                
+                data.schedule = scheduleObj;
+                setSavedSchedule(data);
+                setScheduleTable(scheduleObj);
+                
+                console.log(`✅ Loaded schedule: ${data.scheduleName} (${courses.length} courses)`);
             } else {
                 console.log('⚠️ Chưa có schedule được lưu trong database');
             }
