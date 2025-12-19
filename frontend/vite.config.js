@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:7071',
+        target: 'https://func-student-schedule-gbcpezaghachdkfn.eastasia-01.azurewebsites.net',
         changeOrigin: true,
       }
     }

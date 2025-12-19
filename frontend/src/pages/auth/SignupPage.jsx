@@ -44,7 +44,7 @@ export default function SignupPage() {
 
         try {
             setLoading(true);
-            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:7071/api';
+            const API_URL = import.meta.env.VITE_API_URL || 'https://func-student-schedule-gbcpezaghachdkfn.eastasia-01.azurewebsites.net/api';
             
             const response = await fetch(`${API_URL}/auth/signup`, {
                 method: 'POST',

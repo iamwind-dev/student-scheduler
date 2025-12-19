@@ -26,7 +26,7 @@ const ProfilePage = () => {
             }
 
             // Load từ SQL Server với userId thực
-            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:7071/api';
+            const API_URL = import.meta.env.VITE_API_URL || 'https://func-student-schedule-gbcpezaghachdkfn.eastasia-01.azurewebsites.net/api';
             const userId = user.email || user.id;
             
             console.log(`📥 Loading schedule for user: ${userId}`);
@@ -106,7 +106,7 @@ const ProfilePage = () => {
             
             // 2. Xóa tất cả schedules từ database
             if (user && user.email) {
-                const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:7071/api';
+                const API_URL = import.meta.env.VITE_API_URL || 'https://func-student-schedule-gbcpezaghachdkfn.eastasia-01.azurewebsites.net/api';
                 
                 // Get all schedules của user
                 const getResponse = await fetch(`${API_URL}/schedules/user/${user.email}`);

@@ -177,7 +177,7 @@ export default function SchedulePage() {
                 return;
             }
 
-            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:7071/api';
+            const API_URL = import.meta.env.VITE_API_URL || 'https://func-student-schedule-gbcpezaghachdkfn.eastasia-01.azurewebsites.net/api';
             
             // Chuẩn bị dữ liệu
             const userId = user.email || user.id;
@@ -291,7 +291,7 @@ export default function SchedulePage() {
                 errorMessage += 'Kiểm tra:\n';
                 errorMessage += '- Server có đang chạy?\n';
                 errorMessage += '- VITE_API_URL có đúng?\n';
-                errorMessage += `- URL hiện tại: ${import.meta.env.VITE_API_URL || 'http://localhost:7071/api'}\n`;
+                errorMessage += `- URL hiện tại: ${import.meta.env.VITE_API_URL || 'https://func-student-schedule-gbcpezaghachdkfn.eastasia-01.azurewebsites.net/api'}\n`;
             } else {
                 errorMessage += `📝 Lỗi: ${error.message}\n`;
             }
