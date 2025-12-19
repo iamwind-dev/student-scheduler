@@ -35,7 +35,8 @@ export const msalConfig = {
 };
 
 // Flag để biết có đang ở chế độ demo không
-export const isDemoMode = !hasValidEntraConfig;
+// DISABLED - Use real authentication with database
+export const isDemoMode = false;
 
 // Scopes yêu cầu khi đăng nhập
 export const loginRequest = {

@@ -12,54 +12,72 @@ const ProfilePage = () => {
     const [scheduleTable, setScheduleTable] = useState({});
 
     useEffect(() => {
-        loadSchedule();
-    }, []);
+        if (user) {
+            loadSchedule();
+        }
+    }, [user]);
 
     const loadSchedule = async () => {
         try {
-            // Load từ SQL Server trước
-            const API_URL = import.meta.env.VITE_API_URL || 'https://student-api-func.azurewebsites.net/api';
-            const response = await fetch(`${API_URL}/schedules/demo-user`);
+            // Kiểm tra user đã đăng nhập chưa
+            if (!user || !user.email) {
+                console.log('❌ Chưa đăng nhập, không thể load schedule');
+                return;
+            }
+
+            // Load từ SQL Server với userId thực
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:7071/api';
+            const userId = user.email || user.id;
+            
+            console.log(`📥 Loading schedule for user: ${userId}`);
+            const response = await fetch(`${API_URL}/schedules/user/${encodeURIComponent(userId)}`);
             const result = await response.json();
 
-            if (result.success) {
-                const data = {
-                    courses: result.data.courses,
-                    totalCredits: result.data.totalCredits,
-                    createdAt: result.data.createdAt
-                };
-                // Rebuild schedule object từ courses
-                const scheduleObj = {};
-                result.data.courses.forEach(course => {
-                    const timeInfo = parseCourseTime(course.time);
-                    if (timeInfo) {
-                        const key = `${timeInfo.day}-${timeInfo.startPeriod}-${timeInfo.endPeriod}`;
-                        scheduleObj[key] = course;
-                    }
-                });
-                data.schedule = scheduleObj;
-                setSavedSchedule(data);
-                setScheduleTable(scheduleObj);
-                // Backup vào localStorage
-                localStorage.setItem('savedSchedule', JSON.stringify(data));
-            } else {
-                // Fallback: Load từ localStorage
-                const localData = localStorage.getItem('savedSchedule');
-                if (localData) {
-                    const parsed = JSON.parse(localData);
-                    setSavedSchedule(parsed);
-                    setScheduleTable(parsed.schedule || {});
+            if (result.success && result.schedules && result.schedules.length > 0) {
+                // Lấy schedule mới nhất
+                const latestSchedule = result.schedules[0];
+                
+                // Load chi tiết schedule
+                const detailResponse = await fetch(`${API_URL}/schedules/${latestSchedule.ScheduleId}`);
+                const detailResult = await detailResponse.json();
+                
+                if (detailResult.success) {
+                    const data = {
+                        scheduleId: latestSchedule.ScheduleId,
+                        scheduleName: latestSchedule.ScheduleName,
+                        courses: detailResult.data.courses,
+                        totalCredits: latestSchedule.TotalCredits,
+                        createdAt: latestSchedule.CreatedAt
+                    };
+                    
+                    // Rebuild schedule object từ courses
+                    const scheduleObj = {};
+                    detailResult.data.courses.forEach(course => {
+                        const timeInfo = parseCourseTime(course.Time || course.time);
+                        if (timeInfo) {
+                            const key = `${timeInfo.day}-${timeInfo.startPeriod}-${timeInfo.endPeriod}`;
+                            scheduleObj[key] = {
+                                ...course,
+                                courseName: course.CourseName || course.courseName,
+                                lecturer: course.Lecturer || course.lecturer,
+                                credits: course.Credits || course.credits
+                            };
+                        }
+                    });
+                    
+                    data.schedule = scheduleObj;
+                    setSavedSchedule(data);
+                    setScheduleTable(scheduleObj);
+                    
+                    console.log(`✅ Loaded schedule: ${data.scheduleName} (${data.courses.length} courses)`);
+                } else {
+                    console.log('⚠️ Không có schedule chi tiết');
                 }
+            } else {
+                console.log('⚠️ Chưa có schedule được lưu trong database');
             }
         } catch (error) {
-            console.error('Load error:', error);
-            // Fallback: Load từ localStorage
-            const localData = localStorage.getItem('savedSchedule');
-            if (localData) {
-                const parsed = JSON.parse(localData);
-                setSavedSchedule(parsed);
-                setScheduleTable(parsed.schedule || {});
-            }
+            console.error('❌ Load schedule error:', error);
         }
     };
 
@@ -77,11 +95,46 @@ const ProfilePage = () => {
         const endPeriod = parseInt(periodMatch[2] || periodMatch[3]);
 
         return { day, startPeriod, endPeriod };
-    }; const deleteSchedule = () => {
-        if (confirm('Bạn có chắc muốn xóa thời khóa biểu đã lưu?')) {
-            localStorage.removeItem('savedSchedule');
+    };
+
+    const deleteSchedule = async () => {
+        if (!confirm('Bạn có chắc muốn xóa TẤT CẢ thời khóa biểu đã lưu?\n\n⚠️ Hành động này sẽ xóa:\n- Tất cả data trong localStorage\n- Tất cả schedules trong Azure SQL Database')) {
+            return;
+        }
+
+        try {
+            // 1. Xóa localStorage
+            localStorage.clear();
+            
+            // 2. Xóa tất cả schedules từ database
+            if (user && user.email) {
+                const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:7071/api';
+                
+                // Get all schedules của user
+                const getResponse = await fetch(`${API_URL}/schedules/user/${user.email}`);
+                const getResult = await getResponse.json();
+                
+                if (getResult.success && getResult.data?.schedules) {
+                    // Xóa từng schedule
+                    for (const schedule of getResult.data.schedules) {
+                        await fetch(`${API_URL}/schedules/${schedule.ScheduleId}`, {
+                            method: 'DELETE'
+                        });
+                    }
+                }
+            }
+            
             setSavedSchedule(null);
             setScheduleTable({});
+            alert('✅ Đã xóa tất cả thời khóa biểu thành công!');
+            
+        } catch (error) {
+            console.error('Delete error:', error);
+            // Vẫn xóa localStorage dù có lỗi
+            localStorage.clear();
+            setSavedSchedule(null);
+            setScheduleTable({});
+            alert('⚠️ Đã xóa localStorage. Có thể còn data trong database.');
         }
     };
 
@@ -228,7 +281,7 @@ const ProfilePage = () => {
                         </div>
 
                         {/* Course List */}
-                        <div className="course-list-section">
+                        {/* <div className="course-list-section">
                             <h3 className="section-title">📖 Danh sách môn học chi tiết</h3>
                             <div className="course-grid">
                                 {savedSchedule.courses.map((course, index) => (
@@ -255,7 +308,7 @@ const ProfilePage = () => {
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </div> */}
                     </>
                 ) : (
                     <div className="empty-state-modern">

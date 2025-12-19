@@ -1,87 +1,97 @@
-/**
- * LOGIN PAGE COMPONENT
- * Authentication page with Microsoft SSO
- */
+import { useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
+import './SignupPage.css';
 
-import React, { useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
-import { useAuth } from '../../contexts/AuthContext';
-import LoadingSpinner from '../../components/common/LoadingSpinner';
-import './LoginPage.css';
-
-const LoginPage = () => {
-    const { user, isAuthenticated, isLoading, loginWithMicrosoft, login } = useAuth();
+export default function SignupPage() {
     const navigate = useNavigate();
-    const [formData, setFormData] = useState({ email: '', password: '' });
-    const [error, setError] = useState('');
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        studentId: '',
+        password: '',
+        confirmPassword: ''
+    });
     const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
 
-    // Redirect if already authenticated
-    if (isAuthenticated && user) {
-        return <Navigate to="/" replace />;
-    }
-
-    if (isLoading) {
-        return (
-            <LoadingSpinner
-                fullscreen
-                message="Đang kiểm tra trạng thái đăng nhập..."
-            />
-        );
-    }
-
-    const handleMicrosoftLogin = async () => {
-        try {
-            await loginWithMicrosoft();
-        } catch (error) {
-            console.error('Login failed:', error);
-        }
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+        setError(''); // Clear error when user types
     };
 
-    const handleEmailLogin = async (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setError('');
-        setLoading(true);
+
+        // Validation
+        if (!formData.name || !formData.email || !formData.password) {
+            setError('Vui lòng điền đầy đủ thông tin bắt buộc');
+            return;
+        }
+
+        if (formData.password.length < 6) {
+            setError('Mật khẩu phải có ít nhất 6 ký tự');
+            return;
+        }
+
+        if (formData.password !== formData.confirmPassword) {
+            setError('Mật khẩu xác nhận không khớp');
+            return;
+        }
 
         try {
-            const response = await fetch('http://localhost:7071/api/auth/login', {
+            setLoading(true);
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:7071/api';
+            
+            const response = await fetch(`${API_URL}/auth/signup`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    studentId: formData.studentId,
+                    password: formData.password
+                })
             });
 
-            const data = await response.json();
+            const result = await response.json();
 
-            if (data.success) {
-                // API returns: { success: true, data: { userId, email, name, ... } }
-                const userData = data.data?.user || data.user || data.data;
-                
+            if (result.success) {
                 // Normalize: API uses 'userId' but context expects 'id'
-                if (userData && (userData.id || userData.userId)) {
-                    const normalizedUser = {
-                        ...userData,
-                        id: userData.id || userData.userId
-                    };
-                    await login(normalizedUser);
-                    navigate('/');
-                } else {
-                    setError('Dữ liệu người dùng không hợp lệ');
-                }
+                const userData = result.data?.user || result.data;
+                const normalizedUser = {
+                    ...userData,
+                    id: userData.id || userData.userId
+                };
+                
+                alert(`✅ Đăng ký thành công!\nChào mừng ${normalizedUser.name}!`);
+                
+                // Tự động đăng nhập sau khi đăng ký
+                localStorage.setItem('userData', JSON.stringify(normalizedUser));
+                localStorage.setItem('sessionToken', 'signup-token-' + Date.now());
+                
+                // Chuyển đến trang dashboard
+                navigate('/dashboard');
             } else {
-                setError(data.error || data.message || 'Đăng nhập thất bại');
+                setError(result.error || 'Đăng ký thất bại');
             }
         } catch (err) {
-            setError('Lỗi kết nối đến server');
-            console.error('Login error:', err);
+            console.error('Signup error:', err);
+            setError('Lỗi kết nối đến server. Vui lòng thử lại!');
         } finally {
             setLoading(false);
         }
     };
 
     return (
-        <div className="login-page">
+        <div className="signup-page">
             {/* Left Side - Illustration */}
-            <div className="login-illustration">
+            <div className="signup-illustration">
                 <div className="illustration-content">
                     <div className="floating-card card-1">
                         <div className="card-icon">✓</div>
@@ -103,9 +113,9 @@ const LoginPage = () => {
                 </div>
             </div>
 
-            {/* Right Side - Login Form */}
-            <div className="login-container">
-                <div className="login-header">
+            {/* Right Side - Signup Form */}
+            <div className="signup-container">
+                <div className="signup-header">
                     <div className="logo-section">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <rect width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
@@ -117,17 +127,17 @@ const LoginPage = () => {
                                 </linearGradient>
                             </defs>
                         </svg>
-                        <span className="logo-text">Scheduler Study</span>
+                        <span className="logo-text"></span>
                     </div>
                     <div className="header-right">
                         <span className="header-text">Already have an account?</span>
-                        <a href="/signup" className="btn-outline">SIGN IN</a>
+                        <Link to="/login" className="btn-outline">SIGN IN</Link>
                     </div>
                 </div>
 
-                <div className="login-content">
+                <div className="signup-content">
                     <div className="welcome-section">
-                        <h1 className="welcome-title">Welcome to  Scheduler Study</h1>
+                        <h1 className="welcome-title">Welcome to Scheduler Study</h1>
                         <p className="welcome-subtitle">Register your account</p>
                     </div>
 
@@ -137,14 +147,18 @@ const LoginPage = () => {
                         </div>
                     )}
 
-                    <form onSubmit={handleEmailLogin} className="login-form">
+                    <form onSubmit={handleSubmit} className="signup-form">
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
                             <input
                                 type="text"
                                 id="name"
-                                placeholder="Chi"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                placeholder="Enter your full name"
                                 className="form-input"
+                                required
                             />
                         </div>
 
@@ -153,11 +167,25 @@ const LoginPage = () => {
                             <input
                                 type="email"
                                 id="email"
+                                name="email"
                                 value={formData.email}
-                                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                placeholder="focus011@gmail.com"
+                                onChange={handleChange}
+                                placeholder="yourmail@gmail.com"
                                 className="form-input"
                                 required
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="studentId">Student ID (Optional)</label>
+                            <input
+                                type="text"
+                                id="studentId"
+                                name="studentId"
+                                value={formData.studentId}
+                                onChange={handleChange}
+                                placeholder="Your student ID"
+                                className="form-input"
                             />
                         </div>
 
@@ -167,8 +195,9 @@ const LoginPage = () => {
                                 <input
                                     type="password"
                                     id="password"
+                                    name="password"
                                     value={formData.password}
-                                    onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                                    onChange={handleChange}
                                     placeholder="8+ characters"
                                     className="form-input"
                                     required
@@ -182,19 +211,41 @@ const LoginPage = () => {
                             </div>
                         </div>
 
-                        <button
-                            type="submit"
-                            className="login-btn"
+                        <div className="form-group">
+                            <label htmlFor="confirmPassword">Confirm Password</label>
+                            <div className="password-input-wrapper">
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    name="confirmPassword"
+                                    value={formData.confirmPassword}
+                                    onChange={handleChange}
+                                    placeholder="Re-enter password"
+                                    className="form-input"
+                                    required
+                                />
+                                <button type="button" className="password-toggle">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            className="signup-button"
                             disabled={loading}
                         >
-                            {loading ? 'Loading...' : 'Login'}
+                            {loading ? 'Loading...' : 'Sign Up'}
                         </button>
                     </form>
 
-                    <div className="social-login">
+                    <div className="social-signup">
                         <p className="social-text">Create account with</p>
                         <div className="social-buttons">
-                            <button className="social-btn" onClick={handleMicrosoftLogin}>
+                            <button className="social-btn">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2">
                                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                                 </svg>
@@ -218,6 +269,4 @@ const LoginPage = () => {
             </div>
         </div>
     );
-};
-
-export default LoginPage;
+}

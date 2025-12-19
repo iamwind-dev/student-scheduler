@@ -187,54 +187,10 @@ export function AuthProvider({ children }) {
         try {
             dispatch({ type: AUTH_ACTIONS.LOGIN_START });
 
-            // Check if demo mode
+            // Demo mode đã bị vô hiệu hóa - chỉ dùng Microsoft login
             if (isDemoMode) {
-                // Demo mode login
-                console.log('🎭 Demo mode - Setting up demo user');
-
-                const demoUser = {
-                    id: 'demo-user-123',
-                    email: 'demo@student.edu',
-                    name: 'Sinh viên Demo',
-                    role: {
-                        roleName: 'Student',
-                        roleId: 1
-                    }
-                };
-
-                const demoTokens = {
-                    sessionToken: 'demo-session-token',
-                    refreshToken: 'demo-refresh-token'
-                };
-
-                // Store demo data
-                localStorage.setItem('sessionToken', demoTokens.sessionToken);
-                localStorage.setItem('refreshToken', demoTokens.refreshToken);
-                localStorage.setItem('userData', JSON.stringify(demoUser));
-
-                dispatch({
-                    type: AUTH_ACTIONS.LOGIN_SUCCESS,
-                    payload: {
-                        user: demoUser,
-                        sessionToken: demoTokens.sessionToken,
-                        refreshToken: demoTokens.refreshToken
-                    }
-                });
-
-                // Show success messages
-                console.log('✅ Đăng nhập thành công với Demo Mode!');
-                console.log('✅ Kết nối API thành công!');
-                console.log(`👤 Xin chào: ${demoUser.name}`);
-
-                // Optional: Show browser notification
-                if ('Notification' in window && Notification.permission === 'granted') {
-                    new Notification('Student Scheduler', {
-                        body: '✅ Đăng nhập thành công!\n👤 ' + demoUser.name,
-                        icon: '/vite.svg'
-                    });
-                }
-
-                return { success: true, user: demoUser };
+                console.warn('⚠️ Demo mode không còn được hỗ trợ. Vui lòng đăng nhập bằng Microsoft.');
+                throw new Error('Demo mode is disabled. Please use Microsoft login.');
             }
 
             // Microsoft login popup
@@ -434,6 +390,50 @@ export function AuthProvider({ children }) {
         return roles.includes(state.user.role.roleName);
     }
 
+    /**
+     * Login with email/password (database authentication)
+     */
+    async function login(userData) {
+        try {
+            const user = {
+                id: userData.id,
+                email: userData.email,
+                name: userData.name,
+                studentId: userData.studentId,
+                role: {
+                    roleName: userData.role || 'Student',
+                    displayName: userData.role || 'Sinh viên'
+                }
+            };
+
+            // Save to localStorage
+            const sessionToken = 'session-' + Date.now();
+            const refreshToken = 'refresh-' + Date.now();
+            
+            localStorage.setItem('sessionToken', sessionToken);
+            localStorage.setItem('refreshToken', refreshToken);
+            localStorage.setItem('userData', JSON.stringify(user));
+
+            dispatch({
+                type: AUTH_ACTIONS.LOGIN_SUCCESS,
+                payload: {
+                    user,
+                    sessionToken,
+                    refreshToken
+                }
+            });
+
+            console.log('✅ Đăng nhập thành công!', user);
+        } catch (error) {
+            console.error('Login error:', error);
+            dispatch({
+                type: AUTH_ACTIONS.LOGIN_FAILURE,
+                payload: { error: error.message }
+            });
+            throw error;
+        }
+    }
+
     const value = {
         // State
         user: state.user,
@@ -444,6 +444,7 @@ export function AuthProvider({ children }) {
         lastLoginTime: state.lastLoginTime,
 
         // Actions
+        login,
         loginWithMicrosoft,
         silentLogin,
         logout,

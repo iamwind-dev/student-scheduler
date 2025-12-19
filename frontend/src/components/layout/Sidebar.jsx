@@ -23,13 +23,13 @@ const Sidebar = ({ isOpen, onClose, currentPath }) => {
             icon: '📚',
             description: 'Quản lý môn học và tín chỉ'
         },
-        {
-            path: '/preferences',
-            label: 'Ràng buộc',
-            icon: '⚙️',
-            description: 'Đang phát triển',
-            disabled: true
-        },
+        // {
+        //     path: '/preferences',
+        //     label: 'Ràng buộc',
+        //     icon: '⚙️',
+        //     description: 'Đang phát triển',
+        //     disabled: true
+        // },
         {
             path: '/schedule',
             label: 'Thời khóa biểu',

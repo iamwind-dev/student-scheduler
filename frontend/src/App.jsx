@@ -20,6 +20,7 @@ import { ToastContainer, useToast } from './components/common/Toast';
 
 // Lazy-loaded Pages
 const LoginPage = lazy(() => import('./pages/auth/LoginPage'));
+const SignupPage = lazy(() => import('./pages/auth/SignupPage'));
 const DashboardPage = lazy(() => import('./pages/dashboard/DashboardPage'));
 const CoursesPage = lazy(() => import('./pages/courses/CoursesPage'));
 const CourseDetailsPage = lazy(() => import('./pages/courses/CourseDetailsPage'));
@@ -60,6 +61,7 @@ function AppContent() {
                     <Routes>
                         {/* Public Routes */}
                         <Route path="/login" element={<LoginPage />} />
+                        <Route path="/signup" element={<SignupPage />} />
 
                         {/* Protected Routes */}
                         <Route path="/" element={

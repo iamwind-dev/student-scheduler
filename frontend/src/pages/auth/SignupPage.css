@@ -1,9 +1,4 @@
-/**
- * LOGIN PAGE STYLES - Focus Theme
- * Modern purple gradient authentication page
- */
-
-.login-page {
+.signup-page {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 45% 55%;
@@ -12,7 +7,7 @@
     overflow: hidden;
 }
 
-.login-page::before {
+.signup-page::before {
     content: '';
     position: absolute;
     top: -10%;
@@ -23,7 +18,7 @@
     border-radius: 50%;
 }
 
-.login-page::after {
+.signup-page::after {
     content: '';
     position: absolute;
     bottom: -10%;
@@ -35,7 +30,7 @@
 }
 
 /* Left Side - Illustration */
-.login-illustration {
+.signup-illustration {
     grid-column: 1;
     display: flex;
     align-items: center;
@@ -168,7 +163,7 @@
 }
 
 /* Right Side - Form Container */
-.login-container {
+.signup-container {
     grid-column: 2;
     display: flex;
     flex-direction: column;
@@ -179,7 +174,7 @@
     padding: 2rem 3rem;
 }
 
-.login-header {
+.signup-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -226,7 +221,7 @@
     color: white;
 }
 
-.login-content {
+.signup-content {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -253,15 +248,18 @@
     margin: 0;
 }
 
-.login-form {
-    width: 100%;
+.error-message {
+    background: #FEE;
+    color: #C00;
+    padding: 0.875rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    border-left: 4px solid #C00;
 }
 
-.form-title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
+.signup-form {
+    width: 100%;
 }
 
 .form-group {
@@ -320,17 +318,7 @@
     color: #667eea;
 }
 
-.error-message {
-    background: #FEE;
-    color: #C00;
-    padding: 0.875rem 1rem;
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-    border-left: 4px solid #C00;
-}
-
-.login-btn {
+.signup-button {
     width: 100%;
     padding: 1rem;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -345,17 +333,17 @@
     box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
 }
 
-.login-btn:hover:not(:disabled) {
+.signup-button:hover:not(:disabled) {
     transform: translateY(-2px);
     box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
 }
 
-.login-btn:disabled {
+.signup-button:disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }
 
-.social-login {
+.social-signup {
     margin-top: 2rem;
     text-align: center;
 }
@@ -391,82 +379,26 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.microsoft-btn {
+.signup-footer {
     display: none;
 }
 
-.login-divider {
-    display: none;
-}
-
-.forgot-password {
-    text-align: right;
-    margin-top: var(--spacing-xs);
-    margin-bottom: var(--spacing-md);
-}
-
-.forgot-password a {
-    color: #00897b;
-    font-size: var(--font-size-sm);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.forgot-password a:hover {
-    text-decoration: underline;
-}
-
-.demo-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-sm);
-    width: 100%;
-    padding: var(--spacing-lg);
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    border-radius: var(--border-radius-md);
-    font-size: var(--font-size-base);
-    font-weight: 600;
-    cursor: pointer;
-    transition: all var(--transition-normal);
-}
-
-.demo-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
-    opacity: 0.9;
-}
-
-.demo-btn:active {
-    transform: translateY(0);
-}
-
-.signup-link {
-    display: none;
-}
-
-.login-footer {
-    display: none;
-}
-
-/* Mobile responsive */
+/* Responsive */
 @media (max-width: 1024px) {
-    .login-page {
+    .signup-page {
         grid-template-columns: 1fr;
     }
 
-    .login-illustration {
+    .signup-illustration {
         display: none;
     }
 
-    .login-container {
+    .signup-container {
         border-radius: 0;
         padding: 1.5rem;
     }
 
-    .login-header {
+    .signup-header {
         flex-direction: column;
         gap: 1rem;
         align-items: flex-start;
@@ -483,11 +415,11 @@
 }
 
 @media (max-width: 480px) {
-    .login-container {
+    .signup-container {
         padding: 1rem;
     }
 
-    .login-content {
+    .signup-content {
         padding: 0;
     }
 

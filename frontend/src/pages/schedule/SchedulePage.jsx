@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useAuth } from '../../contexts/AuthContext';
 import apiService from '../../services/api/apiService';
 import './SchedulePage.css';
 
@@ -7,6 +8,7 @@ const MORNING_PERIODS = [1, 2, 3, 4, 5];
 const AFTERNOON_PERIODS = [6, 7, 8, 9, 10];
 
 export default function SchedulePage() {
+    const { user } = useAuth();
     const [courses, setCourses] = useState([]);
     const [loading, setLoading] = useState(true);
     const [mode, setMode] = useState('manual');
@@ -164,42 +166,157 @@ export default function SchedulePage() {
 
     const saveSchedule = async () => {
         try {
-            // Lưu vào SQL Server
-            const API_URL = import.meta.env.VITE_API_URL || 'https://student-api-func.azurewebsites.net/api';
+            // Validation cơ bản
+            if (!user || !user.id) {
+                alert('❌ Vui lòng đăng nhập để lưu thời khóa biểu!');
+                return;
+            }
+
+            if (selectedCourses.length === 0) {
+                alert('⚠️ Vui lòng chọn ít nhất một môn học!');
+                return;
+            }
+
+            const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:7071/api';
+            
+            // Chuẩn bị dữ liệu
+            const userId = user.email || user.id;
+            
+            // Validate và format courses data
+            const formattedCourses = selectedCourses.map(c => ({
+                courseId: String(c.id || c.courseId || ''),
+                courseName: String(c.courseName || c.name || 'Unknown'),
+                courseCode: String(c.courseCode || c.code || ''),
+                credits: Number(c.credits) || 2,
+                lecturer: String(c.lecturer || c.instructor || 'TBA'),
+                time: String(c.time || c.schedule || ''),
+                room: String(c.room || ''),
+                weeks: String(c.weeks || ''),
+                quantity: Number(c.quantity || c.maxStudents || 0)
+            }));
+
+            const payload = {
+                userId: userId,
+                scheduleName: `Thời khóa biểu - ${new Date().toLocaleDateString('vi-VN')}`,
+                courses: formattedCourses,
+                user: {
+                    email: String(user.email || ''),
+                    name: String(user.name || 'Unknown'),
+                    studentId: String(user.studentId || ''),
+                    role: String(user.role?.roleName || 'Student')
+                },
+                totalCredits: totalCredits,
+                createdAt: new Date().toISOString()
+            };
+
+            console.log('💾 Saving schedule...', {
+                userId,
+                coursesCount: formattedCourses.length,
+                totalCredits
+            });
+
+            // Gửi request với timeout
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 30000); // 30s timeout
+
             const response = await fetch(`${API_URL}/schedules`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    userId: 'demo-user',
-                    courses: selectedCourses,
-                    totalCredits: totalCredits
-                })
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(payload),
+                signal: controller.signal
             });
+
+            clearTimeout(timeoutId);
+
+            // Kiểm tra response
+            if (!response.ok) {
+                const errorText = await response.text();
+                let errorMessage = `Server error (${response.status})`;
+                
+                try {
+                    const errorJson = JSON.parse(errorText);
+                    errorMessage = errorJson.error || errorJson.message || errorMessage;
+                } catch {
+                    errorMessage = errorText || errorMessage;
+                }
+                
+                throw new Error(errorMessage);
+            }
 
             const result = await response.json();
 
             if (result.success) {
                 // Backup vào localStorage
-                localStorage.setItem('savedSchedule', JSON.stringify({
+                localStorage.setItem(`savedSchedule_${user.id}`, JSON.stringify({
+                    userId: user.id,
+                    userName: user.name,
                     courses: selectedCourses,
                     schedule: schedule,
                     totalCredits: totalCredits,
-                    createdAt: new Date().toISOString()
+                    createdAt: new Date().toISOString(),
+                    scheduleId: result.data?.scheduleId
                 }));
-                alert('✅ Đã lưu vào SQL Server!');
+                
+                let message = `✅ Đã lưu thành công vào Azure SQL Database!\n\n`;
+                message += `👤 User: ${user.name}\n`;
+                message += `📊 Schedule ID: ${result.data?.scheduleId || 'N/A'}\n`;
+                message += `📚 Số môn học: ${formattedCourses.length}\n`;
+                message += `🎓 Tổng tín chỉ: ${totalCredits}\n\n`;
+                message += `📖 Môn học đã lưu:\n`;
+                formattedCourses.slice(0, 5).forEach((course, index) => {
+                    message += `${index + 1}. ${course.courseName} - ${course.lecturer} (${course.credits} TC)\n`;
+                });
+                if (formattedCourses.length > 5) {
+                    message += `... và ${formattedCourses.length - 5} môn khác\n`;
+                }
+                
+                alert(message);
             } else {
-                throw new Error(result.error);
+                throw new Error(result.error || 'Lưu thất bại - không có thông tin lỗi');
             }
+
         } catch (error) {
-            console.error('Save error:', error);
+            console.error('❌ Save error:', error);
+            
+            // Xác định loại lỗi
+            let errorMessage = '⚠️ Lưu vào Azure SQL thất bại!\n\n';
+            
+            if (error.name === 'AbortError') {
+                errorMessage += '⏱️ Lỗi: Request timeout (quá 30s)\n';
+            } else if (error.message.includes('Failed to fetch')) {
+                errorMessage += '🌐 Lỗi: Không thể kết nối tới server\n';
+                errorMessage += 'Kiểm tra:\n';
+                errorMessage += '- Server có đang chạy?\n';
+                errorMessage += '- VITE_API_URL có đúng?\n';
+                errorMessage += `- URL hiện tại: ${import.meta.env.VITE_API_URL || 'http://localhost:7071/api'}\n`;
+            } else {
+                errorMessage += `📝 Lỗi: ${error.message}\n`;
+            }
+            
             // Fallback: Lưu vào localStorage
-            localStorage.setItem('savedSchedule', JSON.stringify({
-                courses: selectedCourses,
-                schedule: schedule,
-                totalCredits: totalCredits,
-                createdAt: new Date().toISOString()
-            }));
-            alert('⚠️ Đã lưu vào localStorage (SQL Server lỗi)');
+            if (user && user.id) {
+                try {
+                    localStorage.setItem(`savedSchedule_${user.id}`, JSON.stringify({
+                        userId: user.id,
+                        userName: user.name,
+                        courses: selectedCourses,
+                        schedule: schedule,
+                        totalCredits: totalCredits,
+                        createdAt: new Date().toISOString(),
+                        failedSync: true,
+                        error: error.message
+                    }));
+                    errorMessage += '\n✅ Đã backup vào localStorage';
+                } catch (localError) {
+                    errorMessage += '\n❌ Không thể backup vào localStorage';
+                    console.error('LocalStorage error:', localError);
+                }
+            }
+            
+            alert(errorMessage);
         }
     };
 

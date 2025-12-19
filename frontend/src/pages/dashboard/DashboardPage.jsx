@@ -63,13 +63,13 @@ const DashboardPage = () => {
                     subtitle="Đã đăng ký"
                     color="primary"
                 />
-                <StatsCard
+                {/* <StatsCard
                     icon="❄️"
                     title="Ràng buộc"
                     value={stats.preferences}
                     subtitle="Đã thiết lập"
                     color="success"
-                />
+                /> */}
                 <StatsCard
                     icon="🎓"
                     title="Thời khóa biểu"
@@ -89,13 +89,13 @@ const DashboardPage = () => {
                         onClick={() => navigate('/courses')}
                         color="primary"
                     />
-                    <QuickAction
+                    {/* <QuickAction
                         icon="❄️"
                         title="Thiết lập ràng buộc"
                         description="Đang phát triển - Coming soon"
                         onClick={() => { }}
                         color="success"
-                    />
+                    /> */}
                     <QuickAction
                         icon="🎓"
                         title="Thời khóa biểu"
